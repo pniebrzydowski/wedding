@@ -1,19 +1,5 @@
 import Link from "next/link";
-
-const routes = [
-  {
-    url: "/",
-    title: "Home",
-  },
-  {
-    url: "/about",
-    title: "About Us",
-  },
-  {
-    url: "/location",
-    title: "Location",
-  },
-];
+import routes from "./routes";
 
 const MainNavigation = () => (
   <nav>

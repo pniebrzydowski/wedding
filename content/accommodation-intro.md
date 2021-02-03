@@ -1,0 +1,5 @@
+---
+title: "Accommodation Information"
+---
+
+## Accommodation
