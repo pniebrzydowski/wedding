@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
@@ -18,7 +18,7 @@ const About = ({ aboutPatrick, aboutChristina }) => {
   return (
     <Layout>
       <Head>
-        <title>About Us</title>
+        <title>About Us | {siteTitle}</title>
       </Head>
 
       <div dangerouslySetInnerHTML={{ __html: aboutPatrick.contentHtml }} />

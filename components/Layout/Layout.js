@@ -1,10 +1,10 @@
 import Head from "next/head";
+import MainNavigation from "../MainNavigation";
 import styles from "./layout.module.css";
-import Link from "next/link";
 
 export const siteTitle = "Wedding";
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -20,18 +20,11 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        <nav>
-          <ul>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-            <Link href="/about">
-              <a>About Us</a>
-            </Link>
-          </ul>
-        </nav>
+        <MainNavigation />
       </header>
       <main>{children}</main>
     </div>
   );
-}
+};
+
+export default Layout;
