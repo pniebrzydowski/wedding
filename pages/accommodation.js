@@ -8,10 +8,13 @@ import {
 
 import { getContentData } from "../lib/content";
 
-export const getStaticProps = async () => {
-  const introContent = await getContentData("accommodation-intro");
-  const blockedAccommodations = await getBlockedAccommodations();
-  const otherAccommodations = await getOtherAccommodations();
+export const getStaticProps = async ({ locale }) => {
+  const introContent = await getContentData({
+    id: "accommodation-intro",
+    locale,
+  });
+  const blockedAccommodations = await getBlockedAccommodations(locale);
+  const otherAccommodations = await getOtherAccommodations(locale);
 
   return {
     props: {

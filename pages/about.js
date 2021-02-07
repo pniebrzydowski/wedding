@@ -3,10 +3,13 @@ import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
-export const getStaticProps = async () => {
-  const ourStory = await getContentData("our-story");
-  const aboutPatrick = await getContentData("about-patrick");
-  const aboutChristina = await getContentData("about-christina");
+export const getStaticProps = async ({ locale }) => {
+  const ourStory = await getContentData({ id: "our-story", locale });
+  const aboutPatrick = await getContentData({ id: "about-patrick", locale });
+  const aboutChristina = await getContentData({
+    id: "about-christina",
+    locale,
+  });
   return {
     props: {
       ourStory,

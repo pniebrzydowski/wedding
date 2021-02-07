@@ -3,9 +3,12 @@ import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
-export const getStaticProps = async () => {
-  const schlossGreinburg = await getContentData("schloss-greinburg");
-  const arrival = await getContentData("arrival");
+export const getStaticProps = async ({ locale }) => {
+  const schlossGreinburg = await getContentData({
+    id: "schloss-greinburg",
+    locale,
+  });
+  const arrival = await getContentData({ id: "arrival", locale });
 
   return {
     props: {

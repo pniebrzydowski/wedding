@@ -1,10 +1,11 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
-export const getStaticProps = async () => {
-  const dayOf = await getContentData("day-of");
+export const getStaticProps = async ({ locale }) => {
+  const dayOf = await getContentData({ id: "day-of", locale });
 
   return {
     props: {
@@ -14,6 +15,8 @@ export const getStaticProps = async () => {
 };
 
 const DayOf = ({ dayOf }) => {
+  const { locale } = useRouter();
+
   return (
     <Layout>
       <Head>
