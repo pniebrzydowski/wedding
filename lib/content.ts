@@ -18,10 +18,12 @@ export async function getContentData({ id, filePath = "", locale = "en" }) {
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
+  const data: any = matterResult.data;
+
   // Combine the data with the id and contentHtml
   return {
     id,
     contentHtml,
-    ...matterResult.data,
+    ...data
   };
 }
