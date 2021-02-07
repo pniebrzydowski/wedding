@@ -4,23 +4,23 @@ import Layout, { siteTitle } from "../components/Layout";
 import { getContentData } from "../lib/content";
 
 export const getStaticProps = async () => {
-  const schedule = await getContentData("schedule");
+  const dayOf = await getContentData("day-of");
 
   return {
     props: {
-      schedule,
+      dayOf,
     },
   };
 };
 
-const DayOf = ({ schedule }) => {
+const DayOf = ({ dayOf }) => {
   return (
     <Layout>
       <Head>
         <title>Day Of | {siteTitle}</title>
       </Head>
 
-      <div dangerouslySetInnerHTML={{ __html: schedule.contentHtml }} />
+      <div dangerouslySetInnerHTML={{ __html: dayOf.contentHtml }} />
     </Layout>
   );
 };
