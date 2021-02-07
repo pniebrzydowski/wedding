@@ -1,20 +1,32 @@
 import Head from "next/head";
+import AccommodationInfo from "../components/AccommodationInfo/AccommodationInfo";
 import Layout, { siteTitle } from "../components/Layout";
+import {
+  getBlockedAccommodations,
+  getOtherAccommodations,
+} from "../lib/accommodations";
 
 import { getContentData } from "../lib/content";
 
 export async function getStaticProps() {
   const introContent = await getContentData("accommodation-intro");
+  const blockedAccommodations = await getBlockedAccommodations();
+  const otherAccommodations = await getOtherAccommodations();
 
   return {
     props: {
       introContent,
-      accommodationOptions: [""],
+      blockedAccommodations,
+      otherAccommodations,
     },
   };
 }
 
-const Accommodation = ({ introContent, accommodationOptions }) => {
+const Accommodation = ({
+  introContent,
+  blockedAccommodations,
+  otherAccommodations,
+}) => {
   return (
     <Layout>
       <Head>
@@ -23,8 +35,11 @@ const Accommodation = ({ introContent, accommodationOptions }) => {
 
       <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
 
-      {accommodationOptions.map((option) => (
-        <div dangerouslySetInnerHTML={{ __html: option.contentHtml }} />
+      {blockedAccommodations.map((option) => (
+        <AccommodationInfo accommodation={option} key={option.name} />
+      ))}
+      {otherAccommodations.map((option) => (
+        <AccommodationInfo accommodation={option} key={option.name} />
       ))}
     </Layout>
   );
