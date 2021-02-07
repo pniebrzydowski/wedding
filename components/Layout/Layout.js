@@ -6,7 +6,7 @@ export const siteTitle = "Wedding";
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Wedding" />
@@ -22,8 +22,10 @@ const Layout = ({ children }) => {
       <header className={styles.header}>
         <MainNavigation />
       </header>
-      <main>{children}</main>
-    </div>
+      <div className={styles.container}>
+        <main>{children}</main>
+      </div>
+    </>
   );
 };
 
