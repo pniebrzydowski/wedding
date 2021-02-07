@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const introContent = await getContentData("reply-intro");
 
   return {
@@ -11,7 +11,7 @@ export async function getStaticProps() {
       introContent,
     },
   };
-}
+};
 
 const Reply = ({ introContent }) => {
   return (

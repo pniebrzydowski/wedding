@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const schedule = await getContentData("schedule");
 
   return {
@@ -11,7 +11,7 @@ export async function getStaticProps() {
       schedule,
     },
   };
-}
+};
 
 const DayOf = ({ schedule }) => {
   return (

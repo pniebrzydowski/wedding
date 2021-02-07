@@ -8,7 +8,7 @@ import {
 
 import { getContentData } from "../lib/content";
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const introContent = await getContentData("accommodation-intro");
   const blockedAccommodations = await getBlockedAccommodations();
   const otherAccommodations = await getOtherAccommodations();
@@ -20,7 +20,7 @@ export async function getStaticProps() {
       otherAccommodations,
     },
   };
-}
+};
 
 const Accommodation = ({
   introContent,

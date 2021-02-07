@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/Layout";
 
 import { getContentData } from "../lib/content";
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const schlossGreinburg = await getContentData("schloss-greinburg");
   const arrival = await getContentData("arrival");
 
@@ -13,7 +13,7 @@ export async function getStaticProps() {
       arrival,
     },
   };
-}
+};
 
 const Location = ({ schlossGreinburg, arrival }) => {
   return (
