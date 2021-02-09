@@ -17,8 +17,9 @@ const useDocData = <T>({
   const firebase = useContext(FirebaseContext);
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<T>();
+
   const queryRef = useRef<CollectionReference<DocumentData> | undefined>(
-    firebase?.firestore.collection(collection)
+    firebase?.firestore?.collection(collection)
   );
 
   useEffect(() => {
