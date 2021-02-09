@@ -19,7 +19,7 @@ interface Guest {
   id: string;
   inviteId: string;
   name: string;
-  attending: boolean;
+  attending: string;
 }
 
 interface Invite {
@@ -58,7 +58,7 @@ const Reply = ({ introContent }) => {
       {guests &&
         guests.map((guest) => (
           <li key={guest.id}>
-            {guest.name} - {guest.attending.toString()}
+            {guest.name} - {guest.attending}
           </li>
         ))}
       {invite && (
