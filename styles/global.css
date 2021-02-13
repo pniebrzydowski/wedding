@@ -12,6 +12,24 @@ body {
   box-sizing: border-box;
 }
 
+div {
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
 a {
   color: #0070f3;
   text-decoration: none;
@@ -24,4 +42,18 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  background: white;
+  font-weight: bold;
+  border-radius: 9px;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  height: 3rem;
+}
+
+button:hover {
+  background: lightgray;
+  cursor: pointer;
 }

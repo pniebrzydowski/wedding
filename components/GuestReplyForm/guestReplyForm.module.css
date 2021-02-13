@@ -1,0 +1,39 @@
+.listItem {
+  list-style: none;
+  width: 100%;
+}
+
+.listItem + .listItem {
+  border-top: 1px solid lightgray;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+.column + .column {
+  margin-left: 1.5rem;
+}
+
+.submitButton {
+  background: darkslateblue;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+}
+
+.submitButton:hover {
+  background: darkblue;
+}

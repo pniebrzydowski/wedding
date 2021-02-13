@@ -1,5 +1,5 @@
 .nav {
-  background: darkblue;
+  background: darkslateblue;
   width: 100%;
 }
 
@@ -17,14 +17,14 @@
 }
 
 .navLink:hover {
-  background-color: darkcyan;
+  background-color: darkblue;
   text-decoration: none;
 }
 
 .activeLink {
   display: block;
   padding: 1rem;
-  color: darkblue;
+  color: darkslateblue;
   background-color: white;
 }
 

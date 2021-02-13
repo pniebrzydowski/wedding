@@ -15,7 +15,7 @@ export interface Guest {
   id: string;
   inviteId: string;
   name: string;
-  attending: string;
-  dietaryNeeds: string;
-  songRequest: string;
+  attending?: string;
+  dietaryNeeds?: string;
+  songRequest?: string;
 }
