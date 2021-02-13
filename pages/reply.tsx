@@ -1,7 +1,8 @@
 import Head from "next/head";
+import GuestReplyForm from "../components/GuestReplyForm";
 import Layout, { siteTitle } from "../components/Layout";
 import useCollectionDocsData from "../firebase/hooks/useCollectionDocsData";
-import useDocData from "../firebase/hooks/useDocData";
+import { Guest } from "../firebase/types";
 
 import { getContentData } from "../lib/content";
 
@@ -15,35 +16,16 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-interface Guest {
-  id: string;
-  inviteId: string;
-  name: string;
-  attending: string;
-}
-
-interface Invite {
-  dietaryNeeds: string;
-  songRequest: string;
-}
-
 const Reply = ({ introContent }) => {
   const inviteId = "CHNLr4xnflG0COwg9pgU";
-  const { loading: inviteLoading, data: invite } = useDocData<Invite>({
-    collection: "invites",
-    id: inviteId,
+  const { loading, data: guests } = useCollectionDocsData<Guest>({
+    collection: "guests",
+    query: {
+      field: "inviteId",
+      operator: "==",
+      value: inviteId,
+    },
   });
-
-  const { loading: guestsLoading, data: guests } = useCollectionDocsData<Guest>(
-    {
-      collection: "guests",
-      query: {
-        field: "inviteId",
-        operator: "==",
-        value: inviteId,
-      },
-    }
-  );
 
   return (
     <Layout>
@@ -53,26 +35,10 @@ const Reply = ({ introContent }) => {
 
       <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
 
-      {(inviteLoading || guestsLoading) && "Loading..."}
+      {loading && "Loading..."}
 
       {guests &&
-        guests.map((guest) => (
-          <li key={guest.id}>
-            {guest.name} - {guest.attending}
-          </li>
-        ))}
-      {invite && (
-        <>
-          <div>
-            <label>Dietary Needs</label>
-            <textarea>{invite.dietaryNeeds}</textarea>
-          </div>
-          <div>
-            <label>Song Request</label>
-            <input type="text" defaultValue={invite.songRequest} />
-          </div>
-        </>
-      )}
+        guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)}
     </Layout>
   );
 };

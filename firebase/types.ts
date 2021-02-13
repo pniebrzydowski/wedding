@@ -10,3 +10,12 @@ export interface FirebaseData<T> {
   data: T;
   loading: boolean;
 }
+
+export interface Guest {
+  id: string;
+  inviteId: string;
+  name: string;
+  attending: string;
+  dietaryNeeds: string;
+  songRequest: string;
+}
