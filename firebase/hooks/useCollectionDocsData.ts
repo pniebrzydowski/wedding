@@ -63,6 +63,7 @@ const useCollectionDocsData = <T>({
           id: doc.id,
           ...(doc.data() as T),
         }));
+        console.log(data);
         setData(data);
       },
       (error) => {

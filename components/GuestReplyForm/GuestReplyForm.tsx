@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useContext } from "react";
 import { FormProvider, useForm } from "react-hook-form";
+import { FirebaseContext } from "../../firebase";
 import { Guest } from "../../firebase/types";
-import Select from "../form/Select";
-import { SelectOption } from "../form/Select/Select";
+import Select, { SelectOption } from "../form/Select";
 import Textarea from "../form/Textarea";
 import styles from "./guestReplyForm.module.css";
 
@@ -14,10 +14,29 @@ const GuestReplyForm: FunctionComponent<Props> = ({
   guest: { id, attending, name, dietaryNeeds, songRequest },
 }) => {
   const form = useForm();
+  const firebase = useContext(FirebaseContext);
+
   const { handleSubmit } = form;
 
-  const onSubmit = (data: Partial<Guest>) => {
-    console.log(data);
+  const onSubmit = ({
+    attending,
+    dietaryNeeds,
+    songRequest,
+  }: Partial<Guest>) => {
+    firebase.firestore
+      .collection("guests")
+      .doc(id)
+      .update({
+        attending,
+        dietaryNeeds,
+        songRequest,
+      })
+      .then(() => {
+        console.log("Document successfully written!");
+      })
+      .catch((err) => {
+        console.error("Error creating series: ", err);
+      });
   };
 
   const attendingOptions: SelectOption[] = [
