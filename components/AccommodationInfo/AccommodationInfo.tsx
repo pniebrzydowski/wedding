@@ -1,5 +1,3 @@
-import React from "react";
-
 const AccommodationInfo = ({ accommodation }) => {
   const totalRooms = accommodation.blockedDouble + accommodation.blockedSingle;
   const totalBeds =

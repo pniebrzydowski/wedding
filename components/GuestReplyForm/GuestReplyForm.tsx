@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useContext } from "react";
+import { FunctionComponent, useContext } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { FirebaseContext } from "../../firebase";
 import { Guest } from "../../firebase/types";
