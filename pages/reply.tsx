@@ -1,8 +1,7 @@
 import Head from "next/head";
-import GuestReplyForm from "../components/GuestReplyForm";
+import { useEffect, useState } from "react";
 import Layout, { siteTitle } from "../components/Layout";
-import useCollectionDocsData from "../firebase/hooks/useCollectionDocsData";
-import { Guest } from "../firebase/types";
+import ReplyGuestList from "../components/ReplyGuestList";
 
 import { getContentData } from "../lib/content";
 
@@ -17,14 +16,10 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 const Reply = ({ introContent }) => {
-  const inviteId = "CHNLr4xnflG0COwg9pgU";
-  const { loading, data: guests } = useCollectionDocsData<Guest>({
-    collection: "guests",
-    query: {
-      field: "inviteId",
-      operator: "==",
-      value: inviteId,
-    },
+  const [inviteId, setInviteId] = useState("");
+  useEffect(() => {
+    const iId = localStorage.getItem("inviteId");
+    setInviteId(iId);
   });
 
   return (
@@ -35,10 +30,7 @@ const Reply = ({ introContent }) => {
 
       <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
 
-      {loading && "Loading..."}
-
-      {guests &&
-        guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)}
+      {inviteId && <ReplyGuestList inviteId={inviteId} />}
     </Layout>
   );
 };
