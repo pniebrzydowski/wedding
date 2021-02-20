@@ -11,6 +11,7 @@ type AttendingValue = 'yes' | 'no' | 'no-response' | 'all';
 function GuestList(): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
     collection: 'guests',
+    sortField: 'inviteId'
   });
   const [attendingFilter, setAttendingFilter] = useState<AttendingValue>();
 
