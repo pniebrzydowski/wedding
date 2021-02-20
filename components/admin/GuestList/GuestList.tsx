@@ -3,6 +3,8 @@ import { ReactElement } from 'react';
 import useCollectionDocsData from '../../../firebase/hooks/useCollectionDocsData';
 import { Guest } from '../../../firebase/types';
 
+import styles from './guestList.module.css';
+
 function GuestList(): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
     collection: 'guests',
@@ -13,7 +15,7 @@ function GuestList(): ReactElement {
   }
 
   return (
-    <table>
+    <table className={styles.table}>
       <thead>
         <tr>
           <th>Guest Name</th>

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { PropsWithChildren, ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 import MainNavigation from '../MainNavigation';
 
@@ -7,7 +7,11 @@ import styles from './layout.module.css';
 
 export const siteTitle = 'Wedding';
 
-const Layout = ({ children }: PropsWithChildren<Record<string, never>>): ReactElement => {
+interface Props {
+  children?: ReactNode 
+}
+
+const Layout = ({ children }: Props): ReactElement => {
   return (
     <>
       <Head>
