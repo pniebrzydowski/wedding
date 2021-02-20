@@ -1,13 +1,13 @@
-import { useContext, useEffect, useState, useRef } from "react";
+import { useContext, useEffect, useState, useRef } from 'react';
 
-import FirebaseContext from "../FirebaseContext";
-import { FirebaseQuery, FirebaseData } from "../types";
+import FirebaseContext from '../FirebaseContext';
+import { FirebaseQuery, FirebaseData } from '../types';
 
 import {
   OrderByDirection,
   Query,
   DocumentData,
-} from "@firebase/firestore-types";
+} from '@firebase/firestore-types';
 
 interface Props {
   collection: string;
@@ -20,7 +20,7 @@ const useCollectionDocsData = <T>({
   collection,
   query,
   sortField,
-  sortOrder = "asc",
+  sortOrder = 'asc',
 }: Props): FirebaseData<T[]> => {
   const firebase = useContext(FirebaseContext);
   const [loading, setLoading] = useState(true);
@@ -63,7 +63,6 @@ const useCollectionDocsData = <T>({
           id: doc.id,
           ...(doc.data() as T),
         }));
-        console.log(data);
         setData(data);
       },
       (error) => {
