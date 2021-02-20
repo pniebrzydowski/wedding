@@ -1,22 +1,19 @@
-.addButton {
-  border: 1px solid darkslateblue;
-  color: darkslateblue;
-  background: white;
-  font-weight: bold;
+.wrapper {
+  display: flex;
+}
+
+.wrapper > * + * {
+  margin-left: 3rem;
+}
+
+.guestList {
+  width: 100%;
+}
+
+.formActions {
   width: 200px;
 }
 
-.addButton:hover {
-  background: lightgray;
-}
-
-.submitButton {
-  background: darkslateblue;
-  color: white;
-  font-weight: bold;
-  width: 200px;
-}
-
-.submitButton:hover {
-  background: darkblue;
+.formActions > * + * {
+  margin-top: 1rem;
 }

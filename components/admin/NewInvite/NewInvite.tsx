@@ -3,6 +3,8 @@ import { FormProvider, useForm } from 'react-hook-form';
 import { FirebaseContext } from '../../../firebase';
 import Text from '../../form/Text';
 import styles from './newInvite.module.css';
+import Button from '../../ui/Button';
+import FlexBox from '../../ui/FlexBox';
 
 const NewInvite: FunctionComponent = () => {
   const form = useForm();
@@ -43,22 +45,29 @@ const NewInvite: FunctionComponent = () => {
   return (
     <FormProvider {...form}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {guests.map(idx => (
-          <Text key={idx}
-            formName="newInvite"
-            fieldName={`guest_${idx}`}
-            label={`Guest ${idx}`}
-          />
-        ))}
+        <div className={styles.wrapper}>
+          <ul className={styles.guestList}>
+            {guests.map(idx => (
+              <li key={idx}>
+                <Text
+                  formName="newInvite"
+                  fieldName={`guest_${idx}`}
+                  label={`Guest ${idx}`}
+                /></li>
+            ))}
+          </ul>
 
-        <button type="button" className={styles.addButton} onClick={() => {
-          setGuests([...guests, guests.length + 1]);
-        }}>
-          Add guest
-        </button>
-        <button type="submit" className={styles.submitButton}>
-          Save
-        </button>
+          <FlexBox flexDirection="column">
+            <Button buttonType="secondary" type="button" onClick={() => {
+              setGuests([...guests, guests.length + 1]);
+            }}>
+              Add guest
+            </Button>
+            <Button buttonType="primary" type="submit">
+              Save
+            </Button>
+          </FlexBox>
+        </div>
       </form>
     </FormProvider>
   );

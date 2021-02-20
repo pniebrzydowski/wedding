@@ -1,5 +1,4 @@
 .listItem {
-  list-style: none;
   width: 100%;
 }
 
@@ -25,15 +24,4 @@
 
 .column + .column {
   margin-left: 1.5rem;
-}
-
-.submitButton {
-  background: darkslateblue;
-  color: white;
-  font-weight: bold;
-  width: 200px;
-}
-
-.submitButton:hover {
-  background: darkblue;
 }

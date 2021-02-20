@@ -6,8 +6,6 @@
 .navList {
   display: flex;
   justify-content: center;
-  list-style: none;
-  margin: 0;
 }
 
 .navLink {

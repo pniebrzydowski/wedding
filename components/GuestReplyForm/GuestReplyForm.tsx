@@ -1,18 +1,19 @@
-import { FunctionComponent, useContext } from "react";
-import { FormProvider, useForm } from "react-hook-form";
-import { FirebaseContext } from "../../firebase";
-import { Guest } from "../../firebase/types";
-import Select, { SelectOption } from "../form/Select";
-import Textarea from "../form/Textarea";
-import styles from "./guestReplyForm.module.css";
+import { FunctionComponent, useContext } from 'react';
+import { FormProvider, useForm } from 'react-hook-form';
+import { FirebaseContext } from '../../firebase';
+import { Guest } from '../../firebase/types';
+import Select, { SelectOption } from '../form/Select';
+import Textarea from '../form/Textarea';
+import styles from './guestReplyForm.module.css';
+import Button from '../ui/Button';
 
 interface Props {
   guest: Guest;
 }
 
-const GuestReplyForm: FunctionComponent<Props> = ({
-  guest: { id, attending, name, dietaryNeeds, songRequest },
-}) => {
+const GuestReplyForm: FunctionComponent<Props> = (
+  { guest: { id, attending, name, dietaryNeeds, songRequest }
+  }: Props) => {
   const form = useForm();
   const firebase = useContext(FirebaseContext);
 
@@ -24,7 +25,7 @@ const GuestReplyForm: FunctionComponent<Props> = ({
     songRequest,
   }: Partial<Guest>) => {
     firebase.firestore
-      .collection("guests")
+      .collection('guests')
       .doc(id)
       .update({
         attending,
@@ -32,24 +33,24 @@ const GuestReplyForm: FunctionComponent<Props> = ({
         songRequest,
       })
       .then(() => {
-        console.log("Document successfully written!");
+        console.log('Document successfully written!');
       })
       .catch((err) => {
-        console.error("Error creating series: ", err);
+        console.error('Error creating series: ', err);
       });
   };
 
   const attendingOptions: SelectOption[] = [
     {
-      value: "",
+      value: '',
     },
     {
-      value: "yes",
-      label: "Can't wait!",
+      value: 'yes',
+      label: 'Can\'t wait!',
     },
     {
-      value: "no",
-      label: "Sorry, can't make it",
+      value: 'no',
+      label: 'Sorry, can\'t make it',
     },
   ];
 
@@ -60,9 +61,9 @@ const GuestReplyForm: FunctionComponent<Props> = ({
           <input type="hidden" id="guest_id" name="id" value={id} />
           <div className={styles.header}>
             <h3>{name}</h3>
-            <button type="submit" className={styles.submitButton}>
+            <Button buttonType="primary" type="submit">
               Save
-            </button>
+            </Button>
           </div>
           <div className={styles.grid}>
             <div className={styles.column}>

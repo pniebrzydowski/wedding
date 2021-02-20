@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row > * + * {
+  margin-left: 1rem;
+}
+
+.row.factor2 > * + * {
+  margin-left: 2rem;
+}
+
+.row.factor3 > * + * {
+  margin-left: 3rem;
+}
+
+.row.factor4 > * + * {
+  margin-left: 4rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column > * + * {
+  margin-top: 1rem;
+}
+
+.column.factor2 > * + * {
+  margin-top: 2rem;
+}
+
+.column.factor3 > * + * {
+  margin-top: 3rem;
+}
+
+.column.factor4 > * + * {
+  margin-top: 4rem;
+}
+

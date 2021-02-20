@@ -1,0 +1,23 @@
+.primary {
+  border: 1px solid darkslateblue;
+  background: darkslateblue;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+}
+
+.primary:hover {
+  background: darkblue;
+}
+
+.secondary {
+  border: 1px solid darkslateblue;
+  color: darkslateblue;
+  background: white;
+  font-weight: bold;
+  width: 200px;
+}
+
+.secondary:hover {
+  background: lightgray;
+}
