@@ -1,18 +1,18 @@
 .primary {
-  border: 1px solid darkslateblue;
-  background: darkslateblue;
+  border: 1px solid rgb(4, 15, 15);
+  background: rgb(4, 15, 15);
   color: white;
   font-weight: bold;
   width: 200px;
 }
 
 .primary:hover {
-  background: darkblue;
+  background: rgb(32, 32, 48);
 }
 
 .secondary {
-  border: 1px solid darkslateblue;
-  color: darkslateblue;
+  border: 1px solid rgb(4, 15, 15);
+  color: rgb(4, 15, 15);
   background: white;
   font-weight: bold;
   width: 200px;

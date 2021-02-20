@@ -26,6 +26,7 @@ const Layout = ({ children }: Props): ReactElement => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <div className={styles.bg}></div>
       <header className={styles.header}>
         <MainNavigation />
       </header>

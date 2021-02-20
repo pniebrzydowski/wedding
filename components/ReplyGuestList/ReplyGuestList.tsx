@@ -25,7 +25,9 @@ function ReplyGuestList({ inviteId }: Props): ReactElement {
       {!loading &&
         guests &&
         (guests.length ? (
-          guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)
+          <ul>
+            {guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)}
+          </ul>
         ) : (
           <>Sorry, no invite was found with this ID</>
         ))}

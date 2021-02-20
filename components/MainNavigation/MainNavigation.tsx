@@ -12,12 +12,12 @@ const MainNavigation = () => {
       <ul className={styles.navList}>
         {routes.map((route) => {
           const linkStyle =
-            router.pathname === route.url ? styles.activeLink : styles.navLink;
+            router.pathname === route.url ? [styles.navLink, styles.activeLink] : [styles.navLink];
 
           return (
             <li key={route.url}>
               <Link href={route.url}>
-                <a className={linkStyle}>{route.title}</a>
+                <a className={linkStyle.join(' ')}>{route.title}</a>
               </Link>
             </li>
           );

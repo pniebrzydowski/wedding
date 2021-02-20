@@ -1,5 +1,5 @@
 .nav {
-  background: darkslateblue;
+  background: rgb(104, 11, 11);
   width: 100%;
 }
 
@@ -11,22 +11,19 @@
 .navLink {
   color: white;
   display: block;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .navLink:hover {
-  background-color: darkblue;
+  background-color: rgb(128, 19, 19);
   text-decoration: none;
 }
 
 .activeLink {
-  display: block;
-  padding: 1rem;
-  color: darkslateblue;
   background-color: white;
+  color: rgba(104, 11, 11);
 }
 
 .activeLink:hover {
-  background-color: lightgray;
-  text-decoration: none;
+  background-color: rgb(236, 236, 236);
 }

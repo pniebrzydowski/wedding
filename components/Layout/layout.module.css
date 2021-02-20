@@ -1,7 +1,17 @@
+.bg {
+  position: fixed;
+  opacity: 0.06;
+  background-image: url('/images/greinburg-hof.jpg');
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
 .container {
   max-width: 56rem;
   padding: 1rem 1rem;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .header {
