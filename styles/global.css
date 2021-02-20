@@ -16,6 +16,10 @@ div {
   line-height: 1;
 }
 
+p {
+  line-height: 1.5;
+}
+
 a {
   color: #0070f3;
   text-decoration: none;
@@ -48,4 +52,18 @@ button {
 button:hover {
   background: lightgray;
   cursor: pointer;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+}
+
+td, th {
+  padding: 0.2em 0.5em;
+  padding-left: 0;
+}
+
+td + td, th + th {
+  padding-left: 0.5em;
 }

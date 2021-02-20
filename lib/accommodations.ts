@@ -1,19 +1,21 @@
+import dayjs from 'dayjs';
 import fs from 'fs';
 import path from 'path';
+import { StaticContent } from '../content/types';
 import { getContentData } from './content';
 
-interface Accommodation {
+export interface AccommodationData extends StaticContent {
   id: string;
-  contentHtml: string;
-  name: string;
-  url: string;
   blockedUntil: string;
   blockedSingle: number;
   blockedDouble: number;
   costSingle: number;
   costDouble: number;
   distance: number;
+  url: string;
+  name: string;
 }
+
 
 const getAllAccommodationData = async (locale = 'en') => {
   const accommodationsDirectory = path.join(
@@ -27,7 +29,7 @@ const getAllAccommodationData = async (locale = 'en') => {
   const allAccommodationsData = Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.md$/, '');
-      const accData: Accommodation = await getContentData({ id, filePath: 'accommodations/', locale });
+      const accData: AccommodationData = await getContentData({ id, filePath: 'accommodations/', locale });
       return accData;
     })
   );
@@ -35,12 +37,12 @@ const getAllAccommodationData = async (locale = 'en') => {
   return allAccommodationsData;
 };
 
-export const getBlockedAccommodations = async (locale) => {
+export const getBlockedAccommodations = async (locale: string): Promise<AccommodationData[]> => {
   const allData = await getAllAccommodationData(locale);
-  return allData.filter((a) => !!a.blockedUntil);
+  return allData.filter((a) => !!a.blockedUntil && dayjs(a.blockedUntil) > dayjs());
 };
 
-export const getOtherAccommodations = async (locale) => {
+export const getOtherAccommodations = async (locale: string): Promise<AccommodationData[]> => {
   const allData = await getAllAccommodationData(locale);
-  return allData.filter((a) => !a.blockedUntil);
+  return allData.filter((a) => !a.blockedUntil || dayjs(a.blockedUntil) < dayjs());
 };
