@@ -1,0 +1,15 @@
+.wrapper {
+  padding: 1rem;
+}
+
+.wrapper.factor2 {
+  padding: 2rem;
+}
+
+.wrapper.factor3 {
+  padding: 3rem;
+}
+
+.wrapper.factor4 {
+  padding: 4rem;
+}
