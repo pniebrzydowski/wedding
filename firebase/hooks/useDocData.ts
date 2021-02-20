@@ -1,9 +1,9 @@
-import { useContext, useEffect, useState, useRef } from "react";
+import { useContext, useEffect, useState, useRef } from 'react';
 
-import FirebaseContext from "../FirebaseContext";
-import { FirebaseData } from "../types";
+import FirebaseContext from '../FirebaseContext';
+import { FirebaseData } from '../types';
 
-import { CollectionReference, DocumentData } from "@firebase/firestore-types";
+import { CollectionReference, DocumentData } from '@firebase/firestore-types';
 
 interface DocDataProps {
   collection: string;

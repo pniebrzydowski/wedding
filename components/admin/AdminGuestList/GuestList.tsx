@@ -1,14 +1,15 @@
+import { ReactElement } from 'react';
+
 import useCollectionDocsData from '../../../firebase/hooks/useCollectionDocsData';
 import { Guest } from '../../../firebase/types';
-import { FunctionComponent } from 'react';
 
-const GuestList: FunctionComponent = () => {
+function GuestList(): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
     collection: 'guests',
   });
 
   if (loading) {
-    return <>"Loading..."</>;
+    return <>Loading...</>;
   }
 
   return (
@@ -34,6 +35,6 @@ const GuestList: FunctionComponent = () => {
       </tbody>
     </table>
   );
-};
+}
 
 export default GuestList;

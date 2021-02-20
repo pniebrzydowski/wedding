@@ -1,25 +1,26 @@
-import GuestReplyForm from "../GuestReplyForm";
-import useCollectionDocsData from "../../firebase/hooks/useCollectionDocsData";
-import { Guest } from "../../firebase/types";
-import { FunctionComponent } from "react";
+import { ReactElement } from 'react';
+
+import useCollectionDocsData from '../../firebase/hooks/useCollectionDocsData';
+import { Guest } from '../../firebase/types';
+import GuestReplyForm from '../GuestReplyForm';
 
 interface Props {
   inviteId: string;
 }
 
-const ReplyGuestList: FunctionComponent<Props> = ({ inviteId }) => {
+function ReplyGuestList({ inviteId }: Props): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
-    collection: "guests",
+    collection: 'guests',
     query: {
-      field: "inviteId",
-      operator: "==",
+      field: 'inviteId',
+      operator: '==',
       value: inviteId,
     },
   });
 
   return (
     <>
-      {loading && "Loading..."}
+      {loading && 'Loading...'}
 
       {!loading &&
         guests &&
@@ -30,6 +31,6 @@ const ReplyGuestList: FunctionComponent<Props> = ({ inviteId }) => {
         ))}
     </>
   );
-};
+}
 
 export default ReplyGuestList;

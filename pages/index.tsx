@@ -1,13 +1,15 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import { FunctionComponent } from "react";
-import Layout, { siteTitle } from "../components/Layout";
+import { ReactElement } from 'react';
+
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
+import Layout, { siteTitle } from '../components/Layout';
 
 const saveInviteId = (inviteId: string) => {
-  localStorage.setItem("inviteId", inviteId);
+  localStorage.setItem('inviteId', inviteId);
 };
 
-const Home: FunctionComponent = () => {
+function Home(): ReactElement {
   const { query } = useRouter();
 
   if (query.inviteId) {
@@ -21,6 +23,6 @@ const Home: FunctionComponent = () => {
       </Head>
     </Layout>
   );
-};
+}
 
 export default Home;

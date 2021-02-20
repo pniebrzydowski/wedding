@@ -1,9 +1,9 @@
-import { FunctionComponent } from "react";
+import { ReactElement } from 'react';
 
-import { useFormContext } from "react-hook-form";
+import { useFormContext } from 'react-hook-form';
 
-import FieldWrapper from "../FieldWrapper";
-import styles from "../form.module.css";
+import FieldWrapper from '../FieldWrapper';
+import styles from '../form.module.css';
 
 export interface SelectOption {
   label?: string;
@@ -20,7 +20,7 @@ interface Props {
   required?: boolean;
 }
 
-const Select: FunctionComponent<Props> = ({
+function Select({
   formName,
   fieldName,
   label,
@@ -28,7 +28,7 @@ const Select: FunctionComponent<Props> = ({
   defaultValue,
   error,
   required,
-}) => {
+}: Props): ReactElement {
   const { register } = useFormContext();
   const fieldId = `${formName}_${fieldName}`;
 
@@ -49,6 +49,6 @@ const Select: FunctionComponent<Props> = ({
       </select>
     </FieldWrapper>
   );
-};
+}
 
 export default Select;

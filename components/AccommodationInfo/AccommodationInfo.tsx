@@ -1,7 +1,28 @@
-const AccommodationInfo = ({ accommodation }) => {
+import { ReactElement } from 'react';
+
+interface StaticContent {
+  contentHtml: string;
+}
+
+interface AccommodationData extends StaticContent {
+  blockedDouble: number;
+  costDouble: number;
+  blockedSingle: number;
+  costSingle: number;
+  url: string;
+  name: string;
+  blockedUntil: string;
+}
+
+interface Props {
+  accommodation: AccommodationData;
+}
+
+function AccommodationInfo({ accommodation }: Props): ReactElement {
   const totalRooms = accommodation.blockedDouble + accommodation.blockedSingle;
   const totalBeds =
     accommodation.blockedDouble * 2 + accommodation.blockedSingle;
+
   return (
     <div>
       <h2>
@@ -37,6 +58,6 @@ const AccommodationInfo = ({ accommodation }) => {
       <div dangerouslySetInnerHTML={{ __html: accommodation.contentHtml }} />
     </div>
   );
-};
+}
 
 export default AccommodationInfo;

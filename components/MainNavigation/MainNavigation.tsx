@@ -1,8 +1,9 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import routes from "./routes";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import styles from "./mainNavigation.module.css";
+import styles from './mainNavigation.module.css';
+import routes from './routes';
+
 
 const MainNavigation = () => {
   const router = useRouter();

@@ -1,16 +1,24 @@
-import Head from "next/head";
-import AccommodationInfo from "../components/AccommodationInfo/AccommodationInfo";
-import Layout, { siteTitle } from "../components/Layout";
+import { ReactElement } from 'react';
+
+import Head from 'next/head';
+
+import AccommodationInfo from '../components/AccommodationInfo/AccommodationInfo';
+import Layout, { siteTitle } from '../components/Layout';
 import {
   getBlockedAccommodations,
   getOtherAccommodations,
-} from "../lib/accommodations";
+} from '../lib/accommodations';
+import { getContentData } from '../lib/content';
 
-import { getContentData } from "../lib/content";
+interface Props {
+  introContent: any;
+  blockedAccommodations: any;
+  otherAccommodations: any;
+}
 
-export const getStaticProps = async ({ locale }) => {
+export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
   const introContent = await getContentData({
-    id: "accommodation-intro",
+    id: 'accommodation-intro',
     locale,
   });
   const blockedAccommodations = await getBlockedAccommodations(locale);
@@ -25,11 +33,11 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-const Accommodation = ({
+function Accommodation({
   introContent,
   blockedAccommodations,
   otherAccommodations,
-}) => {
+}: Props): ReactElement {
   return (
     <Layout>
       <Head>
@@ -46,6 +54,6 @@ const Accommodation = ({
       ))}
     </Layout>
   );
-};
+}
 
 export default Accommodation;

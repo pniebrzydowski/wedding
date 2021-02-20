@@ -1,11 +1,13 @@
+import { ReactElement } from 'react';
+
 import Head from 'next/head';
-import { FunctionComponent } from 'react';
+
 import GuestList from '../components/admin/AdminGuestList';
 import NewInvite from '../components/admin/NewInvite';
 import Layout, { siteTitle } from '../components/Layout';
 import FlexBox from '../components/ui/FlexBox';
 
-const Admin:FunctionComponent = () => {
+function Admin(): ReactElement {
   return (
     <Layout>
       <Head>
@@ -17,6 +19,6 @@ const Admin:FunctionComponent = () => {
       </FlexBox>
     </Layout>
   );
-};
+}
 
 export default Admin;

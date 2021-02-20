@@ -1,10 +1,13 @@
-import Head from "next/head";
-import MainNavigation from "../MainNavigation";
-import styles from "./layout.module.css";
+import Head from 'next/head';
+import { PropsWithChildren, ReactElement } from 'react';
 
-export const siteTitle = "Wedding";
+import MainNavigation from '../MainNavigation';
 
-const Layout = ({ children }) => {
+import styles from './layout.module.css';
+
+export const siteTitle = 'Wedding';
+
+const Layout = ({ children }: PropsWithChildren<Record<string, never>>): ReactElement => {
   return (
     <>
       <Head>

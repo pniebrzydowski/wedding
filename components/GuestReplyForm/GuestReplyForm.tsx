@@ -1,19 +1,22 @@
-import { FunctionComponent, useContext } from 'react';
+import { ReactElement, useContext } from 'react';
+
 import { FormProvider, useForm } from 'react-hook-form';
+
 import { FirebaseContext } from '../../firebase';
 import { Guest } from '../../firebase/types';
 import Select, { SelectOption } from '../form/Select';
 import Textarea from '../form/Textarea';
-import styles from './guestReplyForm.module.css';
 import Button from '../ui/Button';
+
+import styles from './guestReplyForm.module.css';
 
 interface Props {
   guest: Guest;
 }
 
-const GuestReplyForm: FunctionComponent<Props> = (
+function GuestReplyForm(
   { guest: { id, attending, name, dietaryNeeds, songRequest }
-  }: Props) => {
+  }: Props): ReactElement {
   const form = useForm();
   const firebase = useContext(FirebaseContext);
 
@@ -94,5 +97,5 @@ const GuestReplyForm: FunctionComponent<Props> = (
       </FormProvider>
     </li>
   );
-};
+}
 export default GuestReplyForm;

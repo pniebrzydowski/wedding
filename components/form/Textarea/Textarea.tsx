@@ -1,9 +1,9 @@
-import { FunctionComponent } from "react";
+import { ReactElement } from 'react';
 
-import { useFormContext } from "react-hook-form";
+import { useFormContext } from 'react-hook-form';
 
-import FieldWrapper from "../FieldWrapper";
-import styles from "../form.module.css";
+import FieldWrapper from '../FieldWrapper';
+import styles from '../form.module.css';
 
 interface Props {
   formName: string;
@@ -14,14 +14,14 @@ interface Props {
   required?: boolean;
 }
 
-const Textarea: FunctionComponent<Props> = ({
+function Textarea({
   formName,
   fieldName,
   defaultValue,
   label,
   error,
   required,
-}) => {
+}: Props): ReactElement {
   const { register } = useFormContext();
   const fieldId = `${formName}_${fieldName}`;
 
@@ -36,6 +36,6 @@ const Textarea: FunctionComponent<Props> = ({
       />
     </FieldWrapper>
   );
-};
+}
 
 export default Textarea;

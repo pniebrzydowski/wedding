@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { ReactElement } from 'react';
 
 import { useFormContext } from 'react-hook-form';
 
@@ -14,14 +14,14 @@ interface Props {
   required?: boolean;
 }
 
-const Text: FunctionComponent<Props> = ({
+function Text({
   formName,
   fieldName,
   defaultValue,
   label,
   error,
   required,
-}: Props) => {
+}: Props): ReactElement {
   const { register } = useFormContext();
   const fieldId = `${formName}_${fieldName}`;
 
@@ -36,6 +36,6 @@ const Text: FunctionComponent<Props> = ({
       />
     </FieldWrapper>
   );
-};
+}
 
 export default Text;

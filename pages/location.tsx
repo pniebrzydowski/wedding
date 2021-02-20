@@ -1,14 +1,21 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/Layout";
+import { ReactElement } from 'react';
 
-import { getContentData } from "../lib/content";
+import Head from 'next/head';
 
-export const getStaticProps = async ({ locale }) => {
+import Layout, { siteTitle } from '../components/Layout';
+import { getContentData } from '../lib/content';
+
+interface Props {
+  schlossGreinburg: any;
+  arrival: any;
+}
+
+export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
   const schlossGreinburg = await getContentData({
-    id: "schloss-greinburg",
+    id: 'schloss-greinburg',
     locale,
   });
-  const arrival = await getContentData({ id: "arrival", locale });
+  const arrival = await getContentData({ id: 'arrival', locale });
 
   return {
     props: {
@@ -18,7 +25,7 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-const Location = ({ schlossGreinburg, arrival }) => {
+function Location({ schlossGreinburg, arrival }: Props): ReactElement {
   return (
     <Layout>
       <Head>
@@ -29,6 +36,6 @@ const Location = ({ schlossGreinburg, arrival }) => {
       <div dangerouslySetInnerHTML={{ __html: arrival.contentHtml }} />
     </Layout>
   );
-};
+}
 
 export default Location;

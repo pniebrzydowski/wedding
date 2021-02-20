@@ -1,12 +1,15 @@
-import { FunctionComponent, useContext, useState } from 'react';
+import { ReactElement, useContext, useState } from 'react';
+
 import { FormProvider, useForm } from 'react-hook-form';
+
 import { FirebaseContext } from '../../../firebase';
 import Text from '../../form/Text';
-import styles from './newInvite.module.css';
 import Button from '../../ui/Button';
 import FlexBox from '../../ui/FlexBox';
 
-const NewInvite: FunctionComponent = () => {
+import styles from './newInvite.module.css';
+
+function NewInvite(): ReactElement {
   const form = useForm();
   const firebase = useContext(FirebaseContext);
   const [guests, setGuests] = useState([1]);
@@ -71,5 +74,5 @@ const NewInvite: FunctionComponent = () => {
       </form>
     </FormProvider>
   );
-};
+}
 export default NewInvite;

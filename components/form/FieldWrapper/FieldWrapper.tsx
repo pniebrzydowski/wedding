@@ -1,5 +1,6 @@
-import { FunctionComponent } from "react";
-import styles from "../form.module.css";
+import { PropsWithChildren, ReactElement } from 'react';
+
+import styles from '../form.module.css';
 
 interface Props {
   fieldId: string;
@@ -7,12 +8,12 @@ interface Props {
   error?: string;
 }
 
-const FieldWrapper: FunctionComponent<Props> = ({
+function FieldWrapper({
   fieldId,
   label,
   error,
   children,
-}) => {
+}: PropsWithChildren<Props> ): ReactElement  {
   return (
     <div className={styles.fieldWrapper}>
       {label && (
@@ -24,6 +25,6 @@ const FieldWrapper: FunctionComponent<Props> = ({
       {error && <label className={styles.fieldError}>{error}</label>}
     </div>
   );
-};
+}
 
 export default FieldWrapper;

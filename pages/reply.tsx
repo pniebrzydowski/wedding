@@ -1,12 +1,17 @@
-import Head from "next/head";
-import { useEffect, useState } from "react";
-import Layout, { siteTitle } from "../components/Layout";
-import ReplyGuestList from "../components/ReplyGuestList";
+import { ReactElement, useEffect, useState } from 'react';
 
-import { getContentData } from "../lib/content";
+import Head from 'next/head';
 
-export const getStaticProps = async ({ locale }) => {
-  const introContent = await getContentData({ id: "reply-intro", locale });
+import Layout, { siteTitle } from '../components/Layout';
+import ReplyGuestList from '../components/ReplyGuestList';
+import { getContentData } from '../lib/content';
+
+interface Props {
+  introContent: any;
+}
+
+export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
+  const introContent = await getContentData({ id: 'reply-intro', locale });
 
   return {
     props: {
@@ -15,10 +20,10 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-const Reply = ({ introContent }) => {
-  const [inviteId, setInviteId] = useState("");
+function Reply({ introContent }: Props): ReactElement {
+  const [inviteId, setInviteId] = useState('');
   useEffect(() => {
-    const iId = localStorage.getItem("inviteId");
+    const iId = localStorage.getItem('inviteId');
     setInviteId(iId);
   });
 
@@ -33,6 +38,6 @@ const Reply = ({ introContent }) => {
       {inviteId && <ReplyGuestList inviteId={inviteId} />}
     </Layout>
   );
-};
+}
 
 export default Reply;

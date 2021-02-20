@@ -1,11 +1,16 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import Layout, { siteTitle } from "../components/Layout";
+import { ReactElement } from 'react';
 
-import { getContentData } from "../lib/content";
+import Head from 'next/head';
 
-export const getStaticProps = async ({ locale }) => {
-  const dayOf = await getContentData({ id: "day-of", locale });
+import Layout, { siteTitle } from '../components/Layout';
+import { getContentData } from '../lib/content';
+
+interface Props {
+  dayOf: any;
+}
+
+export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
+  const dayOf = await getContentData({ id: 'day-of', locale });
 
   return {
     props: {
@@ -14,9 +19,7 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-const DayOf = ({ dayOf }) => {
-  const { locale } = useRouter();
-
+function DayOf({ dayOf }: Props): ReactElement {
   return (
     <Layout>
       <Head>
@@ -26,6 +29,6 @@ const DayOf = ({ dayOf }) => {
       <div dangerouslySetInnerHTML={{ __html: dayOf.contentHtml }} />
     </Layout>
   );
-};
+}
 
 export default DayOf;
