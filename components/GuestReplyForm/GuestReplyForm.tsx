@@ -36,7 +36,7 @@ function GuestReplyForm(
         songRequest,
       })
       .then(() => {
-        console.log('Document successfully written!');
+        console.log('Reply submitted!');
       })
       .catch((err) => {
         console.error('Error creating series: ', err);

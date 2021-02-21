@@ -21,7 +21,6 @@ function NewInvite(): ReactElement {
       .collection('invites')
       .add({})
       .then((docRef) => {
-        console.log(docRef);
         const inviteId = docRef.id;
         Object.keys(values).forEach(field => {
           firebase.firestore
@@ -32,7 +31,7 @@ function NewInvite(): ReactElement {
               inviteId
             })
             .then(() => {
-              console.log('Document successfully written!');
+              console.log('New Guest added!');
             })
             .catch((err) => {
               console.error('Error creating guest: ', err);
