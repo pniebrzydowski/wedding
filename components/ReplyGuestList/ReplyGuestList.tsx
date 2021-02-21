@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 
+import { Trans } from '@lingui/macro';
 import useCollectionDocsData from '../../firebase/hooks/useCollectionDocsData';
 import { Guest } from '../../firebase/types';
 import GuestReplyForm from '../GuestReplyForm';
@@ -29,7 +30,13 @@ function ReplyGuestList({ inviteId }: Props): ReactElement {
             {guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)}
           </ul>
         ) : (
-          <>Sorry, no invite was found with this ID</>
+          <p>
+            <Trans id="reply:noInvite">
+              Sorry, we were unable to find your invitation.
+              Be sure you accessed the site via the direct link sent in your invitation.
+              If you are still having problems, please contact us directly!
+            </Trans>
+          </p>
         ))}
     </>
   );

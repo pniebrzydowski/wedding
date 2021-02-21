@@ -60,3 +60,31 @@ msgstr "Location"
 #: components/MainNavigation/routes.ts:42
 msgid "pageTitle:reply"
 msgstr "Dabei?"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:61
+msgid "reply:labels.answer"
+msgstr "Dabei?"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:64
+msgid "reply:labels.dietaryRestrictions"
+msgstr "Diätvorschriften"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:65
+msgid "reply:labels.songRequest"
+msgstr "Liedwunsch"
+
+#: components/ReplyGuestList/ReplyGuestList.tsx:21
+msgid "reply:noInvite"
+msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:43
+msgid "reply:options.no"
+msgstr "Leider muss ich ablehnen"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:36
+msgid "reply:options.yes"
+msgstr "Kann nicht warten!"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:56
+msgid "reply:save"
+msgstr "Speichern"

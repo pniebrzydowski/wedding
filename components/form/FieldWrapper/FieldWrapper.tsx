@@ -1,10 +1,10 @@
-import { PropsWithChildren, ReactElement } from 'react';
+import { PropsWithChildren, ReactElement, ReactNode } from 'react';
 
 import styles from '../form.module.css';
 
 interface Props {
   fieldId: string;
-  label?: string;
+  label?: ReactNode;
   error?: string;
 }
 

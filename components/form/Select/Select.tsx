@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 import { useFormContext } from 'react-hook-form';
 
@@ -13,7 +13,7 @@ export interface SelectOption {
 interface Props {
   formName: string;
   fieldName: string;
-  label?: string;
+  label?: ReactNode;
   options: SelectOption[];
   defaultValue?: string;
   error?: string;

@@ -1,5 +1,7 @@
 import { ReactElement, useContext } from 'react';
 
+import { i18n } from '@lingui/core';
+import { defineMessage, Trans } from '@lingui/macro';
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { FirebaseContext } from '../../firebase';
@@ -49,11 +51,17 @@ function GuestReplyForm(
     },
     {
       value: 'yes',
-      label: 'Can\'t wait!',
+      label: i18n._(defineMessage({
+        id: 'reply:options.yes',
+        message: 'Can\'t wait!'
+      }))
     },
     {
       value: 'no',
-      label: 'Sorry, can\'t make it',
+      label: i18n._(defineMessage({
+        id: 'reply:options.no',
+        message: 'Sorry, can\'t make it'
+      }))
     },
   ];
 
@@ -65,7 +73,7 @@ function GuestReplyForm(
           <div className={styles.header}>
             <h3>{name}</h3>
             <Button buttonType="primary" type="submit">
-              Save
+              <Trans id="reply:save">Save</Trans>
             </Button>
           </div>
           <div className={styles.grid}>
@@ -73,7 +81,7 @@ function GuestReplyForm(
               <Select
                 formName="guest"
                 fieldName="attending"
-                label="You in?"
+                label={<Trans id="reply:labels.answer">You in?</Trans>}
                 options={attendingOptions}
                 defaultValue={attending}
               />
@@ -82,13 +90,13 @@ function GuestReplyForm(
               <Textarea
                 formName="guest"
                 fieldName="dietaryNeeds"
-                label="Dietary Needs"
+                label={<Trans id="reply:labels.dietaryRestrictions">Dietary Restrictions</Trans>}
                 defaultValue={dietaryNeeds}
               />
               <Textarea
                 formName="guest"
                 fieldName="songRequest"
-                label="Song Request"
+                label={<Trans id="reply:labels.songRequest">Song Request</Trans>}
                 defaultValue={songRequest}
               />
             </div>
