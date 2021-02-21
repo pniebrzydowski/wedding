@@ -8,10 +8,11 @@ import styles from './layout.module.css';
 export const siteTitle = 'Wedding';
 
 interface Props {
-  children?: ReactNode 
+  children?: ReactNode;
+  headerImageUrl?: string;
 }
 
-const Layout = ({ children }: Props): ReactElement => {
+const Layout = ({ children, headerImageUrl }: Props): ReactElement => {
   return (
     <>
       <Head>
@@ -30,6 +31,7 @@ const Layout = ({ children }: Props): ReactElement => {
       <header className={styles.header}>
         <MainNavigation />
       </header>
+      {headerImageUrl && <img className={styles.headerImage} src={`/images/${headerImageUrl}`} />}
       <div className={styles.container}>
         <main>{children}</main>
       </div>

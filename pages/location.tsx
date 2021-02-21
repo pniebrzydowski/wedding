@@ -27,7 +27,7 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 
 function Location({ schlossGreinburg, arrival }: Props): ReactElement {
   return (
-    <Layout>
+    <Layout headerImageUrl="greinburg-hero.jpg">
       <Head>
         <title>Location | {siteTitle}</title>
       </Head>
