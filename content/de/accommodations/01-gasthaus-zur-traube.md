@@ -11,7 +11,7 @@ distance: 250
 
 #### Bedingungen
 
-Kostenlose Stornierung bis 2 Tage vor der Ankunft. 50% bis einem Tag.
+Kostenlose Stornierung bis 2 Tage vor der Ankunft. 50% bis einem Tag. Frühstück inkludiert.
 
 #### Zahlung
 

@@ -13,13 +13,37 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: components/AccommodationInfo/AccommodationInfo.tsx:16
+msgid "accommodation:distance"
+msgstr "Entfernung vom Schloss: {distance}m"
+
+#: components/AccommodationInfo/AccommodationInfo.tsx:33
+msgid "accommodation:doubleRooms"
+msgstr "Doppelzimmer"
+
+#: components/AccommodationInfo/AccommodationInfo.tsx:28
+msgid "accommodation:price"
+msgstr "Preis"
+
+#: components/AccommodationInfo/AccommodationInfo.tsx:13
+msgid "accommodation:reservedUntil"
+msgstr "Reserviert bis:"
+
+#: components/AccommodationInfo/AccommodationInfo.tsx:26
+msgid "accommodation:rooms"
+msgstr "Zimmer"
+
+#: components/AccommodationInfo/AccommodationInfo.tsx:38
+msgid "accommodation:singleRooms"
+msgstr "Einzelzimmer"
+
 #: components/MainNavigation/routes.ts:14
 msgid "pageTitle:about"
 msgstr "Über uns"
 
 #: components/MainNavigation/routes.ts:35
 msgid "pageTitle:accommodation"
-msgstr "Unterkünfte"
+msgstr "Unterkunft"
 
 #: components/MainNavigation/routes.ts:28
 msgid "pageTitle:dayOf"

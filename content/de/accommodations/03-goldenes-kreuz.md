@@ -11,7 +11,7 @@ distance: 260
 
 #### Bedingungen
 
-Kostenlose Stornierung bis 3 Monate vor der Ankunft. 40% bis 1 Monat. 70% bis eine Woche.
+Kostenlose Stornierung bis 3 Monate vor der Ankunft. 40% bis 1 Monat. 70% bis eine Woche. Frühstück inkludiert.
 
 #### Zahlung
 
