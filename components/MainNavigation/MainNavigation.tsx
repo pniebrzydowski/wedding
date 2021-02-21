@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { ReactElement } from 'react';
 
 import styles from './mainNavigation.module.css';
-import routes from './routes';
+import getRoutes from './routes';
 
-
-const MainNavigation = () => {
+const MainNavigation = (): ReactElement => {
   const router = useRouter();
+  const routes = getRoutes();
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>

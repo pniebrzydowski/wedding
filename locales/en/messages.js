@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"pageTitle:about":"About Us","pageTitle:accommodation":"Accommodation","pageTitle:dayOf":"Day of","pageTitle:home":"Home","pageTitle:location":"Location","pageTitle:reply":"Reply"}};
