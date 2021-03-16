@@ -1,0 +1,20 @@
+.container {
+  background: rgb(233, 233, 233);
+  border: 1px solid gray;
+}
+
+.title {
+  background: transparent;
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.content {
+  padding: 1rem;
+}
+.content p:first-of-type {
+  margin-block-start: 0;
+}
