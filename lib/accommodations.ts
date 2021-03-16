@@ -9,8 +9,10 @@ export interface AccommodationData extends StaticContent {
   blockedUntil: string;
   blockedSingle: number;
   blockedDouble: number;
+  blockedFamily: number;
   costSingle: number;
   costDouble: number;
+  costFamily: number;
   distance: number;
   url: string;
   name: string;

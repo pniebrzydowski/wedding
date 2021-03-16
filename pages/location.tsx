@@ -2,8 +2,10 @@ import { ReactElement } from 'react';
 
 import Head from 'next/head';
 
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { getTranslatedSiteTitle } from '../components/Layout';
 import { getContentData } from '../lib/content';
+import { defineMessage } from '@lingui/macro';
+import { i18n } from '@lingui/core';
 
 interface Props {
   schlossGreinburg: any;
@@ -26,10 +28,17 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 };
 
 function Location({ schlossGreinburg, arrival }: Props): ReactElement {
+  const pageTitle = i18n._(defineMessage({
+    id: 'pageTitles:location',
+    message: 'Location'
+  }));
+
   return (
     <Layout headerImageUrl="greinburg-hero.jpg">
       <Head>
-        <title>Location | {siteTitle}</title>
+        <title>
+          {pageTitle} | {getTranslatedSiteTitle()}
+        </title>
       </Head>
 
       <div dangerouslySetInnerHTML={{ __html: schlossGreinburg.contentHtml }} />

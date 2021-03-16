@@ -2,9 +2,11 @@ import { ReactElement, useEffect, useState } from 'react';
 
 import Head from 'next/head';
 
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { getTranslatedSiteTitle } from '../components/Layout';
 import ReplyGuestList from '../components/ReplyGuestList';
 import { getContentData } from '../lib/content';
+import { defineMessage } from '@lingui/macro';
+import { i18n } from '@lingui/core';
 
 interface Props {
   introContent: any;
@@ -27,10 +29,15 @@ function Reply({ introContent }: Props): ReactElement {
     setInviteId(iId);
   });
 
+  const pageTitle = i18n._(defineMessage({
+    id: 'pageTitles:reply',
+    message: 'Reply'
+  }));
+
   return (
     <Layout>
       <Head>
-        <title>Reply | {siteTitle}</title>
+        <title>{pageTitle} | {getTranslatedSiteTitle()}</title>
       </Head>
 
       <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />

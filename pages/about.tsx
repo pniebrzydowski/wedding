@@ -2,8 +2,11 @@ import { ReactElement } from 'react';
 
 import Head from 'next/head';
 
-import Layout, { siteTitle } from '../components/Layout';
+import Layout from '../components/Layout';
 import { getContentData } from '../lib/content';
+import { getTranslatedSiteTitle } from '../components/Layout';
+import { defineMessage } from '@lingui/macro';
+import { i18n } from '@lingui/core';
 
 interface Props {
   ourStory: any,
@@ -28,10 +31,15 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 };
 
 function About({ ourStory, aboutPatrick, aboutChristina }: Props): ReactElement {
+  const pageTitle = i18n._(defineMessage({
+    id: 'pageTitles:accommodation',
+    message: 'Accommodation'
+  }));
+
   return (
     <Layout>
       <Head>
-        <title>About Us | {siteTitle}</title>
+        <title>{pageTitle} | {getTranslatedSiteTitle()}</title>
       </Head>
 
       <div dangerouslySetInnerHTML={{ __html: ourStory.contentHtml }} />

@@ -1,1 +1,1 @@
-export { default, siteTitle } from './Layout';
+export { default, getTranslatedSiteTitle } from './Layout';

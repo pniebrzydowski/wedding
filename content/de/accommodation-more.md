@@ -1,5 +1,5 @@
 ---
-title: "Additional Accommodation"
+title: "Weitere Übernachtungsmöglichkeiten"
 ---
 
 ## Weitere Optionen

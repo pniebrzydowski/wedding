@@ -1,7 +1,13 @@
+.container {
+  font-size: 0.9rem;
+}
+
 .roomsTable {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   padding: 0.5rem 0;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .numberCol {
@@ -9,5 +15,12 @@
 }
 
 .details {
-  font-size: 0.8em;
+  font-size: 0.8rem;
+}
+.details h4 {
+  margin-bottom: 0.25em;
+  margin-top:  0.25em;
+}
+.details p {
+  margin-block-start: 0;
 }

@@ -43,7 +43,7 @@ msgstr "Über uns"
 
 #: components/MainNavigation/routes.ts:35
 msgid "pageTitle:accommodation"
-msgstr "Unterkunft"
+msgstr "Übernachtung"
 
 #: components/MainNavigation/routes.ts:28
 msgid "pageTitle:dayOf"

@@ -11,13 +11,14 @@ interface Props {
 }
 
 function AccommodationInfo({ accommodation: {
-  blockedDouble, costDouble, blockedSingle, costSingle, blockedUntil, distance, url, name, contentHtml
+  blockedDouble, costDouble, blockedSingle, costSingle, blockedFamily,
+  costFamily, blockedUntil, distance, url, name, contentHtml
 } }: Props): ReactElement {
   const isBlocked = blockedUntil && dayjs(blockedUntil) > dayjs();
   const distanceInFeet = Math.round(distance * 3.28084);
 
   return (
-    <div>
+    <div className={styles.container}>
       <h3>
         <a href={url} target="_blank" rel="noreferrer">{name}</a>
       </h3>
@@ -39,15 +40,22 @@ function AccommodationInfo({ accommodation: {
           <thead>
             <tr>
               <th></th>
-              {isBlocked && (blockedDouble || blockedSingle) && (
+              {isBlocked && (blockedDouble || blockedSingle || blockedFamily) && (
                 <th className={styles.numberCol}>
                   <Trans id="accommodation:rooms">Rooms</Trans>
                 </th>
               )}
-              <th><Trans id="accommodation:price">Price</Trans></th>
+              <th className={styles.numberCol}>
+                <Trans id="accommodation:price">Price</Trans>
+              </th>
             </tr>
           </thead>
           <tbody>
+            {costFamily && <tr>
+              <td><Trans id="accommodation:familyRooms">Family Rooms (4)</Trans></td>
+              {isBlocked && blockedFamily && <td>{blockedFamily}</td>}
+              <td>€ {costFamily}</td>
+            </tr>}
             {costDouble && <tr>
               <td><Trans id="accommodation:doubleRooms">Double Rooms</Trans></td>
               {isBlocked && blockedDouble && <td>{blockedDouble}</td>}

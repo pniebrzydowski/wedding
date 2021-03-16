@@ -1,9 +1,10 @@
 import { ReactElement } from 'react';
 
+import { i18n } from '@lingui/core';
 import Head from 'next/head';
 
 import AccommodationInfo from '../components/AccommodationInfo/AccommodationInfo';
-import Layout, { siteTitle } from '../components/Layout';
+import Layout, { getTranslatedSiteTitle } from '../components/Layout';
 import {
   AccommodationData,
   getBlockedAccommodations,
@@ -12,6 +13,7 @@ import {
 import { getContentData } from '../lib/content';
 import { StaticContent } from '../content/types';
 import Grid from '../components/ui/Grid';
+import { defineMessage } from '@lingui/macro';
 
 interface Props {
   introContent: StaticContent;
@@ -48,10 +50,16 @@ function Accommodation({
   blockedAccommodations,
   otherAccommodations,
 }: Props): ReactElement {
+  const pageTitle = i18n._(defineMessage({
+    id: 'pageTitles:accommodation',
+    message: 'Accommodation'
+  }));
   return (
     <Layout>
       <Head>
-        <title>Accommodation | {siteTitle}</title>
+        <title>
+          {pageTitle} | {getTranslatedSiteTitle()}
+        </title>
       </Head>
 
       <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
@@ -63,8 +71,8 @@ function Accommodation({
       </Grid>
 
       <div dangerouslySetInnerHTML={{ __html: additionalContent.contentHtml }} />
-      
-      <Grid>
+
+      <Grid factorX={4}>
         {otherAccommodations.map((option) => (
           <AccommodationInfo accommodation={option} key={option.name} />
         ))}

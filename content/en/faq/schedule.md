@@ -1,12 +1,6 @@
 ---
-title: "Day Of"
+name: "Schedule"
 ---
-
-## Dress Code
-
-## Children & Plus Ones
-
-## Schedule
 
 To help you better know what to expect, below is a tentative schedule of how the day will progress.
 

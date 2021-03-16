@@ -1,8 +1,8 @@
 ---
-title: "Accommodation Information"
+title: "Übernachtung"
 ---
 
-## Unterkunft
+## Übernachtung
 
 Grein ist eine kleine, aber touristische Stadt direkt an der Donau. Aus diesem Grund, können die verfügbare Unterkunfte im Sommer eher limitiert sein, und wir empfehlen eine Unterkunft so früh wie möglich zu buchen!
 

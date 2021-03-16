@@ -15,13 +15,15 @@ const getRoutes = (): Route[] => {
         message: 'Home'
       }))
     },
-    {
+    /*
+      {
       url: '/about',
       title: i18n._(defineMessage({
         id: 'pageTitle:about',
         message: 'About Us'
       }))
     },
+    */
     {
       url: '/location',
       title: i18n._(defineMessage({
@@ -30,10 +32,10 @@ const getRoutes = (): Route[] => {
       }))
     },
     {
-      url: '/day-of',
+      url: '/faq',
       title: i18n._(defineMessage({
-        id: 'pageTitle:dayOf',
-        message: 'Day of'
+        id: 'pageTitle:faq',
+        message: 'FAQ'
       }))
     },
     {
