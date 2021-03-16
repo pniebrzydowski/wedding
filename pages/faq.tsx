@@ -7,6 +7,7 @@ import { getContentData } from '../lib/content';
 import { StaticContent } from '../content/types';
 import { FaqData, getAllFaqs } from '../lib/faq';
 import Accordion from '../components/Accordion';
+import FlexBox from '../components/ui/FlexBox';
 
 interface Props {
   faqIntro: StaticContent;
@@ -34,11 +35,13 @@ function Faq({ faqIntro, allFaqs }: Props): ReactElement {
 
       <div dangerouslySetInnerHTML={{ __html: faqIntro.contentHtml }} />
 
-      {allFaqs.map(faq => (
-        <Accordion key={faq.title} title={faq.title}>
-          <div dangerouslySetInnerHTML={{ __html: faq.contentHtml}} />
-        </Accordion>
-      ))}
+      <FlexBox flexDirection="column" factor={1}>
+        {allFaqs.map(faq => (
+          <Accordion key={faq.title} title={faq.title}>
+            <div dangerouslySetInnerHTML={{ __html: faq.contentHtml}} />
+          </Accordion>
+        ))}
+      </FlexBox>
     </Layout>
   );
 }

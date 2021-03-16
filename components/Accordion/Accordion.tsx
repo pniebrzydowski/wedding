@@ -9,10 +9,11 @@ interface Props {
 function Accordion({ title, children }: PropsWithChildren<Props>): ReactElement {
   const [expanded, setExpanded] = useState(false);
 
+  const buttonClass = expanded ? [styles.title, styles.titleOpen].join(' ') : styles.title;
   return (
     <div className={styles.container}>
-      <button className={styles.title} onClick={() => setExpanded(!expanded)}>
-        {title}
+      <button className={buttonClass} onClick={() => setExpanded(!expanded)}>
+        <h2>{title}</h2>
       </button>
       {expanded && (
         <div className={styles.content}>

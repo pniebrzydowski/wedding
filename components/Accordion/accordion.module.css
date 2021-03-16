@@ -1,20 +1,46 @@
 .container {
   background: rgb(233, 233, 233);
-  border: 1px solid gray;
+  border: 1px solid rgb(175, 175, 175);
+}
+
+.container, .title {
+  border-radius: 9px;
 }
 
 .title {
   background: transparent;
-  border-radius: 0;
   width: 100%;
   text-align: left;
   font-size: 1rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  padding: 1rem;
 }
 
+.title h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.titleOpen {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+  
 .content {
   padding: 1rem;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 .content p:first-of-type {
   margin-block-start: 0;
+}
+.content p:last-of-type {
+  margin-block-end: 0;
+}
+
+.content h3 {
+  font-size: 1rem;
+}
+.content h4 {
+  font-size: 0.9rem;
 }
