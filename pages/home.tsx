@@ -3,14 +3,13 @@ import { ReactElement } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { getTranslatedSiteTitle } from '../components/Layout';
-import SplashScreen from '../components/SplashScreen';
+import Layout, { getTranslatedSiteTitle } from '../components/Layout';
 
 const saveInviteId = (inviteId: string) => {
   localStorage.setItem('inviteId', inviteId);
 };
 
-function Index(): ReactElement {
+function Home(): ReactElement {
   const { query } = useRouter();
 
   if (query.inviteId) {
@@ -18,13 +17,12 @@ function Index(): ReactElement {
   }
 
   return (
-    <>
+    <Layout>
       <Head>
         <title>{getTranslatedSiteTitle()}</title>
       </Head>
-      <SplashScreen />
-    </>
+    </Layout>
   );
 }
 
-export default Index;
+export default Home;

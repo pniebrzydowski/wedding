@@ -2,14 +2,25 @@ import { i18n } from '@lingui/core';
 import { defineMessage } from '@lingui/macro';
 
 interface Route {
+  name: string,
   url: string,
   title: string
 }
 
+export enum RouteName {
+  Home = 'home',
+  Location = 'location',
+  Faq = 'faq',
+  Accommodation = 'accommodation',
+  Reply = 'reply'
+}
+
+
 const getRoutes = (): Route[] => {
   return [
     {
-      url: '/',
+      name: RouteName.Home,
+      url: '/home',
       title: i18n._(defineMessage({
         id: 'pageTitle:home',
         message: 'Home'
@@ -25,6 +36,7 @@ const getRoutes = (): Route[] => {
     },
     */
     {
+      name: RouteName.Location,
       url: '/location',
       title: i18n._(defineMessage({
         id: 'pageTitle:location',
@@ -32,6 +44,7 @@ const getRoutes = (): Route[] => {
       }))
     },
     {
+      name: RouteName.Faq,
       url: '/faq',
       title: i18n._(defineMessage({
         id: 'pageTitle:faq',
@@ -39,6 +52,7 @@ const getRoutes = (): Route[] => {
       }))
     },
     {
+      name: RouteName.Accommodation,
       url: '/accommodation',
       title: i18n._(defineMessage({
         id: 'pageTitle:accommodation',
@@ -46,6 +60,7 @@ const getRoutes = (): Route[] => {
       }))
     },
     {
+      name: RouteName.Reply,
       url: '/reply',
       title: i18n._(defineMessage({
         id: 'pageTitle:reply',
@@ -53,6 +68,13 @@ const getRoutes = (): Route[] => {
       }))
     },
   ];
+};
+
+export const getRouteUrl = (name: RouteName): string => {
+  const routes = getRoutes();
+  const idx = routes.findIndex(v => v.name === name);
+  console.log(idx, name);
+  return routes[idx].url;
 };
 
 export default getRoutes;

@@ -1,0 +1,50 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(104, 11, 11);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(218, 116, 0);
+  font-family: 'Baskerville', serif;
+}
+
+.title,
+.subTitle {
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.2;
+}
+.title {
+  font-size: 4rem;
+}
+.subTitle {
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.imgEagle {
+  height: 50vh;
+  max-height: 300px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.languageList {
+  display: flex;
+  align-items: center;
+}
+
+.languageList li + li {
+  margin-left: 2rem;
+}
+
+.languageLink {
+  color: rgb(218, 116, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
