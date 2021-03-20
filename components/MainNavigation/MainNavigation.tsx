@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 
 import styles from './mainNavigation.module.css';
 import getRoutes from './routes';
@@ -8,24 +8,31 @@ import getRoutes from './routes';
 const MainNavigation = (): ReactElement => {
   const router = useRouter();
   const routes = getRoutes();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const navClasses = [styles.nav, mobileMenuOpen ? styles.visible : styles.hidden].join(' ');
   return (
-    <nav className={styles.nav}>
-      <ul className={styles.navList}>
-        {routes.map((route) => {
-          const linkStyle =
+    <>
+      <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className={styles.mobileMenuTrigger}>
+      Menu
+      </button>
+      <nav className={navClasses}>
+        <ul className={styles.navList}>
+          {routes.map((route) => {
+            const linkStyle =
             router.pathname === route.url ? [styles.navLink, styles.activeLink] : [styles.navLink];
 
-          return (
-            <li key={route.url}>
-              <Link href={route.url}>
-                <a className={linkStyle.join(' ')}>{route.title}</a>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+            return (
+              <li key={route.url}>
+                <Link href={route.url}>
+                  <a className={linkStyle.join(' ')}>{route.title}</a>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </>
   );
 };
 

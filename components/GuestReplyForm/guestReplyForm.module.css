@@ -13,15 +13,3 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-
-.grid {
-  display: flex;
-}
-
-.column {
-  flex-basis: 50%;
-}
-
-.column + .column {
-  margin-left: 1.5rem;
-}

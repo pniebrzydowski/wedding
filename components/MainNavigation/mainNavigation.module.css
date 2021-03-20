@@ -1,11 +1,42 @@
 .nav {
   background: rgb(104, 11, 11);
   width: 100%;
+  display: none;
+}
+.visible {
+  display: block;
+  padding-top: 3rem;
+  height: 100vh;
+  position: fixed;
+}
+.mobileMenuTrigger {
+  background: white;
+  border-bottom: 1px solid lightgray;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+@media screen and (min-width: 700px) {
+  .mobileMenuTrigger {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
 }
 
-.navList {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 700px) {
+  .nav {
+    display: block;
+    height: auto;
+    position: relative;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .navLink {

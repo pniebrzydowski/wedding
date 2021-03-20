@@ -11,6 +11,7 @@ import Textarea from '../form/Textarea';
 import Button from '../ui/Button';
 
 import styles from './guestReplyForm.module.css';
+import Grid from '../ui/Grid';
 
 interface Props {
   guest: Guest;
@@ -76,7 +77,7 @@ function GuestReplyForm(
               <Trans id="reply:save">Save</Trans>
             </Button>
           </div>
-          <div className={styles.grid}>
+          <Grid factorX={2}>
             <div className={styles.column}>
               <Select
                 formName="guest"
@@ -100,7 +101,7 @@ function GuestReplyForm(
                 defaultValue={songRequest}
               />
             </div>
-          </div>
+          </Grid>
         </form>
       </FormProvider>
     </li>
