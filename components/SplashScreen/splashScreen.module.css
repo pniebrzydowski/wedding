@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   color: rgb(218, 116, 0);
   font-family: 'Baskerville', serif;
 }
@@ -17,24 +18,46 @@
   line-height: 1.2;
 }
 .title {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 .subTitle {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: italic;
-  text-align: center;
 }
 
 .imgEagle {
-  height: 50vh;
+  height: 15vh;
   max-height: 300px;
-  width: auto;
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 420px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subTitle {
+    font-size: 1.8rem;
+  }
+  .imgEagle {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 813px) {
+  .title {
+    font-size: 4rem;
+  }
+  .subTitle {
+    font-size: 2rem;
+  }
+  .imgEagle {
+    height: 30vh;
+  }  
+}
+
+
 .languageList {
   display: flex;
-  align-items: center;
+  max-width: 90vw;
 }
 
 .languageList li + li {
