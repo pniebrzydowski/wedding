@@ -106,7 +106,7 @@ function GuestReplyForm(
                 label={<Trans id="reply:labels.songRequest">Song Request</Trans>}
                 defaultValue={songRequest}
               />
-              <p className={styles.disclaimer}><Trans id="reply:songRequestDisclaimer">* No guarantee</Trans></p>
+              <p className={styles.disclaimer}>* <Trans id="reply:songRequestDisclaimer">No guarantee</Trans></p>
             </div>
           </Grid>
         </form>

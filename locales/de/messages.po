@@ -72,9 +72,13 @@ msgstr "Dabei?"
 msgid "reply:labels.answer"
 msgstr "Dabei?"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:65
+#: components/GuestReplyForm/GuestReplyForm.tsx:63
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Diätvorschriften"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:64
+msgid "reply:labels.otherComment"
+msgstr "Andere Kommentare"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:66
 msgid "reply:labels.songRequest"
@@ -84,17 +88,21 @@ msgstr "Liedwunsch"
 msgid "reply:noInvite"
 msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:44
+#: components/GuestReplyForm/GuestReplyForm.tsx:45
 msgid "reply:options.no"
 msgstr "Leider muss ich ablehnen"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:37
+#: components/GuestReplyForm/GuestReplyForm.tsx:38
 msgid "reply:options.yes"
 msgstr "Kann nicht warten!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:57
+#: components/GuestReplyForm/GuestReplyForm.tsx:58
 msgid "reply:save"
 msgstr "Speichern"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:67
+msgid "reply:songRequestDisclaimer"
+msgstr "Keine Garantie"
 
 #: components/Layout/Layout.tsx:7
 msgid "siteTitle"
