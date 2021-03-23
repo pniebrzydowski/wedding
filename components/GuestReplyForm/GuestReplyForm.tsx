@@ -18,7 +18,7 @@ interface Props {
 }
 
 function GuestReplyForm(
-  { guest: { id, attending, name, dietaryNeeds, songRequest }
+  { guest: { id, attending, name, dietaryNeeds, songRequest, comment }
   }: Props): ReactElement {
   const form = useForm();
   const firebase = useContext(FirebaseContext);
@@ -29,6 +29,7 @@ function GuestReplyForm(
     attending,
     dietaryNeeds,
     songRequest,
+    comment
   }: Partial<Guest>) => {
     firebase.firestore
       .collection('guests')
@@ -37,6 +38,7 @@ function GuestReplyForm(
         attending,
         dietaryNeeds,
         songRequest,
+        comment
       })
       .then(() => {
         console.log('Reply submitted!');
@@ -78,28 +80,33 @@ function GuestReplyForm(
             </Button>
           </div>
           <Grid factorX={2}>
-            <div className={styles.column}>
-              <Select
-                formName="guest"
-                fieldName="attending"
-                label={<Trans id="reply:labels.answer">You in?</Trans>}
-                options={attendingOptions}
-                defaultValue={attending}
-              />
-            </div>
-            <div className={styles.column}>
-              <Textarea
-                formName="guest"
-                fieldName="dietaryNeeds"
-                label={<Trans id="reply:labels.dietaryRestrictions">Dietary Restrictions</Trans>}
-                defaultValue={dietaryNeeds}
-              />
+            <Select
+              formName="guest"
+              fieldName="attending"
+              label={<Trans id="reply:labels.answer">You in?</Trans>}
+              options={attendingOptions}
+              defaultValue={attending}
+            />
+            <Textarea
+              formName="guest"
+              fieldName="dietaryNeeds"
+              label={<Trans id="reply:labels.dietaryRestrictions">Dietary Restrictions</Trans>}
+              defaultValue={dietaryNeeds}
+            />
+            <Textarea
+              formName="guest"
+              fieldName="otherComment"
+              label={<Trans id="reply:labels.otherComment">Other comments</Trans>}
+              defaultValue={comment}
+            />
+            <div>
               <Textarea
                 formName="guest"
                 fieldName="songRequest"
                 label={<Trans id="reply:labels.songRequest">Song Request</Trans>}
                 defaultValue={songRequest}
               />
+              <p className={styles.disclaimer}><Trans id="reply:songRequestDisclaimer">* No guarantee</Trans></p>
             </div>
           </Grid>
         </form>

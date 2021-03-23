@@ -18,4 +18,5 @@ export interface Guest {
   attending?: string;
   dietaryNeeds?: string;
   songRequest?: string;
+  comment?: string;
 }

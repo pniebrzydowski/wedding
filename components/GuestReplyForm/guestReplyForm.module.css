@@ -13,3 +13,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0;
+}
