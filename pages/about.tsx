@@ -32,8 +32,8 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 
 function About({ ourStory, aboutPatrick, aboutChristina }: Props): ReactElement {
   const pageTitle = i18n._(defineMessage({
-    id: 'pageTitles:accommodation',
-    message: 'Accommodation'
+    id: 'pageTitle:about',
+    message: 'Über uns'
   }));
 
   return (

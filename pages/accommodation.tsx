@@ -51,7 +51,7 @@ function Accommodation({
   otherAccommodations,
 }: Props): ReactElement {
   const pageTitle = i18n._(defineMessage({
-    id: 'pageTitles:accommodation',
+    id: 'pageTitle:accommodation',
     message: 'Accommodation'
   }));
   return (

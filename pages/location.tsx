@@ -29,7 +29,7 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 
 function Location({ schlossGreinburg, arrival }: Props): ReactElement {
   const pageTitle = i18n._(defineMessage({
-    id: 'pageTitles:location',
+    id: 'pageTitle:location',
     message: 'Location'
   }));
 

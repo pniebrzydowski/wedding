@@ -17,11 +17,15 @@ msgstr ""
 msgid "accommodation:distance"
 msgstr "Distance to Castle: {distance}m ({distanceInFeet}ft)"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:33
+#: components/AccommodationInfo/AccommodationInfo.tsx:40
 msgid "accommodation:doubleRooms"
 msgstr "Double Rooms"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:28
+#: components/AccommodationInfo/AccommodationInfo.tsx:35
+msgid "accommodation:familyRooms"
+msgstr "Family Rooms (4)"
+
+#: components/AccommodationInfo/AccommodationInfo.tsx:29
 msgid "accommodation:price"
 msgstr "Price"
 
@@ -33,43 +37,46 @@ msgstr "Reserved until:"
 msgid "accommodation:rooms"
 msgstr "Rooms"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:38
+#: components/AccommodationInfo/AccommodationInfo.tsx:45
 msgid "accommodation:singleRooms"
 msgstr "Single Rooms"
 
-#: components/MainNavigation/routes.ts:14
+#: pages/about.tsx:32
 msgid "pageTitle:about"
-msgstr "About Us"
+msgstr "Über uns"
 
-#: components/MainNavigation/routes.ts:35
+#: components/MainNavigation/routes.ts:49
+#: pages/accommodation.tsx:39
 msgid "pageTitle:accommodation"
 msgstr "Accommodation"
 
-#: components/MainNavigation/routes.ts:28
-msgid "pageTitle:dayOf"
-msgstr "Day of"
+#: components/MainNavigation/routes.ts:41
+msgid "pageTitle:faq"
+msgstr "FAQ"
 
-#: components/MainNavigation/routes.ts:7
+#: components/MainNavigation/routes.ts:16
 msgid "pageTitle:home"
 msgstr "Home"
 
-#: components/MainNavigation/routes.ts:21
+#: components/MainNavigation/routes.ts:33
+#: pages/location.tsx:29
 msgid "pageTitle:location"
 msgstr "Location"
 
-#: components/MainNavigation/routes.ts:42
+#: components/MainNavigation/routes.ts:57
+#: pages/reply.tsx:31
 msgid "pageTitle:reply"
 msgstr "Reply"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:61
+#: components/GuestReplyForm/GuestReplyForm.tsx:62
 msgid "reply:labels.answer"
 msgstr "You in?"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:64
+#: components/GuestReplyForm/GuestReplyForm.tsx:65
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Dietary Restrictions"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:65
+#: components/GuestReplyForm/GuestReplyForm.tsx:66
 msgid "reply:labels.songRequest"
 msgstr "Song Request"
 
@@ -77,14 +84,18 @@ msgstr "Song Request"
 msgid "reply:noInvite"
 msgstr "Sorry, we were unable to find your invitation. Be sure you accessed the site via the direct link sent in your invitation. If you are still having problems, please contact us directly!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:43
+#: components/GuestReplyForm/GuestReplyForm.tsx:44
 msgid "reply:options.no"
 msgstr "Sorry, can't make it"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:36
+#: components/GuestReplyForm/GuestReplyForm.tsx:37
 msgid "reply:options.yes"
 msgstr "Can't wait!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:56
+#: components/GuestReplyForm/GuestReplyForm.tsx:57
 msgid "reply:save"
 msgstr "Save"
+
+#: components/Layout/Layout.tsx:7
+msgid "siteTitle"
+msgstr "Patrick & Christina's Wedding"

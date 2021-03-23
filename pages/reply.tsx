@@ -30,7 +30,7 @@ function Reply({ introContent }: Props): ReactElement {
   });
 
   const pageTitle = i18n._(defineMessage({
-    id: 'pageTitles:reply',
+    id: 'pageTitle:reply',
     message: 'Reply'
   }));
 
