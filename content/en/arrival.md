@@ -6,7 +6,9 @@ title: "How to get there"
 
 Schloss Greinburg is located in Grein, just inside Upper Austria along the Danube. The closest large city is Linz, the capital of Upper Austria. It is easily accessible via all forms of transportation, and lies about halfway between Christina's hometown of Schardenberg and our current home in Vienna. Connections to the town are generally good, but as it is not a major city, routes may not always be quick or direct.
 
-### By Car
+### By Car 
+
+[Get directions on Google](https://www.google.com/maps/dir//Castle+Greinburg,+Greinburg+1,+4360+Grein,+Austria/@48.2261756,14.8506957,17z/data=!4m16!1m6!3m5!1s0x47724e0820767e7b:0x60e3b375b28d262e!2sCastle+Greinburg!8m2!3d48.2261756!4d14.8528844!4m8!1m0!1m5!1m1!1s0x47724e0820767e7b:0x60e3b375b28d262e!2m2!1d14.8528844!2d48.2261756!3e2)
 
 #### From Linz
 
@@ -28,7 +30,7 @@ The castle is reachable via the nearest train station, Grein Stadt Bahnhof, whic
 
 Before buying a ticket, consider grouping together and utilizing the the [Einfach-Raus Ticket](https://www.oebb.at/en/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket). The ticket is only valid on local trains (R-, CJX, REX, and S-Bahn) and not express trains (ICE, Railjet). When travelling with a group of 5, the price is only 47€ valid for one calendar day (as compared to €68,50 for 5 individual tickets from Linz, or around 200€ from Vienna).
 
-If you are arriving at the Munich airport, it is almost always best to purchase a [Bayern Ticket](https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml). These tickets are similar to the Einfach-Raus ticket in Austria, in that they are only available for use on local trains. However, even the cost for a single person (25€) is often lower than the cost to get from Munich to Austria. Most likely, the best route will be via a local train to Passau or Salzburg, while purchasing a separate ticket for the Austrian portion of the journey. They can be purchased online or at the airport DB ticket vending machines.
+If you are arriving at the Munich airport, it is almost always best to purchase a [Bayern Ticket](https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml). These tickets are similar to the Einfach-Raus Ticket in Austria, in that they are only available for use on local trains. However, even the cost for a single person (25€) is often lower than the cost to get from Munich to Austria. Most likely, the best route will be via a local train to Passau or Salzburg, while purchasing a separate ticket for the Austrian portion of the journey. They can be purchased online or at the airport DB ticket vending machines.
 
 For both of these regional discount tickets, be sure to write your name on the ticket before departing on your journey!
 
@@ -42,4 +44,4 @@ Connections from Vienna require about 2 to 3 hours and 1 or 2 transfers, either 
 
 #### From Passau or Schärding
 
-Connections from Passau or Schärding take about 3 to 3.5 hours via 1-3 transfers. The standard cost of the ticket is €19,40. Look for "Sparschiene" tickets in advance to reduce the cost to as low as €9,90. Some of these connections are via local trains, so the Einfach-Raus ticket may also be an option here.
+Connections from Passau or Schärding take about 3 to 3.5 hours via 1-3 transfers. The standard cost of the ticket is €19,40. Look for "Sparschiene" tickets in advance to reduce the cost to as low as €9,90. Some of these connections are via local trains, so the Einfach-Raus Ticket may also be an option here.
