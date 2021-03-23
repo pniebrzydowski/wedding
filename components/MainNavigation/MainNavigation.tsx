@@ -19,13 +19,18 @@ const MainNavigation = (): ReactElement => {
       <nav className={navClasses}>
         <ul className={styles.navList}>
           {routes.map((route) => {
+            const isCurrent = router.pathname === route.url;
             const linkStyle =
-            router.pathname === route.url ? [styles.navLink, styles.activeLink] : [styles.navLink];
+             isCurrent ? [styles.navLink, styles.activeLink] : [styles.navLink];
 
             return (
               <li key={route.url}>
                 <Link href={route.url}>
-                  <a className={linkStyle.join(' ')}>{route.title}</a>
+                  <a className={linkStyle.join(' ')} onClick={() => {
+                    if (isCurrent) {
+                      setMobileMenuOpen(false);
+                    }
+                  }}>{route.title}</a>
                 </Link>
               </li>
             );

@@ -51,7 +51,7 @@ button {
   border-radius: 9px;
   border: 1px solid lightgray;
   padding: 0.5rem;
-  height: 3rem;
+  min-height: 3rem;
 }
 
 button:hover {
