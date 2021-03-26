@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 
 import useCollectionDocsData from '../../../firebase/hooks/useCollectionDocsData';
-import { Guest, Invite } from '../../../firebase/types';
+import { Guest, Invite, InviteLanguage } from '../../../firebase/types';
 
 import styles from './inviteList.module.css';
 
@@ -20,24 +20,34 @@ const getInvitesWithGuests = (invites: Invite[], guests: Guest[]): InviteWithGue
   return invitesWithGuests;
 };
 
-const getGuestsInfo = (guests: Guest[]): { names: string[], emails: string[] } => {
-  const names = [];
-  const emails = [];
+const getInviteInfo = (invite: InviteWithGuests): { names: string[], emails: string[], salutations: string[] } => {
+  const { guests, lang } = invite;
+
+  const names: string[] = [];
+  const emails: string[] = [];
+  const salutations: string[] = [];
   guests.forEach(guest => {
     names.push(guest.name);
     if (guest.email) {
       emails.push(guest.email);
     }
+    const salutation = lang === 'en'
+      ? 'Dear'
+      : `Liebe${guest.gender === 'm' ? 'r' : ''}`;
+
+    salutations.push(
+      `${salutation} ${guest.name}`
+    );
   });
-  return { names, emails };
+  return { names, emails, salutations };
 };
 
-const getEmailLink = (invite: Invite, names: string[], emails: string[]): string => {
+const getEmailLink = (invite: Invite, emails: string[], salutations: string[]): string => {
   const subject = invite.lang === 'en'
     ? 'Wallner-Niebrzydowski Wedding Invitation!'
     : 'Wallner-Niebrzydowski Hochzeitseinladung!';
   const inviteLink = `https://wallski-wedding.vercel.app/?inviteId=${invite.id}`;
-  const salutation = names.join(',%20');
+  const salutation = salutations.join(',%20');
   return `mailto:${emails}?subject=${subject}&body=${salutation}%0d%0a%0d%0a${inviteLink}`;
 };
 
@@ -70,7 +80,7 @@ function InviteList(): ReactElement {
 
       <tbody>
         {invitesWithGuests.map(invite => {
-          const { names, emails } = getGuestsInfo(invite.guests);
+          const { names, emails, salutations } = getInviteInfo(invite);
           return (
             <tr key={invite.id}>
               <td>{invite.id}</td>
@@ -82,7 +92,7 @@ function InviteList(): ReactElement {
               </td>
               <td>
                 {emails && emails.length ? (
-                  <a href={getEmailLink(invite, names, emails)}>
+                  <a href={getEmailLink(invite, emails, salutations)}>
                     Email Link
                   </a>
                 )

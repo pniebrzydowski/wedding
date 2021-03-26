@@ -26,7 +26,7 @@ function NewInvite(): ReactElement {
       })
       .then((docRef) => {
         const inviteId = docRef.id;
-        const guests: Omit<Guest, 'id'>[] = [];
+        const guests: Partial<Guest>[] = [];
         Object.keys(values).forEach(field => {
           const fieldParts = field.split('_');
           if (fieldParts[0] !== 'guest') {
@@ -35,8 +35,7 @@ function NewInvite(): ReactElement {
           const guestIndex = parseInt(fieldParts[1], 10) - 1;
           if (!guests[guestIndex]) {
             guests[guestIndex] = {
-              inviteId,
-              name: '',
+              inviteId
             };
           }
           guests[guestIndex][fieldParts[2]] = values[field];
@@ -87,13 +86,22 @@ function NewInvite(): ReactElement {
                   <Text
                     formName="newInvite"
                     fieldName={`guest_${idx}_name`}
-                    label={`Guest ${idx}`}
+                    label={'Name'}
                     required
+                  />
+                  <Select
+                    formName="newInvite"
+                    fieldName={`guest_${idx}_gender`}
+                    label={'Gender'}
+                    defaultValue={'m'}
+                    options={[
+                      { value: 'm', label: 'M' }, { value: 'f', label: 'F' }
+                    ]}
                   />
                   <Text
                     formName="newInvite"
                     fieldName={`guest_${idx}_email`}
-                    label={`Guest ${idx} Email`}
+                    label={'Email'}
                   />
                 </FlexBox>
               </li>

@@ -22,6 +22,7 @@ export interface Guest {
   id: string;
   inviteId: string;
   name: string;
+  gender: 'm' | 'f';
   email?: string;
   attending?: string;
   dietaryNeeds?: string;
