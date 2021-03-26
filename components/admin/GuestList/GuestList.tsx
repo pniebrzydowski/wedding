@@ -4,7 +4,7 @@ import useCollectionDocsData from '../../../firebase/hooks/useCollectionDocsData
 import { Guest } from '../../../firebase/types';
 
 import styles from './guestList.module.css';
-import formStyles from  '../../form/form.module.css';
+import formStyles from '../../form/form.module.css';
 
 type AttendingValue = 'yes' | 'no' | 'no-response' | 'all';
 
@@ -13,13 +13,13 @@ function GuestList(): ReactElement {
     collection: 'guests',
     sortField: 'inviteId'
   });
-  const [attendingFilter, setAttendingFilter] = useState<AttendingValue>();
+  const [attendingFilter, setAttendingFilter] = useState<AttendingValue>('all');
 
   if (loading) {
     return <>Loading...</>;
   }
 
-  const visibleGuests = attendingFilter === 'all' 
+  const visibleGuests = attendingFilter === 'all'
     ? guests
     : guests.filter(guest => {
       return attendingFilter === 'no-response' ? !guest.attending : guest.attending === attendingFilter;
@@ -49,13 +49,14 @@ function GuestList(): ReactElement {
           <option key={option.value} value={option.value}>{option.label}</option>
         ))}
       </select>
-      
+
       <p>Total: {visibleGuests.length} / {guests.length}</p>
       <table className={styles.table}>
         <thead>
           <tr>
             <th>Guest Name</th>
             <th>Attending</th>
+            <th>Comment</th>
             <th>Dietary</th>
             <th>Song</th>
             <th>Invite ID</th>
@@ -66,6 +67,7 @@ function GuestList(): ReactElement {
           {visibleGuests.map((guest) => <tr key={guest.id}>
             <td>{guest.name}</td>
             <td>{guest.attending}</td>
+            <td>{guest.comment}</td>
             <td>{guest.dietaryNeeds}</td>
             <td>{guest.songRequest}</td>
             <td>{guest.inviteId}</td>
