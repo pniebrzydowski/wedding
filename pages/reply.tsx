@@ -31,7 +31,7 @@ function Reply({ introContent }: Props): ReactElement {
 
   const pageTitle = i18n._(defineMessage({
     id: 'pageTitle:reply',
-    message: 'Reply'
+    message: 'Can you make it?'
   }));
 
   return (

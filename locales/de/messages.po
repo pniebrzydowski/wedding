@@ -41,6 +41,10 @@ msgstr "Zimmer"
 msgid "accommodation:singleRooms"
 msgstr "Einzelzimmer"
 
+#: components/HomeContent/HomeContent.tsx:15
+msgid "home:replyButtonLabel"
+msgstr "Sag uns, ob du dabei bist!"
+
 #: pages/about.tsx:32
 msgid "pageTitle:about"
 msgstr "Über uns"
@@ -66,11 +70,11 @@ msgstr "Veranstaltungsort"
 #: components/MainNavigation/routes.ts:57
 #: pages/reply.tsx:31
 msgid "pageTitle:reply"
-msgstr "Dabei?"
+msgstr "Antwort"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:62
 msgid "reply:labels.answer"
-msgstr "Dabei?"
+msgstr "Antwort"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:63
 msgid "reply:labels.dietaryRestrictions"
@@ -94,7 +98,7 @@ msgstr "Leider muss ich ablehnen"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:38
 msgid "reply:options.yes"
-msgstr "Kann nicht warten!"
+msgstr "Freu mich schon!"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:58
 msgid "reply:save"

@@ -25,13 +25,6 @@ const HomeContent = ({ basicInfo }: Props): ReactElement => {
             </Trans>
           </Button>
         </Link>
-        <Link href={getRouteUrl(RouteName.Faq)}>
-          <Button buttonType="secondary">
-            <Trans id="home:faqButtonLabel">
-              Frequently Asked Questions
-            </Trans>
-          </Button>
-        </Link>
       </div>
     </div>
   );

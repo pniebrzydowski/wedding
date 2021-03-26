@@ -41,6 +41,10 @@ msgstr "Rooms"
 msgid "accommodation:singleRooms"
 msgstr "Single Rooms"
 
+#: components/HomeContent/HomeContent.tsx:15
+msgid "home:replyButtonLabel"
+msgstr "Let us know if you can make it!"
+
 #: pages/about.tsx:32
 msgid "pageTitle:about"
 msgstr "Über uns"
@@ -66,7 +70,7 @@ msgstr "Location"
 #: components/MainNavigation/routes.ts:57
 #: pages/reply.tsx:31
 msgid "pageTitle:reply"
-msgstr "Reply"
+msgstr "Can you make it?"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:62
 msgid "reply:labels.answer"

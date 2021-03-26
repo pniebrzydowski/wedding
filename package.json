@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "extract": "NODE_ENV=development lingui extract",
+    "extract": "NODE_ENV=development lingui extract --overwrite --clean",
     "compile": "lingui compile"
   },
   "dependencies": {
