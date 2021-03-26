@@ -2,12 +2,20 @@
   display: flex;
 }
 
+.wrapper > * {
+  flex: 1;
+}
+
 .wrapper > * + * {
   margin-left: 3rem;
 }
 
-.guestList {
-  width: 100%;
+.guestList li + li {
+  margin-top: 1rem;
+}
+
+.guestList input {
+  width: 300px;
 }
 
 .formActions {

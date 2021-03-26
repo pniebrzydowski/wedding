@@ -59,7 +59,6 @@ function GuestList(): ReactElement {
             <th>Comment</th>
             <th>Dietary</th>
             <th>Song</th>
-            <th>Invite ID</th>
           </tr>
         </thead>
 
@@ -70,7 +69,6 @@ function GuestList(): ReactElement {
             <td>{guest.comment}</td>
             <td>{guest.dietaryNeeds}</td>
             <td>{guest.songRequest}</td>
-            <td>{guest.inviteId}</td>
           </tr>)}
         </tbody>
       </table>
