@@ -22,3 +22,5 @@ Kostenlose Stornierung bis 3 Wochen vor der Ankunft. Frühstück inkludiert.
 #### Zahlung
 
 Die Zahlung können vor Ort mit Bankomat oder Bar bezahlen.
+
+[Zusätzliche Information (PDF)](https://www.gasthof-froschauer.at/downloads/Folder_%202017.pdf)

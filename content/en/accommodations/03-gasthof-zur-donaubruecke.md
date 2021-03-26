@@ -22,3 +22,5 @@ Free cancellation until 3 Wochen before arrival. Breakfast included.
 #### Payment
 
 Payment can be made with bank card or cash on arrival.
+
+[Additional Information (PDF) - German](https://www.gasthof-froschauer.at/downloads/Folder_%202017.pdf)
