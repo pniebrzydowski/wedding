@@ -70,7 +70,7 @@ msgstr "Location"
 #: components/MainNavigation/routes.ts:57
 #: pages/reply.tsx:31
 msgid "pageTitle:reply"
-msgstr "Can you make it?"
+msgstr "Reply"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:62
 msgid "reply:labels.answer"
