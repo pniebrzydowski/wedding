@@ -41,7 +41,6 @@ function NewInvite(): ReactElement {
           guests[guestIndex][fieldParts[2]] = values[field];
         });
 
-        console.log(guests);
         guests.forEach(guest => {
           firebase.firestore
             .collection('guests')
