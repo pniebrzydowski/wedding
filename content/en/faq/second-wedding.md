@@ -1,5 +1,6 @@
 ---
 title: "Austria is a long way away!"
+order: 4
 ---
 
 We look forward to celebrating with friends and family from all over the world. One of the important aspects of a wedding for us is bringing all of our loved ones together and we hope that as many of you as possible will be able to attend!

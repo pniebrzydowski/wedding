@@ -1,5 +1,6 @@
 ---
 title: "What is the plan for the day?"
+order: 3
 ---
 
 To help you better know what to expect, below is a tentative schedule of how the day will progress.

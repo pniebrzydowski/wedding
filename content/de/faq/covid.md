@@ -1,5 +1,6 @@
 ---
 title: "What about Covid?"
+order: 1
 ---
 
 We take the pandemic very seriously and our first priority is the safety and health of all our guests. We will follow any requirements and recommendations and take all necessary precautions. However, we are optimistic due to the increasing pace of vaccinations, especially in the USA, as well as the improving weather conditions.

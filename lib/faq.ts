@@ -5,6 +5,7 @@ import { getContentData } from './content';
 
 export interface FaqData extends StaticContent {
   title: string;
+  order: number;
 }
 
 export const getAllFaqs = async (locale = 'en'): Promise<FaqData[]> => {
@@ -16,7 +17,7 @@ export const getAllFaqs = async (locale = 'en'): Promise<FaqData[]> => {
   );
 
   const fileNames = fs.readdirSync(accommodationsDirectory);
-  const allFaqs = Promise.all(
+  const allFaqs = await Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.md$/, '');
       const data: FaqData = await getContentData({ id, filePath: 'faq/', locale });
@@ -24,5 +25,5 @@ export const getAllFaqs = async (locale = 'en'): Promise<FaqData[]> => {
     })
   );
 
-  return allFaqs;
+  return allFaqs.sort((a, b) => a.order - b.order);
 };

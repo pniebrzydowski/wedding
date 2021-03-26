@@ -9,6 +9,7 @@ costSingle: 55
 costDouble: 90
 costFamily: 140
 distance: 2700
+order: 3
 ---
 
 #### Zimmer

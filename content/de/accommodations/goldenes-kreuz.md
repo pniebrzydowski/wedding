@@ -7,6 +7,7 @@ blockedDouble: 10
 costSingle: 84
 costDouble: 138
 distance: 260
+order: 5
 ---
 
 #### Bedingungen

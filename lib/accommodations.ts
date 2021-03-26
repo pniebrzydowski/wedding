@@ -16,6 +16,7 @@ export interface AccommodationData extends StaticContent {
   distance: number;
   url: string;
   name: string;
+  order: number;
 }
 
 
@@ -28,7 +29,7 @@ const getAllAccommodationData = async (locale = 'en') => {
   );
 
   const fileNames = fs.readdirSync(accommodationsDirectory);
-  const allAccommodationsData = Promise.all(
+  const allAccommodationsData = await Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.md$/, '');
       const accData: AccommodationData = await getContentData({ id, filePath: 'accommodations/', locale });
@@ -36,7 +37,7 @@ const getAllAccommodationData = async (locale = 'en') => {
     })
   );
 
-  return allAccommodationsData;
+  return allAccommodationsData.sort((a, b) => a.order - b.order);
 };
 
 export const getBlockedAccommodations = async (locale: string): Promise<AccommodationData[]> => {
