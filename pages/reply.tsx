@@ -7,9 +7,11 @@ import ReplyGuestList from '../components/ReplyGuestList';
 import { getContentData } from '../lib/content';
 import { defineMessage } from '@lingui/macro';
 import { i18n } from '@lingui/core';
+import { StaticContent } from '../content/types';
+import InviteNotFound from '../components/InviteNotFound';
 
 interface Props {
-  introContent: any;
+  introContent: StaticContent;
 }
 
 export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
@@ -42,7 +44,7 @@ function Reply({ introContent }: Props): ReactElement {
 
       <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
 
-      {inviteId && <ReplyGuestList inviteId={inviteId} />}
+      {inviteId ? <ReplyGuestList inviteId={inviteId} /> : <InviteNotFound />}
     </Layout>
   );
 }

@@ -4,6 +4,7 @@ import { Trans } from '@lingui/macro';
 import useCollectionDocsData from '../../firebase/hooks/useCollectionDocsData';
 import { Guest } from '../../firebase/types';
 import GuestReplyForm from '../GuestReplyForm';
+import InviteNotFound from '../InviteNotFound';
 
 interface Props {
   inviteId: string;
@@ -19,26 +20,18 @@ function ReplyGuestList({ inviteId }: Props): ReactElement {
     },
   });
 
-  return (
-    <>
-      {loading && 'Loading...'}
+  if (loading) {
+    return <>Loading...</>;
+  }
 
-      {!loading &&
-        guests &&
-        (guests.length ? (
-          <ul>
-            {guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)}
-          </ul>
-        ) : (
-          <p>
-            <Trans id="reply:noInvite">
-              Sorry, we were unable to find your invitation.
-              Be sure you accessed the site via the direct link sent in your invitation.
-              If you are still having problems, please contact us directly!
-            </Trans>
-          </p>
-        ))}
-    </>
+  if (!guests?.length) {
+    return <InviteNotFound />;
+  }
+
+  return (
+    <ul>
+      {guests.map((guest) => <GuestReplyForm guest={guest} key={guest.id} />)}
+    </ul>
   );
 }
 

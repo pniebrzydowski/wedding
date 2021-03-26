@@ -19,11 +19,13 @@ const HomeContent = ({ basicInfo }: Props): ReactElement => {
       </div>
       <div className={styles.buttonWrapper}>
         <Link href={getRouteUrl(RouteName.Reply)}>
-          <Button buttonType="primary">
-            <Trans id="home:replyButtonLabel">
-              Let us know if you can make it!
-            </Trans>
-          </Button>
+          <a>
+            <Button buttonType="primary">
+              <Trans id="home:replyButtonLabel">
+                Let us know if you can make it!
+              </Trans>
+            </Button>
+          </a>
         </Link>
       </div>
     </div>
