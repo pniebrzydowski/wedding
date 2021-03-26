@@ -1,7 +1,7 @@
 ---
 name: "Wellness Hotel Aumühle"
 url: "https://www.aumuehle.at/"
-costDouble: 80
+costDouble: 160
 distance: 7000
 ---
 

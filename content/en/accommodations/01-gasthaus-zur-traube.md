@@ -12,7 +12,3 @@ distance: 250
 #### Terms
 
 Free cancellation until 2 days before arrival. 50% up one day before. Breakfast included.
-
-#### Payment
-
-Payment can be made via bank transfer. For those coming from outside the EU, it is possible to make payment by card, but the information must be provided directly to the hotel.

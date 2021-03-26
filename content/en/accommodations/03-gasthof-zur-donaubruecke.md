@@ -17,7 +17,7 @@ The 4 twin bed rooms can be booked either as a double room for 80€ or as a sin
 
 #### Terms
 
-Free cancellation until 3 Wochen before arrival. Breakfast included.
+Free cancellation until 3 weeks before arrival. Breakfast included.
 
 #### Payment
 
