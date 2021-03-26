@@ -23,10 +23,10 @@ function AccommodationInfo({ accommodation: {
         <a href={url} target="_blank" rel="noreferrer">{name}</a>
       </h3>
       <p>
-        { isBlocked && (
+        {isBlocked && (
           <>
             <Trans id="accommodation:reservedUntil">Reserved until:</Trans>{' '}
-            <strong>{dayjs(blockedUntil).format('LL')}</strong>{distance && <br/>}
+            <strong>{dayjs(blockedUntil).format('LL')}</strong>{distance && <br />}
           </>
         )}
         {distance && (

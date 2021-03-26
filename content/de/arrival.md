@@ -8,7 +8,7 @@ Schloss Greinburg befindet sich in Grein an der Donau, in Oberösterreich an der
 
 ### Mit dem Auto
 
-[Wegbeschreibung auf Google abrufen](https://www.google.com/maps/dir//Castle+Greinburg,+Greinburg+1,+4360+Grein,+Austria/@48.2261756,14.8506957,17z/data=!4m16!1m6!3m5!1s0x47724e0820767e7b:0x60e3b375b28d262e!2sCastle+Greinburg!8m2!3d48.2261756!4d14.8528844!4m8!1m0!1m5!1m1!1s0x47724e0820767e7b:0x60e3b375b28d262e!2m2!1d14.8528844!2d48.2261756!3e2)
+<a href="https://www.google.com/maps/dir//Castle+Greinburg,+Greinburg+1,+4360+Grein,+Austria/@48.2261756,14.8506957,17z/data=!4m16!1m6!3m5!1s0x47724e0820767e7b:0x60e3b375b28d262e!2sCastle+Greinburg!8m2!3d48.2261756!4d14.8528844!4m8!1m0!1m5!1m1!1s0x47724e0820767e7b:0x60e3b375b28d262e!2m2!1d14.8528844!2d48.2261756!3e2" target="_blank" rel="noreferrer" rel="noreferrer">Wegbeschreibung auf Google abrufen</a>
 
 #### Von Linz
 
@@ -24,13 +24,13 @@ Grein ist in circa 1 Stunde und 50 Minuten über die A3 von Passau oder die A8 v
 
 ### Mit dem öffentlichen Verkehr
 
-Der nächste Bahnhof ist Grein Stadt Bahnhof, ungefähr 9 Minuten zum Füß vom Schloss. Sehe die [ÖBB Webseite](https://tickets.oebb.at/en/ticket) für die aktuelle Zeitplan und Fahrkarten. Busfahrten kommen normalerweise um Grein Schiffstation (Donaulände)an, ungefähr 10 Minuten zum Füß vom Schloss.
+Der nächste Bahnhof ist Grein Stadt Bahnhof, ungefähr 9 Minuten zum Füß vom Schloss. Sehe die <a href="https://tickets.oebb.at/en/ticket" target="_blank" rel="noreferrer">ÖBB Webseite</a> für die aktuelle Zeitplan und Fahrkarten. Busfahrten kommen normalerweise um Grein Schiffstation (Donaulände)an, ungefähr 10 Minuten zum Füß vom Schloss.
 
 ##### Bei öffentliche Verkehr sparen
 
-Bevor Kauf von Fahrkarten, betrachte es eine Gruppe zusammen zu stellen, um die  [Einfach-Raus Ticket](https://www.oebb.at/de/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket). Dieses Ticket ist nur auf Lokalbahnen (R-, CJX, REX, and S-Bahn)aber nicht in den Expresslinien (ICE, Railjet) gültig. Zu fünft ist der Preis nur 47€ und für einen Kalendertagg gültig. Zum Vergleich, kosten 5 Einzelfahrten von Linz €68,50 oder von Wien circa 200€.
+Bevor Kauf von Fahrkarten, betrachte es eine Gruppe zusammen zu stellen, um die <a href="https://www.oebb.at/de/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket" target="_blank" rel="noreferrer">Einfach-Raus Ticket</a>. Dieses Ticket ist nur auf Lokalbahnen (R-, CJX, REX, and S-Bahn)aber nicht in den Expresslinien (ICE, Railjet) gültig. Zu fünft ist der Preis nur 47€ und für einen Kalendertagg gültig. Zum Vergleich, kosten 5 Einzelfahrten von Linz €68,50 oder von Wien circa 200€.
 
-Bei Ankunft im Flughafen München, ist es fast immer besser das [Bayern-Ticket](https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml) zu kaufen. Die Tickets sind ähnlich zum Einfach-Raus Ticket in Österreich, indem sie nur auf Lokalbahnen gültig sind. Das Ticket als Einzelperson (25€) ist auch günstiger als eine von München nach Österreich. Wahrscheinlich ist der günstige Weg anzukommen ist mit diesem Ticket via Lokalbahn nach Passau oder Salzburg mit eine zweite Fahrkarte für Österreich. Das Bayern-Ticket können Online oder beim Ticketautomat im Flughafen gekauft werden.
+Bei Ankunft im Flughafen München, ist es fast immer besser das <a href="https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml" target="_blank" rel="noreferrer">Bayern Ticket</a> zu kaufen. Die Tickets sind ähnlich zum Einfach-Raus Ticket in Österreich, indem sie nur auf Lokalbahnen gültig sind. Das Ticket als Einzelperson (25€) ist auch günstiger als eine von München nach Österreich. Wahrscheinlich ist der günstige Weg anzukommen ist mit diesem Ticket via Lokalbahn nach Passau oder Salzburg mit eine zweite Fahrkarte für Österreich. Das Bayern-Ticket können Online oder beim Ticketautomat im Flughafen gekauft werden.
 
 Für beide diesen regionale Spartickets, vergiss nicht deinen Name darauf zu schreiben, bevor die Fahrt beginnt!
 
