@@ -36,7 +36,6 @@ a:hover {
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 ul {
@@ -50,7 +49,7 @@ button {
   font-weight: bold;
   border-radius: 9px;
   border: 1px solid lightgray;
-  padding: 0.5rem;
+  padding: 1rem;
   min-height: 3rem;
 }
 

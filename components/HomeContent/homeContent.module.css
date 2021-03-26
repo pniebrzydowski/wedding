@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+}
+
+.imgWrapper {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.basicInfo {
+  font-family: 'Dancing Script';
+  font-size: 1.5em;
+}
+
+.basicInfo p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.imgWrapper img {
+  width: 400px;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.buttonWrapper button {
+  width: auto;
+}
+.buttonWrapper button + button {
+  margin-left: 1rem;
+}
