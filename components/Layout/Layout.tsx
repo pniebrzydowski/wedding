@@ -8,11 +8,11 @@ import MainNavigation from '../MainNavigation';
 
 import styles from './layout.module.css';
 
-const siteTitle = 'Patrick & Christina\'s Wedding';
+const siteTitle = 'Christina & Patrick\'s Wedding';
 
 export const getTranslatedSiteTitle = (): string => i18n._(defineMessage({
   id: 'siteTitle',
-  message: 'Patrick & Christina\'s Wedding'
+  message: 'Christina & Patrick\'s Wedding'
 }));
 
 interface Props {

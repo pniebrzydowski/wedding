@@ -8,7 +8,7 @@ const SplashScreen = (): ReactElement => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Patrick & Christina</h1>
+      <h1 className={styles.title}>Christina & Patrick</h1>
       <nav>
         <ul className={styles.languageList}>
           <li>
