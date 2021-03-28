@@ -46,7 +46,7 @@ const getEmailLink = (invite: Invite, emails: string[], salutations: string[]): 
   const subject = invite.lang === 'en'
     ? 'Wallner-Niebrzydowski Wedding Invitation!'
     : 'Wallner-Niebrzydowski Hochzeitseinladung!';
-  const inviteLink = `https://wallski-wedding.vercel.app/?inviteId=${invite.id}`;
+  const inviteLink = `https://christina-patrick.vercel.app/?inviteId=${invite.id}`;
   const salutation = salutations.join(',%20');
   return `mailto:${emails}?subject=${subject}&body=${salutation}%0d%0a%0d%0a${inviteLink}`;
 };
