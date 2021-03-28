@@ -1,18 +1,18 @@
 ---
-title: "What rules & guidelines should I consider?"
+title: "Welche Regeln und Richtlinien sollte ich in Acht nehmen?"
 order: 2
 ---
 
-The castle is a historic site and has some guidelines we ask that you consider during the celebration. 
+Das Schloss ist ein historisches Gebäude und hat ein paar Richtlinien, dass wir während der Feier beachten müssen.
 
-### Food & Drink
+### Speisen und Getränke
 
-Please keep in mind that food & drink are only allowed in the main reception hall and in outdoor areas.
+Bitte beachten, dass Speisen und Getränke sind nur im Saal und in den Außenbereiche erlaubt.
 
-### Smoking
+### Rauchen
 
-Smoking is strictly forbidden inside of the castle. In the courtyard and other outdoor areas of the castle is smoking allowed, but please be sure to dispose of your butts propertly.
+Das Rauchen ist in den Innenbereiche des Schlosses streng verboten. Im Hof und in anderen Außenbereiche ist erlaubt, aber bitte dafür sorgen, dass die Zigarettenstummel ordentlich entsorgt werden.
 
-### Closing Time
+### Schluss
 
-There is no specific end time for the party, but the bar will close and we will need to start wrapping up around 03:00. The live band will finish around 02:00. The cleaning crew for the castle will arrive at 06:00 and everything must be ready by then.
+Es gibt keine bestimmte Schlusszeit, aber um 03:00 wird die Bar schließen und müssen wir anfangen abzubauen. Die Band wird bis 02:00 spielen. Das Reinigungsteam kommt um 06:00 und bis dann muss alles abgebaut und fertig gemacht werden.

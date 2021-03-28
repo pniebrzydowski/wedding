@@ -1,8 +1,8 @@
 ---
-title: "Can I bring my kids?"
+title: "Darf ich meine Kinder mitbringen?"
 order: 6
 ---
 
-We do love all of you and would love to celebrate with as many people as possible. However, due to limited space and arrangments with our caterer, we ask that only those named on the invitations attend. Thank you for your understanding!
+Wir haben euch alle gerne und würden gerne mit so viele Leute wie möglich feiern. Trotzdem, aufgrund limitiertem Plätze und Absprache mit unserem Caterer, müssen wir leider ersuchen, dass nur diejenigen, die auf der Einladung genannt wird, uns begleiten. Vielen Dank für ihr Verständnis!
 
-We also look forward to a second celebration in Michigan in the future, where the whole family is welcome!
+Wir freuen uns auch auf einer zweiten Feier in Michigan in der Zukunft, wo die ganze Familie willkommen wird!

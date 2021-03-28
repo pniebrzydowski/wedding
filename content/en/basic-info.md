@@ -1,5 +1,5 @@
 ---
-title: "How to get there"
+title: "Basic Info"
 ---
 
 # Christina & Patrick

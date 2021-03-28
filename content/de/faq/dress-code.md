@@ -1,6 +1,6 @@
 ---
-title: "What is the dress code?"
+title: "Was ist die Kleiderordnung?"
 order: 8
 ---
 
-Formal Attire / Black Tie Optional
+Formelle Kleidung

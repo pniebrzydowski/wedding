@@ -1,8 +1,8 @@
 ---
-title: "What about Covid?"
+title: "Was ist mit Covid?"
 order: 1
 ---
 
-We take the pandemic very seriously and our first priority is the safety and health of all our guests. We will follow any requirements and recommendations and take all necessary precautions. However, we are optimistic due to the increasing pace of vaccinations, especially in the USA, as well as the improving weather conditions.
+Wir nehmen die Pandemie ganz im Ernst und unsere erste Priorität ist die Sicherheit und Gesundheit unseren Gäste. Wir werden alle Maßnahmen und Empfehlungen halten und alle notwendige Vorsorge in acht nehmen. Wir sind aber optimistisch, aufgrund der steigenden Impfungen, besonders in der USA, sowie des verbessernden Witterungs.
 
-There is unfortunately a lot of uncertainty in these times. We are hopeful, but there is of course still the possibility that the wedding will need to be postponed to a later date. Please keep this in mind when making your travel plans. We will be sure to inform all our guests as soon as any new information is available.
+Es gibt leider derzeit viele Ungewissheit. Wir sind allgmein hoffnungsvoll, aber die Möglichkeit besteht noch, dass die Hochzeit verschoben werden müssen. Bitte nimm dieses in Betracht, wann du deine Reisepläne machst. Wir werden bestimmt alle informieren, falls neue Informationen verfügbar ist.

@@ -1,32 +1,32 @@
 ---
-title: "What is the plan for the day?"
+title: "Wie läuft der Tag?"
 order: 3
 ---
 
-To help you better know what to expect, below is a tentative schedule of how the day will progress.
+Sodass ihr besser wissen, was zu erwarten wird, ein vorläufiger Zeitplan des Tages:
 
-### 13:00 - Reception
+### 13:00 - Empfang
 
-As you arrive, you will be greeted with a small selection of refreshing drinks, including beers from <a href="https://wenzl-privatbraeu.jimdosite.com/" target="_blank" rel="noreferrer">Wenzl</a>, a small private brewery in the family, which was recently named "Brewery of the Year 2021" in Austria by the esteemed Gault & Millau.
+Bei der Ankunft, grüßen wir euch mit einer kleinen Auswahl von erfrischenden Getränken, inklusiv Bier von <a href="https://wenzl-privatbraeu.jimdosite.com/" target="_blank" rel="noreferrer">Wenzl</a>, eine kleine Privatbrauerei in der Familie, die vor Kurzem "Brauerei des Jahres 2021" in Österreich von der hoch angesehenen Gault & Millau ausgezeichnet wurde.
 
-### 14:00 - Wedding Ceremony
+### 14:00 - Trauung
 
-The wedding ceremony, including a liturgy of the word, will take place inside the Rittersaal and the adjacent Chapel.
+Die kirchliche Trauung und Wortgottesdienst, werden im Rittersaal und in der Schlosskapelle darin, abgehalten.
 
-### 15:00 - Cocktail Hour
+### 15:00 - Agape
 
-Immediately following the ceremony, we will proceed downstairs into the beautiful courtyard for a cocktail hour with refreshing drinks and finger food, accompanied by music from members of Christina's band - <a href="http://www.trachtenmusikkapelleschardenberg.at/" target="_blank" rel="noreferrer">Trachtenmusikkapelle Schardenberg</a>. During this time, we will also be taking group photographs.
+Sofort nach der Trauung, gehen wir nach unten in den schönen Arkadenhof. Hier findet eine Agape mit erfrischenden Getränken und kleine Häppchen statt, begleitet von Mitglieder von Christinas Band - <a href="http://www.trachtenmusikkapelleschardenberg.at/" target="_blank" rel="noreferrer">Trachtenmusikkapelle Schardenberg</a>. Während dieser Zeit, machen wir auch Gruppenfotos.
 
-### 18:00 - Opening of Buffet
+### 18:00 - Eröffnung des Buffets
 
-Around 17:00, we will conclude the cocktail hour and begin moving back into the Rittersaal for dinner and an evening of fun. Seating will be arranged by table, but there will be no assigned seats within the table. After everyone has had time to find their seats and get comfortable, the dinner buffet will open around 18:00. Vegetarian options will be included. If you have any special dietary needs, please reach out to us!
+Um circa 17:00, gehen wir zurück in den Rittersaal für das Abendmahl und ein Abend voller Spaß. Die Bestuhlung wird nach Tisch verordnet, aber am Tisch wird keine bestimmte Sitzplätze definiert. Dieses könnte sich aber ändern, abhängend von der aktuellen Coronamaßnahmen. Nach ein bisschen Zeit für alle die Sitzplätze zu finden und gemütlich zu werden, eröffnet das Abendessenbuffet um circa 18:00. Vegetarische Optionen wird auch inkludiert. Falls du Diätvorschriften haben, sag uns in das Antwortformular Bescheid, oder konktaktiere uns direkt!
 
-An open bar will be available throughout the night, and <a href="https://www.duorotation.at/" target="_blank" rel="noreferrer">Duo Rotation</a> will be providing the entertainment after dinner.
+Getränke wird durch des Abends zur Verfügung gestellt, und die Stimmung wird von <a href="https://www.duorotation.at/" target="_blank" rel="noreferrer">Duo Rotation</a> gebracht.
 
-### 11:30 - Midnight Snack
+### 11:30 - Mitternachtsjausen
 
-For a proper full night of partying, we think it's important to make sure everyone is properly fueled throughout the night. A small but hearty snack will be provided around midnight to keep everyone going.
+Um richtig zu feiren, finden wir es wichtig, dass alle durch der Nacht gut versorgt bleiben. Ein kleines aber kräftiges Snack wird um circa Mitternacht bereitgestellt.
 
-### Closing Time
+### Schlusszeit
 
-Though we do not have an official closing time, the cleaning crew will arrive at 06:00 and we will need to start packing up around 03:00.
+Es gibt keine bestimmte Schlusszeit, aber um 03:00 wird die Bar schließen und müssen wir anfangen abzubauen. Die Band wird bis 02:00 spielen. Das Reinigungsteam kommt um 06:00 und bis dann muss alles abgebaut und fertig gemacht werden.

@@ -1,11 +1,11 @@
 ---
-title: "How to get there"
+title: "Basic Info"
 ---
 
 # Christina & Patrick
 
-Schloss Greinburg • Grein, Austria
+Schloss Greinburg • Grein, Österreich
 
-August 28, 2021
+28\. August 2021
 
-Ceremony: 14:00 • Cocktails and Reception to follow
+Trauung: 14:00 • Agape und Party danach

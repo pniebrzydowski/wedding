@@ -25,5 +25,5 @@ export const getAllFaqs = async (locale = 'en'): Promise<FaqData[]> => {
     })
   );
 
-  return allFaqs.sort((a, b) => a.order - b.order);
+  return allFaqs.filter(faq => !!faq.order).sort((a, b) => a.order - b.order);
 };

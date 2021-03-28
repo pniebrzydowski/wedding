@@ -1,10 +1,10 @@
 ---
-title: "What if I have special dietary requirements?"
+title: "Was soll ich tun, wenn ich Diätvorschriften habe?"
 order: 5
 ---
 
-We are confident that most dietary restrictions should be covered by our offerings. A variety of hors d'oeuvres during the cocktail hour, main courses, side dishes, and salads in the buffet, as well as dessert options will be available, including multiple vegetarian options throughout.
+Wir sind zuversichtlich, dass die meisten Diätvorschriften von unserem Angebot abgedeckt werden sollen. Es gibt eine Auswahl von Häppchen während der Agape, und später Hauptspeisen-, Beilagen- und Salatbuffet, sowie Nachspeisen danach. Vegatarische Optionen sind immer inkludiert.
 
-Drinks will be provided via an open bar throughout the day. Various non-alcoholic beverages; beer; red, white, and sparling wine; and a selection of spirits will be available.
+Getränke wird durch des Tages zur Verfügung gestellt, inklusiv vielfältige antialkoholische Getränke, Bier, Rot-, Weiß-, und Schaumwein, sowie eine Auswahl von Spirituosen.
 
-If you have any specific additional restrictions, please let us know in the reply form. We will do our best to accommodate all special requests where possible. If you have any concerns, please contact us directly!
+Wenn du zusätzliche Vorschriften hast, bitte sag uns im Antwortformular Bescheid. Wir werden unser Bestes geben, alle Sonderwünsche womöglich entgegenzukommen. Falls du noch Anliegen hast, bitte kontaktiere uns!

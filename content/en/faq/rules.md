@@ -3,7 +3,7 @@ title: "What rules & guidelines should I consider?"
 order: 2
 ---
 
-The castle is a historic site and has some guidelines we ask that you consider during the celebration. 
+The castle is a historic site and has some guidelines we must consider during the celebration. 
 
 ### Food & Drink
 

@@ -1,10 +1,10 @@
 ---
-title: "Are you planning to celebrate in the US?"
+title: "Plant ihr auch in der USA zu feiern??"
 order: 4
 ---
 
-We look forward to celebrating with friends and family from all over the world. One of the important aspects of a wedding for us is bringing all of our loved ones together and we hope that as many of you as possible will be able to attend!
+Wir freuen uns darauf, mit unseren Familien und Freuden von der ganzen Welt zu feiern. Eine der wichtigsten Aspekten einer Hochzeit für uns, ist die Gelegentheit die Leute, die wir lieben, alle zusammen zu bringen. Wir hoffen, dass so viele von euch wie möglich mit uns feiern können!
 
-However, with such an international circle, we also understand that it may not be so easy for all to find the time and ability to make an extended journey, especially for those from the USA, and even more so on the tail end of a pandemic.
+Allerdings, mit einem sehr internationalen Kreis, verstehen wir auch, dass es nicht für alle einfach wäre, die lange Reise zu machen. Vor allem, wird es schwierig für diejenigen, die aus der USA einreisen müssen, besonders während einer Pandemie.
 
-As a result, we do intend to have a less formal celebration in the future in the Detroit area. We have no specific plan yet, but tentatively it will take place sometime in late June or early July of 2022. In this celebration, we are happy to welcome your entire families as well! We encourage those of our guests from outside the USA to join us for this celebration as well.
+Deswegen, planen wir eine lockere Feier in der Zukunft in der Nähe von Detrot. Wir haben noch keinen festen Plan, aber vorsichtig werden sie irgendwann am Ende Juni oder Anfang Juli 2022 stattfinden. Auf dieser Feier, freuen wir uns auf eure ganze Familien! Wir ermutigen alle von außerhalb der USA, diese Feier auch teilzunehmen!

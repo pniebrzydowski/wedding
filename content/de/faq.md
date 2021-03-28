@@ -2,5 +2,5 @@
 title: "FAQ"
 ---
 
-## Frequently Asked Questions
+## Häufige gestellte Fragen
 
