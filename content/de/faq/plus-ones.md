@@ -1,5 +1,5 @@
 ---
-title: "Can I bring a date?"
+title: "Darf ich eine Begleitung mitbringen?"
 order: 7
 ---
 
