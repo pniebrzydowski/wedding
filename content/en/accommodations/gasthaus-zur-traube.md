@@ -13,3 +13,7 @@ order: 1
 #### Terms
 
 Free cancellation until 2 days before arrival. 50% up one day before. Breakfast included.
+
+#### Payment
+
+Payment can be made with bank card or cash on arrival.

@@ -14,3 +14,6 @@ order: 1
 
 Kostenlose Stornierung bis 2 Tage vor der Ankunft. 50% bis einem Tag. Frühstück inkludiert.
 
+#### Zahlung
+
+Die Zahlung können vor Ort mit Bankomat oder Bar bezahlen.
