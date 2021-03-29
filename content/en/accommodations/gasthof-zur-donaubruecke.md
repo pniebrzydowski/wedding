@@ -14,7 +14,7 @@ order: 3
 
 #### Rooms
 
-The 4 twin bed rooms can be booked either as a double room for 80€ or as a single room for 55€.
+The single rooms have two twin beds, and can also be booked by 2 people for 80€.
 
 #### Terms
 

@@ -14,7 +14,7 @@ order: 3
 
 #### Zimmer
 
-Die 4 Zweibettzimmer können entweder als Doppelzimmer für 80€ oder als Einzelzimmer für 55€ gebucht werden.
+Die Einzelzimmer haben zwei Einzelbetten und können auch als Doppelzimmer für 80€ gebucht werden.
 
 #### Bedingungen
 

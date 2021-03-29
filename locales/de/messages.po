@@ -23,7 +23,7 @@ msgstr "Doppelzimmer"
 
 #: components/AccommodationInfo/AccommodationInfo.tsx:37
 msgid "accommodation:familyRooms"
-msgstr "Familienzimmer"
+msgstr "Familienzimmer (4)"
 
 #: components/AccommodationInfo/AccommodationInfo.tsx:31
 msgid "accommodation:price"
