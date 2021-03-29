@@ -1,6 +1,6 @@
 ---
 title: "What rules & guidelines should I consider?"
-order: 2
+order: 7
 ---
 
 The castle is a historic site and has some guidelines we must consider during the celebration. 
@@ -11,7 +11,7 @@ Please keep in mind that food & drink are only allowed in the main reception hal
 
 ### Smoking
 
-Smoking is strictly forbidden inside of the castle. In the courtyard and other outdoor areas of the castle is smoking allowed, but please be sure to dispose of your butts propertly.
+Smoking is strictly forbidden inside of the castle. In the courtyard and other outdoor areas of the castle, smoking is allowed, but please be sure to dispose of your butts propertly.
 
 ### Closing Time
 

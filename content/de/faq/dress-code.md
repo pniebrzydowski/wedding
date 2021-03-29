@@ -1,6 +1,6 @@
 ---
 title: "Was ist die Kleiderordnung?"
-order: 8
+order: 7
 ---
 
 Formelle Kleidung

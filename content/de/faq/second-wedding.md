@@ -1,6 +1,6 @@
 ---
 title: "Plant ihr auch in der USA zu feiern?"
-order: 4
+order: 8
 ---
 
 Wir freuen uns darauf, mit unseren Familien und Freuden von der ganzen Welt zu feiern. Eine der wichtigsten Aspekten einer Hochzeit für uns, ist die Gelegentheit die Leute, die wir lieben, alle zusammen zu bringen. Wir hoffen, dass so viele von euch wie möglich mit uns feiern können!

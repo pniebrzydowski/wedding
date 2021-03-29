@@ -1,6 +1,6 @@
 ---
-title: "Are you planning to celebrate in the US?"
-order: 4
+title: "Will there also be a celebration in the US?"
+order: 3
 ---
 
 We look forward to celebrating with friends and family from all over the world. One of the important aspects of a wedding for us is bringing all of our loved ones together and we hope that as many of you as possible will be able to attend!

@@ -1,6 +1,6 @@
 ---
 title: "Was soll ich tun, wenn ich Diätvorschriften habe?"
-order: 5
+order: 3
 ---
 
 Wir sind zuversichtlich, dass die meisten Diätvorschriften von unserem Angebot abgedeckt werden sollen. Es gibt eine Auswahl von Häppchen während der Agape, und später Hauptspeisen-, Beilagen- und Salatbuffet, sowie Nachspeisen danach. Vegatarische Optionen sind immer inkludiert.

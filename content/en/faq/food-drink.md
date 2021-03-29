@@ -1,6 +1,6 @@
 ---
 title: "What if I have special dietary requirements?"
-order: 5
+order: 4
 ---
 
 We are confident that most dietary restrictions should be covered by our offerings. A variety of hors d'oeuvres during the cocktail hour, main courses, side dishes, and salads in the buffet, as well as dessert options will be available, including multiple vegetarian options throughout.

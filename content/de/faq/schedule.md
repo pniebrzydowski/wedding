@@ -1,6 +1,6 @@
 ---
 title: "Wie läuft der Tag?"
-order: 3
+order: 2
 ---
 
 Sodass ihr besser wissen, was zu erwarten wird, ein vorläufiger Zeitplan des Tages:

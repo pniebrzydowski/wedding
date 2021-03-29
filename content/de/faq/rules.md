@@ -1,6 +1,6 @@
 ---
-title: "Welche Regeln und Richtlinien sollte ich in Acht nehmen?"
-order: 2
+title: "Welche Regeln und Richtlinien sollte beachten?"
+order: 6
 ---
 
 Das Schloss ist ein historisches Gebäude und hat ein paar Richtlinien, dass wir während der Feier beachten müssen.
