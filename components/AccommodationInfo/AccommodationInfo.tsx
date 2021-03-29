@@ -1,10 +1,11 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 
 import { Trans } from '@lingui/macro';
 import dayjs from 'dayjs';
 import { AccommodationData } from '../../lib/accommodations';
 
 import styles from './accommodationInfo.module.css';
+import Table from '../ui/Table';
 
 interface Props {
   accommodation: AccommodationData;
@@ -36,7 +37,7 @@ function AccommodationInfo({ accommodation: {
         )}
       </p>
       {(costDouble || costSingle) &&
-        <table className={styles.roomsTable}>
+        <Table>
           <thead>
             <tr>
               <th></th>
@@ -67,7 +68,7 @@ function AccommodationInfo({ accommodation: {
               <td>€ {costSingle}</td>
             </tr>}
           </tbody>
-        </table>
+        </Table>
       }
       <div className={styles.details} dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </div>

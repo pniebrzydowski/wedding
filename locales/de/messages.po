@@ -13,35 +13,43 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:16
+#: components/AccommodationInfo/AccommodationInfo.tsx:18
 msgid "accommodation:distance"
 msgstr "Entfernung vom Schloss: {distance}m"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:40
+#: components/AccommodationInfo/AccommodationInfo.tsx:42
 msgid "accommodation:doubleRooms"
 msgstr "Doppelzimmer"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:35
+#: components/AccommodationInfo/AccommodationInfo.tsx:37
 msgid "accommodation:familyRooms"
 msgstr "Familienzimmer"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:29
+#: components/AccommodationInfo/AccommodationInfo.tsx:31
 msgid "accommodation:price"
 msgstr "Preis"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:13
+#: components/AccommodationInfo/AccommodationInfo.tsx:15
 msgid "accommodation:reservedUntil"
 msgstr "Reserviert bis:"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:26
+#: components/AccommodationInfo/AccommodationInfo.tsx:28
 msgid "accommodation:rooms"
 msgstr "Zimmer"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:45
+#: components/AccommodationInfo/AccommodationInfo.tsx:47
 msgid "accommodation:singleRooms"
 msgstr "Einzelzimmer"
 
-#: components/HomeContent/HomeContent.tsx:15
+#: pages/location.tsx:80
+msgid "arrival:byCar"
+msgstr "Mit dem Auto"
+
+#: pages/location.tsx:50
+msgid "arrival:byTransit"
+msgstr "Mit dem öffentlichen Verkehr"
+
+#: components/HomeContent/HomeContent.tsx:16
 msgid "home:replyButtonLabel"
 msgstr "Sag uns, ob du dabei bist!"
 
@@ -63,12 +71,12 @@ msgid "pageTitle:home"
 msgstr "Start"
 
 #: components/MainNavigation/routes.ts:33
-#: pages/location.tsx:29
+#: pages/location.tsx:35
 msgid "pageTitle:location"
 msgstr "Veranstaltungsort"
 
 #: components/MainNavigation/routes.ts:57
-#: pages/reply.tsx:31
+#: pages/reply.tsx:32
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
@@ -88,7 +96,7 @@ msgstr "Andere Kommentare"
 msgid "reply:labels.songRequest"
 msgstr "Liedwunsch"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:21
+#: components/InviteNotFound/InviteNotFound.tsx:4
 msgid "reply:noInvite"
 msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
 

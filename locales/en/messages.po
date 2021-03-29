@@ -13,35 +13,43 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:16
+#: components/AccommodationInfo/AccommodationInfo.tsx:18
 msgid "accommodation:distance"
 msgstr "Distance to Castle: {distance}m ({distanceInFeet}ft)"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:40
+#: components/AccommodationInfo/AccommodationInfo.tsx:42
 msgid "accommodation:doubleRooms"
 msgstr "Double Rooms"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:35
+#: components/AccommodationInfo/AccommodationInfo.tsx:37
 msgid "accommodation:familyRooms"
 msgstr "Family Rooms (4)"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:29
+#: components/AccommodationInfo/AccommodationInfo.tsx:31
 msgid "accommodation:price"
 msgstr "Price"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:13
+#: components/AccommodationInfo/AccommodationInfo.tsx:15
 msgid "accommodation:reservedUntil"
 msgstr "Reserved until:"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:26
+#: components/AccommodationInfo/AccommodationInfo.tsx:28
 msgid "accommodation:rooms"
 msgstr "Rooms"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:45
+#: components/AccommodationInfo/AccommodationInfo.tsx:47
 msgid "accommodation:singleRooms"
 msgstr "Single Rooms"
 
-#: components/HomeContent/HomeContent.tsx:15
+#: pages/location.tsx:80
+msgid "arrival:byCar"
+msgstr "By Car"
+
+#: pages/location.tsx:50
+msgid "arrival:byTransit"
+msgstr "By Public Transit"
+
+#: components/HomeContent/HomeContent.tsx:16
 msgid "home:replyButtonLabel"
 msgstr "Let us know if you can make it!"
 
@@ -63,12 +71,12 @@ msgid "pageTitle:home"
 msgstr "Home"
 
 #: components/MainNavigation/routes.ts:33
-#: pages/location.tsx:29
+#: pages/location.tsx:35
 msgid "pageTitle:location"
 msgstr "Location"
 
 #: components/MainNavigation/routes.ts:57
-#: pages/reply.tsx:31
+#: pages/reply.tsx:32
 msgid "pageTitle:reply"
 msgstr "Reply"
 
@@ -88,7 +96,7 @@ msgstr "Other comments"
 msgid "reply:labels.songRequest"
 msgstr "Song Request"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:21
+#: components/InviteNotFound/InviteNotFound.tsx:4
 msgid "reply:noInvite"
 msgstr "Sorry, we were unable to find your invitation. Be sure you accessed the site via the direct link sent in your invitation. If you are still having problems, please contact us directly!"
 
@@ -110,4 +118,4 @@ msgstr "No guarantee"
 
 #: components/Layout/Layout.tsx:7
 msgid "siteTitle"
-msgstr "Patrick & Christina's Wedding"
+msgstr "Christina & Patrick's Wedding"
