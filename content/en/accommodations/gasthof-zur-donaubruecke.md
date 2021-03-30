@@ -18,7 +18,7 @@ The single rooms have two twin beds, and can also be booked by 2 people for 80â‚
 
 #### Parking
 
-Free private parking is available on-location.
+Free private parking is available on-site.
 
 #### Terms
 

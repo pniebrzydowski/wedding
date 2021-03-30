@@ -16,7 +16,7 @@ Free cancellation until 2 days before arrival. 50% up one day before.
 
 #### Parking
 
-Free private parking is available on-location.
+Free private parking is available on-site.
 
 #### Payment
 

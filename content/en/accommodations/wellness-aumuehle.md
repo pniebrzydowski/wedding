@@ -12,4 +12,4 @@ Free cancellation until 1 week before arrival. Access to the spa area and fitnes
 
 #### Parking
 
-Free private parking is available on-location.
+Free private parking is available on-site.
