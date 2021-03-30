@@ -8,4 +8,4 @@ Grein ist leicht erreichbar durch alle Verkehrsmittel, und liegt ungefähr halbw
 
 Falls du einfliegst, ist das einfachste Flughafen wahrscheinlich Wien (VIE). Das nächste Flughafen ist Linz (LNZ), aber Verbindungen da sind limitiert, besonders von außerhalb Europas.
 
-Wenn du von außerhalb Europas fliegst, möchtest du vielleicht auch München (MUC), Budapest (BUD), oder Prag (PRG) prüfen, weil Flüge nach Wien sind oft teuerer. Falls du ein Auto mietest, sind diese 3 Flughafen ungefähr dieselbe Entfernung weg, aber die Zugverbindungen von München sind allgemein besser.
+Wenn du von außerhalb Europas fliegst, möchtest du vielleicht auch München (MUC), Budapest (BUD), oder Prag (PRG) prüfen, weil Flüge nach Wien sind oft teuerer. Falls du ein Auto mietest, sind diese drei Flughafen ungefähr dieselbe Entfernung weg, aber die Zugverbindungen von München sind allgemein besser. Bedenke auch, dass diese drei Flughafen sind in anderen Länder, und Einschränkungen/Maßnahmen im Bezug auf Covid oder Quarantäne könnten sich unterscheiden.
