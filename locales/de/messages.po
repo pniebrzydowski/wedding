@@ -80,19 +80,23 @@ msgstr "Veranstaltungsort"
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:62
+#: components/GuestReplyForm/GuestReplyForm.tsx:47
+msgid "reply:error"
+msgstr ""
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:84
 msgid "reply:labels.answer"
 msgstr "Antwort"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:63
+#: components/GuestReplyForm/GuestReplyForm.tsx:85
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Diätvorschriften"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:64
+#: components/GuestReplyForm/GuestReplyForm.tsx:86
 msgid "reply:labels.otherComment"
 msgstr "Andere Kommentare"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:66
+#: components/GuestReplyForm/GuestReplyForm.tsx:88
 msgid "reply:labels.songRequest"
 msgstr "Liedwunsch"
 
@@ -100,21 +104,29 @@ msgstr "Liedwunsch"
 msgid "reply:noInvite"
 msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:45
+#: components/GuestReplyForm/GuestReplyForm.tsx:67
 msgid "reply:options.no"
 msgstr "Leider muss ich ablehnen"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:38
+#: components/GuestReplyForm/GuestReplyForm.tsx:60
 msgid "reply:options.yes"
 msgstr "Freu mich schon!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:58
+#: components/GuestReplyForm/GuestReplyForm.tsx:80
 msgid "reply:save"
 msgstr "Speichern"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:67
+#: components/GuestReplyForm/GuestReplyForm.tsx:89
 msgid "reply:songRequestDisclaimer"
 msgstr "Keine Garantie"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:36
+msgid "reply:success.attending"
+msgstr ""
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:40
+msgid "reply:success.notAttending"
+msgstr ""
 
 #: components/Layout/Layout.tsx:7
 msgid "siteTitle"

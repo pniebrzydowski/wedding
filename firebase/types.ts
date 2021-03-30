@@ -18,13 +18,15 @@ export interface Invite {
   lang: InviteLanguage
 }
 
+export type Attending = '' | 'yes' | 'no';
+
 export interface Guest {
   id: string;
   inviteId: string;
   name: string;
   gender: 'm' | 'f';
   email?: string;
-  attending?: string;
+  attending?: Attending;
   dietaryNeeds?: string;
   songRequest?: string;
   comment?: string;

@@ -5,17 +5,41 @@ import { defineMessage, Trans } from '@lingui/macro';
 import { FormProvider, useForm } from 'react-hook-form';
 
 import { FirebaseContext } from '../../firebase';
-import { Guest } from '../../firebase/types';
+import { Attending, Guest } from '../../firebase/types';
 import Select, { SelectOption } from '../form/Select';
 import Textarea from '../form/Textarea';
 import Button from '../ui/Button';
 
 import styles from './guestReplyForm.module.css';
 import Grid from '../ui/Grid';
+import { toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 interface Props {
   guest: Guest;
 }
+
+const getSuccessMessage = (attending: Attending): string => {
+  if (!attending) {
+    return i18n._(defineMessage({
+      id: 'reply:success.noResponse',
+      message: 'Thanks for your response, please let us know if you can make it!'
+    }));
+  }
+
+  if (attending === 'yes') {
+    return i18n._(defineMessage({
+      id: 'reply:success.attending',
+      message: 'Looking forward to seeing you there!'
+    }));
+  }
+
+  return i18n._(defineMessage({
+    id: 'reply:success.notAttending',
+    message: 'Sorry that you can\'t join us, hope to see you soon!'
+  }));
+};
 
 function GuestReplyForm(
   { guest: { id, attending, name, dietaryNeeds, songRequest, comment }
@@ -23,28 +47,41 @@ function GuestReplyForm(
   const form = useForm();
   const firebase = useContext(FirebaseContext);
 
-  const { handleSubmit } = form;
+  const { handleSubmit, formState: { isSubmitting } } = form;
 
-  const onSubmit = ({
+  const onSubmit = async ({
     attending,
     dietaryNeeds,
     songRequest,
     comment
   }: Partial<Guest>) => {
-    firebase.firestore
+    const newData: Partial<Guest> = {
+      attending
+    };
+    if (dietaryNeeds) {
+      newData.dietaryNeeds = dietaryNeeds;
+    }
+    if (songRequest) {
+      newData.songRequest = songRequest;
+    }
+    if (comment) {
+      newData.comment = comment;
+    }
+
+    return firebase.firestore
       .collection('guests')
       .doc(id)
-      .update({
-        attending,
-        dietaryNeeds,
-        songRequest,
-        comment
-      })
+      .update(newData)
       .then(() => {
-        console.log('Reply submitted!');
+        const message = getSuccessMessage(attending);
+        toast.success(message, { toastId: 'reply-response' });
       })
       .catch((err) => {
-        console.error('Error creating series: ', err);
+        const error = i18n._(defineMessage({
+          id: 'reply:error',
+          message: 'There was an error. Try again or contact us if you continue to have problems.'
+        }));
+        toast.error(error, { toastId: 'reply-response' });
       });
   };
 
@@ -75,8 +112,11 @@ function GuestReplyForm(
           <input type="hidden" id="guest_id" name="id" value={id} />
           <div className={styles.header}>
             <h3>{name}</h3>
-            <Button buttonType="primary" type="submit">
-              <Trans id="reply:save">Save</Trans>
+            <Button buttonType="primary" type="submit" disabled={isSubmitting}>
+              {isSubmitting
+                ? '...'
+                : <Trans id="reply:save">Save</Trans>
+              }
             </Button>
           </div>
           <Grid factorX={2}>
