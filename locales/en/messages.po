@@ -80,23 +80,24 @@ msgstr "Location"
 msgid "pageTitle:reply"
 msgstr "Reply"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:47
+#: components/GuestReplyForm/GuestReplyForm.tsx:61
+#: components/GuestReplyForm/GuestReplyForm.tsx:61
 msgid "reply:error"
 msgstr "There was an error. Try again or contact us if you continue to have problems."
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:84
+#: components/GuestReplyForm/GuestReplyForm.tsx:99
 msgid "reply:labels.answer"
 msgstr "You in?"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:85
+#: components/GuestReplyForm/GuestReplyForm.tsx:100
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Dietary Restrictions"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:86
+#: components/GuestReplyForm/GuestReplyForm.tsx:101
 msgid "reply:labels.otherComment"
 msgstr "Other comments"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:88
+#: components/GuestReplyForm/GuestReplyForm.tsx:103
 msgid "reply:labels.songRequest"
 msgstr "Song Request"
 
@@ -104,29 +105,33 @@ msgstr "Song Request"
 msgid "reply:noInvite"
 msgstr "Sorry, we were unable to find your invitation. Be sure you accessed the site via the direct link sent in your invitation. If you are still having problems, please contact us directly!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:67
+#: components/GuestReplyForm/GuestReplyForm.tsx:80
 msgid "reply:options.no"
 msgstr "Sorry, can't make it"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:60
+#: components/GuestReplyForm/GuestReplyForm.tsx:73
 msgid "reply:options.yes"
 msgstr "Can't wait!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:80
+#: components/GuestReplyForm/GuestReplyForm.tsx:95
 msgid "reply:save"
 msgstr "Save"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:89
+#: components/GuestReplyForm/GuestReplyForm.tsx:104
 msgid "reply:songRequestDisclaimer"
 msgstr "No guarantee"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:36
+#: components/GuestReplyForm/GuestReplyForm.tsx:30
 msgid "reply:success.attending"
 msgstr "Looking forward to seeing you there!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:40
+#: components/GuestReplyForm/GuestReplyForm.tsx:24
+msgid "reply:success.noResponse"
+msgstr "Thanks for your response, please let us know if you can make it!"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:35
 msgid "reply:success.notAttending"
-msgstr "Sorry that you can't make it"
+msgstr "Sorry that you can't join us, hope to see you soon!"
 
 #: components/Layout/Layout.tsx:7
 msgid "siteTitle"

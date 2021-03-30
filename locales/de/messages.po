@@ -80,23 +80,24 @@ msgstr "Veranstaltungsort"
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:47
+#: components/GuestReplyForm/GuestReplyForm.tsx:61
+#: components/GuestReplyForm/GuestReplyForm.tsx:61
 msgid "reply:error"
-msgstr ""
+msgstr "Es gab einen Fehler. Versuch es nochmal, oder kontaktiere uns falls du weiter Probleme hast."
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:84
+#: components/GuestReplyForm/GuestReplyForm.tsx:99
 msgid "reply:labels.answer"
 msgstr "Antwort"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:85
+#: components/GuestReplyForm/GuestReplyForm.tsx:100
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Diätvorschriften"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:86
+#: components/GuestReplyForm/GuestReplyForm.tsx:101
 msgid "reply:labels.otherComment"
 msgstr "Andere Kommentare"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:88
+#: components/GuestReplyForm/GuestReplyForm.tsx:103
 msgid "reply:labels.songRequest"
 msgstr "Liedwunsch"
 
@@ -104,29 +105,33 @@ msgstr "Liedwunsch"
 msgid "reply:noInvite"
 msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:67
+#: components/GuestReplyForm/GuestReplyForm.tsx:80
 msgid "reply:options.no"
 msgstr "Leider muss ich ablehnen"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:60
+#: components/GuestReplyForm/GuestReplyForm.tsx:73
 msgid "reply:options.yes"
 msgstr "Freu mich schon!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:80
+#: components/GuestReplyForm/GuestReplyForm.tsx:95
 msgid "reply:save"
 msgstr "Speichern"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:89
+#: components/GuestReplyForm/GuestReplyForm.tsx:104
 msgid "reply:songRequestDisclaimer"
 msgstr "Keine Garantie"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:36
+#: components/GuestReplyForm/GuestReplyForm.tsx:30
 msgid "reply:success.attending"
-msgstr ""
+msgstr "Wir freuen uns, dich da zu sehen!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:40
+#: components/GuestReplyForm/GuestReplyForm.tsx:24
+msgid "reply:success.noResponse"
+msgstr "Vielen Dank für deine Antwort, bitte sag uns Bescheid, ob du kommen kannst!"
+
+#: components/GuestReplyForm/GuestReplyForm.tsx:35
 msgid "reply:success.notAttending"
-msgstr ""
+msgstr "Tut uns lied, dass du nicht kommen kannst. Wir hoffen dich bald zu sehen!"
 
 #: components/Layout/Layout.tsx:7
 msgid "siteTitle"

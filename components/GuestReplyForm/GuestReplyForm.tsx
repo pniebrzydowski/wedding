@@ -72,11 +72,13 @@ function GuestReplyForm(
         toast.success(message, { toastId: 'reply-response' });
       })
       .catch((err) => {
-        const error = i18n._(defineMessage({
-          id: 'reply:error',
-          message: 'There was an error. Try again or contact us if you continue to have problems.'
-        }));
-        toast.error(error, { toastId: 'reply-response' });
+        toast.error(
+          i18n._(defineMessage({
+            id: 'reply:error',
+            message: 'There was an error. Try again or contact us if you continue to have problems.'
+          })),
+          { toastId: 'reply-response' }
+        );
       });
   };
 
