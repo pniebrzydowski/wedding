@@ -14,6 +14,10 @@ order: 1
 
 Free cancellation until 2 days before arrival. 50% up one day before.
 
+#### Parking
+
+Free private parking is available on-location.
+
 #### Payment
 
 Payment can be made with bank card or cash on arrival.

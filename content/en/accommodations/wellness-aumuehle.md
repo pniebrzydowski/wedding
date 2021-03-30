@@ -9,3 +9,7 @@ order: 4
 #### Terms
 
 Free cancellation until 1 week before arrival. Access to the spa area and fitness room included.
+
+#### Parking
+
+Free private parking is available on-location.

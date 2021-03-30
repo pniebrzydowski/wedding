@@ -14,6 +14,10 @@ order: 1
 
 Kostenlose Stornierung bis 2 Tage vor der Ankunft. 50% bis einem Tag.
 
+#### Parkplatz
+
+Ein gratis privater Parkplatz liegt direkt vor Ort.
+
 #### Zahlung
 
 Die Zahlung können vor Ort mit Bankomat oder Bar bezahlen.

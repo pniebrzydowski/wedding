@@ -6,6 +6,10 @@ title: "By Car"
 
 Falls du vom Ausland einreist und ein Auto mietest, vergiss nicht zu prüfen, ob dein Führerschein auch in Östserreich gültig ist.
 
+#### Parkplätze
+
+Parkplätze sind kurz nach dem Eingang zum Schloss auf der rechten Seite, an der zweiten Biege der Auffahrt verfügbar.
+
 #### Von Linz
 
 Grein ist in circa 45 Minuten mit der B3 oder über die A1 via Ausfahrt Amstetten West, B119 und B3 erreichbar.

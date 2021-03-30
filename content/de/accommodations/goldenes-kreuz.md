@@ -10,3 +10,7 @@ order: 5
 #### Bedingungen
 
 Kostenlose Stornierung bis 3 Monate vor der Ankunft. 40% bis 1 Monat. 70% bis eine Woche.
+
+#### Parkplatz
+
+Es gibt keinen privaten Parkplatz zur Verfügung, aber gratis öffentliche Parkplätze sind in der Nähe.

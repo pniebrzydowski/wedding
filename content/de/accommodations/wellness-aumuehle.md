@@ -6,6 +6,11 @@ distance: 7000
 order: 4
 ---
 
-#### Terms
+#### Bedingungen
 
 Kostenlose Stornierung bis 1 Woche vor der Ankunft. Eingang zu den Wellness- und Fitnessbereiche inkludiert.
+
+#### Parkplatz
+
+Ein gratis privater Parkplatz liegt direkt vor Ort.
+

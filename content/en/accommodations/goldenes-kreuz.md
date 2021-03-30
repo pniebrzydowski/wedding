@@ -10,3 +10,7 @@ order: 5
 #### Terms
 
 Free cancellation until 3 months before arrival. 40% up to 1 month before. 70% up to one week before.
+
+#### Parking
+
+There is no private parking available, but free public parking should be available nearby. 

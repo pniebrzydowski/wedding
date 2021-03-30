@@ -16,6 +16,10 @@ order: 3
 
 The single rooms have two twin beds, and can also be booked by 2 people for 80€.
 
+#### Parking
+
+Free private parking is available on-location.
+
 #### Terms
 
 Free cancellation until 3 weeks before arrival.

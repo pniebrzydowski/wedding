@@ -16,6 +16,10 @@ order: 3
 
 Die Einzelzimmer haben zwei Einzelbetten und können auch als Doppelzimmer für 80€ gebucht werden.
 
+#### Parkplatz
+
+Ein gratis privater Parkplatz liegt direkt vor Ort.
+
 #### Bedingungen
 
 Kostenlose Stornierung bis 3 Wochen vor der Ankunft.

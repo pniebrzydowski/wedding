@@ -6,6 +6,10 @@ title: "By Car"
 
 If you are travelling from outside of Austria and plan to rent a car, be sure to check whether your driving license is valid in Austria. A US driver's license is **only valid if accompanied by an international driver's permit**, which can be obtained from AAA. More information about driving as an American in Austria is available <a href="https://at.usembassy.gov/u-s-citizen-services/local-resources-of-u-s-citizens/living-in-austria/motoringdrivers-license/" target="_blank" rel="noreferrer">from the US Embassy website</a>.
 
+#### Parking
+
+Parking is available just inside the entrance to the castle on the right side at the second curve of the driveway.
+
 #### From Linz
 
 Grein can be reached in about 45 minutes via route B3, or via the A1 highway to Route B119 and later B3 via the Amstetten West exit.
