@@ -10,4 +10,4 @@ This is the only lodging available on <a href="https://www.booking.com/hotel/at/
 
 #### Terms
 
-Free cancellation until 2 days prior to arrival. Breakfast included.
+Free cancellation until 2 days prior to arrival.

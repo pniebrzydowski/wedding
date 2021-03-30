@@ -10,4 +10,4 @@ Dieses Hotel ist die einzige Unterkunft auf <a href="https://www.booking.com/hot
 
 #### Terms
 
-Kostenlose Stornierung bis 2 Tage vor der Ankunft. Frühstück inkludiert.
+Kostenlose Stornierung bis 2 Tage vor der Ankunft.

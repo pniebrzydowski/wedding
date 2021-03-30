@@ -8,4 +8,4 @@ order: 4
 
 #### Terms
 
-Free cancellation until 1 week before arrival. Breakfast and access to the spa area and fitness room included.
+Free cancellation until 1 week before arrival. Access to the spa area and fitness room included.

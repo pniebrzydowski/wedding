@@ -18,7 +18,7 @@ Die Einzelzimmer haben zwei Einzelbetten und können auch als Doppelzimmer für 
 
 #### Bedingungen
 
-Kostenlose Stornierung bis 3 Wochen vor der Ankunft. Frühstück inkludiert.
+Kostenlose Stornierung bis 3 Wochen vor der Ankunft.
 
 #### Zahlung
 

@@ -12,7 +12,7 @@ order: 1
 
 #### Terms
 
-Free cancellation until 2 days before arrival. 50% up one day before. Breakfast included.
+Free cancellation until 2 days before arrival. 50% up one day before.
 
 #### Payment
 

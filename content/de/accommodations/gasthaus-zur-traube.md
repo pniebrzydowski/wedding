@@ -12,7 +12,7 @@ order: 1
 
 #### Bedingungen
 
-Kostenlose Stornierung bis 2 Tage vor der Ankunft. 50% bis einem Tag. Frühstück inkludiert.
+Kostenlose Stornierung bis 2 Tage vor der Ankunft. 50% bis einem Tag.
 
 #### Zahlung
 

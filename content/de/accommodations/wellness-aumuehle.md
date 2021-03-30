@@ -8,4 +8,4 @@ order: 4
 
 #### Terms
 
-Kostenlose Stornierung bis 1 Woche vor der Ankunft. Frühstück und Eingang zu den Wellness- und Fitnessbereiche inkludiert.
+Kostenlose Stornierung bis 1 Woche vor der Ankunft. Eingang zu den Wellness- und Fitnessbereiche inkludiert.

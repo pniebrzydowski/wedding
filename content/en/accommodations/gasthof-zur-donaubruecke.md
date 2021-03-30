@@ -18,7 +18,7 @@ The single rooms have two twin beds, and can also be booked by 2 people for 80â‚
 
 #### Terms
 
-Free cancellation until 3 weeks before arrival. Breakfast included.
+Free cancellation until 3 weeks before arrival.
 
 #### Payment
 
