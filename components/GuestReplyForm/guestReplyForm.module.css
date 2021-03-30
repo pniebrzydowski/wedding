@@ -4,8 +4,8 @@
 
 .listItem + .listItem {
   border-top: 1px solid lightgray;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .header {

@@ -17,11 +17,11 @@ msgstr ""
 msgid "accommodation:distance"
 msgstr "Entfernung vom Schloss: {distance}m"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:42
+#: components/AccommodationInfo/AccommodationInfo.tsx:37
 msgid "accommodation:doubleRooms"
 msgstr "Doppelzimmer"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:37
+#: components/AccommodationInfo/AccommodationInfo.tsx:47
 msgid "accommodation:familyRooms"
 msgstr "Familienzimmer (4)"
 
@@ -37,7 +37,7 @@ msgstr "Reserviert bis:"
 msgid "accommodation:rooms"
 msgstr "Zimmer"
 
-#: components/AccommodationInfo/AccommodationInfo.tsx:47
+#: components/AccommodationInfo/AccommodationInfo.tsx:42
 msgid "accommodation:singleRooms"
 msgstr "Einzelzimmer"
 
@@ -80,58 +80,61 @@ msgstr "Veranstaltungsort"
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:61
-#: components/GuestReplyForm/GuestReplyForm.tsx:61
+#: components/ReplyGuestList/ReplyGuestList.tsx:81
 msgid "reply:error"
 msgstr "Es gab einen Fehler. Versuch es nochmal, oder kontaktiere uns falls du weiter Probleme hast."
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:99
+#: components/GuestReplyForm/GuestReplyForm.tsx:32
 msgid "reply:labels.answer"
 msgstr "Antwort"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:100
+#: components/GuestReplyForm/GuestReplyForm.tsx:33
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Diätvorschriften"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:101
+#: components/GuestReplyForm/GuestReplyForm.tsx:34
 msgid "reply:labels.otherComment"
 msgstr "Andere Kommentare"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:103
+#: components/GuestReplyForm/GuestReplyForm.tsx:36
 msgid "reply:labels.songRequest"
 msgstr "Liedwunsch"
+
+#: components/ReplyGuestList/ReplyGuestList.tsx:58
+msgid "reply:loading"
+msgstr "Ladet..."
 
 #: components/InviteNotFound/InviteNotFound.tsx:4
 msgid "reply:noInvite"
 msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:80
+#: components/GuestReplyForm/GuestReplyForm.tsx:21
 msgid "reply:options.no"
 msgstr "Leider muss ich ablehnen"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:73
+#: components/GuestReplyForm/GuestReplyForm.tsx:14
 msgid "reply:options.yes"
 msgstr "Freu mich schon!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:95
+#: components/ReplyGuestList/ReplyGuestList.tsx:97
 msgid "reply:save"
 msgstr "Speichern"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:104
+#: components/GuestReplyForm/GuestReplyForm.tsx:37
 msgid "reply:songRequestDisclaimer"
 msgstr "Keine Garantie"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:30
+#: components/ReplyGuestList/ReplyGuestList.tsx:23
 msgid "reply:success.attending"
-msgstr "Wir freuen uns, dich da zu sehen!"
+msgstr "{numberOfGuests, plural, one {Wir freuen uns, dich da zu sehen!} other {Wir freuen uns, euch da zu sehen!}}"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:24
+#: components/ReplyGuestList/ReplyGuestList.tsx:40
 msgid "reply:success.noResponse"
-msgstr "Vielen Dank für deine Antwort, bitte sag uns Bescheid, ob du kommen kannst!"
+msgstr "Vielen Dank für die Antwort!"
 
-#: components/GuestReplyForm/GuestReplyForm.tsx:35
+#: components/ReplyGuestList/ReplyGuestList.tsx:32
 msgid "reply:success.notAttending"
-msgstr "Tut uns lied, dass du nicht kommen kannst. Wir hoffen dich bald zu sehen!"
+msgstr "{numberOfGuests, plural, one {Tut uns lied, dass du nicht kommen kannst. Wir hoffen dich bald zu sehen!} other {Tut uns lied, dass ihr nicht kommen könnt. Wir hoffen euch bald zu sehen!}}"
 
 #: components/Layout/Layout.tsx:7
 msgid "siteTitle"
