@@ -52,11 +52,6 @@ function AccommodationInfo({ accommodation: {
             </tr>
           </thead>
           <tbody>
-            {costFamily && <tr>
-              <td><Trans id="accommodation:familyRooms">Family Rooms (4)</Trans></td>
-              {isBlocked && blockedFamily && <td>{blockedFamily}</td>}
-              <td>€ {costFamily}</td>
-            </tr>}
             {costDouble && <tr>
               <td><Trans id="accommodation:doubleRooms">Double Rooms</Trans></td>
               {isBlocked && blockedDouble && <td>{blockedDouble}</td>}
@@ -66,6 +61,11 @@ function AccommodationInfo({ accommodation: {
               <td><Trans id="accommodation:singleRooms">Single Rooms</Trans></td>
               {isBlocked && blockedSingle && <td>{blockedSingle}</td>}
               <td>€ {costSingle}</td>
+            </tr>}
+            {costFamily && <tr>
+              <td><Trans id="accommodation:familyRooms">Family Rooms (4)</Trans></td>
+              {isBlocked && blockedFamily && <td>{blockedFamily}</td>}
+              <td>€ {costFamily}</td>
             </tr>}
           </tbody>
         </Table>
