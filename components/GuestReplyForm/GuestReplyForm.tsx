@@ -56,17 +56,12 @@ function GuestReplyForm(
     comment
   }: Partial<Guest>) => {
     const newData: Partial<Guest> = {
-      attending
+      attending,
+      dietaryNeeds,
+      songRequest,
+      comment
     };
-    if (dietaryNeeds) {
-      newData.dietaryNeeds = dietaryNeeds;
-    }
-    if (songRequest) {
-      newData.songRequest = songRequest;
-    }
-    if (comment) {
-      newData.comment = comment;
-    }
+    console.log(newData);
 
     return firebase.firestore
       .collection('guests')
@@ -135,7 +130,7 @@ function GuestReplyForm(
             />
             <Textarea
               formName="guest"
-              fieldName="otherComment"
+              fieldName="comment"
               label={<Trans id="reply:labels.otherComment">Other comments</Trans>}
               defaultValue={comment}
             />
