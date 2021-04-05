@@ -16,6 +16,8 @@
   top: 1rem;
   right: 1rem;
   z-index: 1;
+  padding: 0.7rem;
+  min-height: 0;
 }
 @media screen and (min-width: 700px) {
   .mobileMenuTrigger {
@@ -53,8 +55,17 @@
 
 .langLink {
   font-size: 0.8em;
-  margin-left: 2rem;
-  padding: 1rem;
+}
+@media screen and (max-width: 699px) {
+  .langLink {
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .langLink {
+    margin-left: 2rem;
+    padding: 1rem;
+  }
 }
 
 .activeLink {
