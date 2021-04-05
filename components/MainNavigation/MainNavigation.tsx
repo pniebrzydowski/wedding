@@ -35,6 +35,17 @@ const MainNavigation = (): ReactElement => {
               </li>
             );
           })}
+          <li>
+            {router.locale === 'en' ? (
+              <a className={[styles.navLink, styles.langLink].join(' ')} href={`de${router.pathname}`}>
+                DE
+              </a>
+            ) : (
+              <a className={[styles.navLink, styles.langLink].join(' ')} href={`${router.pathname}`}>
+                EN
+              </a>
+            )}
+          </li>
         </ul>
       </nav>
     </>

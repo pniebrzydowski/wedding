@@ -42,12 +42,19 @@
 .navLink {
   color: white;
   display: block;
+  line-height: 1rem;
   padding: 1rem 2rem;
 }
 
 .navLink:hover {
   background-color: rgb(128, 19, 19);
   text-decoration: none;
+}
+
+.langLink {
+  font-size: 0.8em;
+  margin-left: 2rem;
+  padding: 1rem;
 }
 
 .activeLink {
