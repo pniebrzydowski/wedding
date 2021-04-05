@@ -60,7 +60,7 @@ msgstr "Über uns"
 #: components/MainNavigation/routes.ts:49
 #: pages/accommodation.tsx:39
 msgid "pageTitle:accommodation"
-msgstr "Accommodation"
+msgstr "Accommodations"
 
 #: components/MainNavigation/routes.ts:41
 msgid "pageTitle:faq"

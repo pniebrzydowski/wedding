@@ -24,7 +24,7 @@ const changeLocale = async (localeCode: string) => {
 };
 
 const changeDatesLocale = async (localeCode: string) => {
-  await import(`dayjs/locale/${localeCode}`);
+  await import(`dayjs/locale/${localeCode}.js`);
   dayjs.locale(localeCode);
 };
 
@@ -33,7 +33,7 @@ function App({ Component, pageProps }: any): ReactElement {
   useEffect(() => {
     changeLocale(locale);
     changeDatesLocale(locale);
-  }, []);
+  }, [locale]);
 
   return (
     <I18nProvider i18n={i18n}>
