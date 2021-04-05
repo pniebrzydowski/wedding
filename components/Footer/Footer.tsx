@@ -20,7 +20,7 @@ const Footer = (): ReactElement => {
         </h4>
         <p>
           <Trans id="footer:publicGroup">
-            As so many people are travelling in and with the pandemic creeping in the background,
+            As so many people are travelling in and with the pandemic still lingering in the background,
             we thought it could be useful to have a public group chat where we can answer any of your questions.
             Also, it could provide an opportunity to organize groups for ride-sharing, to save money on the train,
             or travelling around before or after the wedding.

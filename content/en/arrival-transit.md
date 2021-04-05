@@ -2,7 +2,7 @@
 title: "By Public Transit"
 ---
 
-The castle is reachable via the nearest train station, Grein Stadt Bahnhof, which lies about 9 minutes away by foot. For the most up to date transit information, see the <a href="https://tickets.oebb.at/en/ticket" target="_blank" rel="noreferrer">Austrian Federal Railway</a> for the latest timetables and ticket purchases. Bus routes generally arrive at Grein Schiffstation (Donaulände), which is approximately 10 minutes walking from the castle.
+The castle is reachable via the nearest train station&#8212;Grein Stadt Bahnhof&#8212;which lies about 9 minutes away by foot. If you are staying at Gasthof "Zur Donaubrücke", a second station&#8212;Bahnhof Grein-Bad Kreuzen&#8212;is closer (about 20 minutes by foot). For the most up to date transit information, see the <a href="https://tickets.oebb.at/en/ticket" target="_blank" rel="noreferrer">Austrian Federal Railway</a> for the latest timetables and ticket purchases. Tickets can be bought online, on the ÖBB App, or from ticket machines at any train station. Major train stations will also have a customer service center for any questions as well as purchasing tickets. Bus routes generally arrive at Grein Schiffstation (Donaulände), which is approximately 10 minutes walking from the castle.
 
 #### From Linz
 

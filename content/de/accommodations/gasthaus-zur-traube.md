@@ -20,4 +20,4 @@ Ein gratis privater Parkplatz liegt direkt vor Ort.
 
 #### Zahlung
 
-Die Zahlung können vor Ort mit Bankomat oder Bar bezahlen.
+Die Zimmer können vor Ort mit Bankomat oder Bar bezahlt werden.

@@ -26,6 +26,6 @@ Ein gratis privater Parkplatz liegt direkt vor Ort.
 
 #### Zahlung
 
-Die Zahlung können vor Ort mit Bankomat oder Bar bezahlen.
+Die Zimmer können vor Ort mit Bankomat oder Bar bezahlt werden.
 
 <a href="https://www.gasthof-froschauer.at/downloads/Folder_%202017.pdf" target="_blank" rel="noreferrer">Zusätzliche Information (PDF)</a>

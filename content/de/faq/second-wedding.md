@@ -1,5 +1,5 @@
 ---
-title: "Plant ihr auch in der USA zu feiern?"
+title: "Gibt es auch eine Feier in der USA?"
 order: 8
 ---
 
@@ -7,4 +7,4 @@ Wir freuen uns darauf, mit unseren Familien und Freuden von der ganzen Welt zu f
 
 Allerdings, mit einem sehr internationalen Kreis, verstehen wir auch, dass es nicht für alle einfach wäre, die lange Reise zu machen. Vor allem, wird es schwierig für diejenigen, die aus der USA einreisen müssen, besonders während einer Pandemie.
 
-Deswegen, planen wir eine lockere Feier in der Zukunft in der Nähe von Detrot. Wir haben noch keinen festen Plan, aber vorsichtig werden sie irgendwann am Ende Juni oder Anfang Juli 2022 stattfinden. Auf dieser Feier, freuen wir uns auf eure ganze Familien! Wir ermutigen alle von außerhalb der USA, diese Feier auch teilzunehmen!
+Deswegen, planen wir eine lockere Feier in der Zukunft in der Nähe von Detroit. Wir haben noch keinen festen Plan, aber vorsichtig werden sie irgendwann am Ende Juni oder Anfang Juli 2022 stattfinden. Auf dieser Feier, freuen wir uns auf eure ganze Familien! Wir ermutigen alle von außerhalb der USA, diese Feier auch teilzunehmen!
