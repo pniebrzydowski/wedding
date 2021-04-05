@@ -24,3 +24,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+.footerWrapper {
+  border-top:1px solid rgb(104, 11, 11);
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}

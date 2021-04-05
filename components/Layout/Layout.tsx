@@ -3,6 +3,7 @@ import { defineMessage } from '@lingui/macro';
 
 import Head from 'next/head';
 import { ReactElement, ReactNode } from 'react';
+import Footer from '../Footer';
 
 import MainNavigation from '../MainNavigation';
 
@@ -42,6 +43,11 @@ const Layout = ({ children, headerImageUrl }: Props): ReactElement => {
       {headerImageUrl && <img className={styles.headerImage} src={`/images/${headerImageUrl}`} />}
       <div className={styles.container}>
         <main>{children}</main>
+      </div>
+      <div className={styles.footerWrapper}>
+        <div className={styles.container}>
+          <Footer />
+        </div>
       </div>
     </>
   );

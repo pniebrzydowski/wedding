@@ -73,7 +73,6 @@ const getRoutes = (): Route[] => {
 export const getRouteUrl = (name: RouteName): string => {
   const routes = getRoutes();
   const idx = routes.findIndex(v => v.name === name);
-  console.log(idx, name);
   return routes[idx].url;
 };
 

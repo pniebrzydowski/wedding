@@ -49,6 +49,30 @@ msgstr "Mit dem Auto"
 msgid "arrival:byTransit"
 msgstr "Mit dem öffentlichen Verkehr"
 
+#: components/Footer/Footer.tsx:36
+msgid "footer:contact"
+msgstr "Falls du nicht in unseren {faqLink} finden kannst, wofür du suchst, kannst du in unserem <0>Gruppenchat auf Telegram</0> oder eine Mail per <1>christina.patrick.2021@gmail.com</1> schreiben."
+
+#: components/Footer/Footer.tsx:7
+msgid "footer:faqLink"
+msgstr "FAQs"
+
+#: components/Footer/Footer.tsx:15
+msgid "footer:publicGroup"
+msgstr "Da so viele Leute einreisen und die Pandemie noch im Hintergrund steht, haben wir gedacht, dass es nützlich sein könnte, eine öffentliche Chatgruppe zu haben, wo wir eure Fragen antworten können. Die Gruppe könnte auch eine Möglichkeit bieten, Gruppen für Mitfahrgelegentheit, Spartickets oder Reisegruppen vor oder nach der Hochzeit zu organisieren."
+
+#: components/Footer/Footer.tsx:33
+msgid "footer:questions"
+msgstr "Noch Fragen?"
+
+#: components/Footer/Footer.tsx:12
+msgid "footer:social"
+msgstr "Social"
+
+#: components/Footer/Footer.tsx:25
+msgid "footer:telegramLinkText"
+msgstr "Gruppe auf Telegram beitreten"
+
 #: components/HomeContent/HomeContent.tsx:16
 msgid "home:replyButtonLabel"
 msgstr "Sag uns, ob du dabei bist!"
@@ -58,7 +82,7 @@ msgid "pageTitle:about"
 msgstr "Über uns"
 
 #: components/MainNavigation/routes.ts:49
-#: pages/accommodation.tsx:39
+#: pages/accommodations.tsx:39
 msgid "pageTitle:accommodation"
 msgstr "Übernachtung"
 
@@ -136,6 +160,6 @@ msgstr "Vielen Dank für die Antwort!"
 msgid "reply:success.notAttending"
 msgstr "{numberOfGuests, plural, one {Tut uns lied, dass du nicht kommen kannst. Wir hoffen dich bald zu sehen!} other {Tut uns lied, dass ihr nicht kommen könnt. Wir hoffen euch bald zu sehen!}}"
 
-#: components/Layout/Layout.tsx:7
+#: components/Layout/Layout.tsx:8
 msgid "siteTitle"
 msgstr "Christina & Patricks Hochzeit"

@@ -49,6 +49,30 @@ msgstr "By Car"
 msgid "arrival:byTransit"
 msgstr "By Public Transit"
 
+#: components/Footer/Footer.tsx:36
+msgid "footer:contact"
+msgstr "If you can't find what you're looking for in our {faqLink}, you can ask in our <0>Group Chat on Telegram</0> or write us an email at <1>christina.patrick.2021@gmail.com</1>."
+
+#: components/Footer/Footer.tsx:7
+msgid "footer:faqLink"
+msgstr "FAQs"
+
+#: components/Footer/Footer.tsx:15
+msgid "footer:publicGroup"
+msgstr "As so many people are travelling in and with the pandemic creeping in the background, we thought it could be useful to have a public group chat where we can answer any of your questions. Also, it could provide an opportunity to organize groups for ride-sharing, to save money on the train, or travelling around before or after the wedding."
+
+#: components/Footer/Footer.tsx:33
+msgid "footer:questions"
+msgstr "Have questions?"
+
+#: components/Footer/Footer.tsx:12
+msgid "footer:social"
+msgstr "Social"
+
+#: components/Footer/Footer.tsx:25
+msgid "footer:telegramLinkText"
+msgstr "Join the telegram group here"
+
 #: components/HomeContent/HomeContent.tsx:16
 msgid "home:replyButtonLabel"
 msgstr "Let us know if you can make it!"
@@ -58,7 +82,7 @@ msgid "pageTitle:about"
 msgstr "Über uns"
 
 #: components/MainNavigation/routes.ts:49
-#: pages/accommodation.tsx:39
+#: pages/accommodations.tsx:39
 msgid "pageTitle:accommodation"
 msgstr "Accommodations"
 
@@ -136,6 +160,6 @@ msgstr "Thanks for your response!"
 msgid "reply:success.notAttending"
 msgstr "{numberOfGuests, plural, one {Sorry that you can't join us, hope to see you soon!} other {Sorry that you can't join us, hope to see you soon!}}"
 
-#: components/Layout/Layout.tsx:7
+#: components/Layout/Layout.tsx:8
 msgid "siteTitle"
 msgstr "Christina & Patrick's Wedding"
