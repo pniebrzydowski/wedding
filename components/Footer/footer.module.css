@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.container > div {
+  min-width: 320px;
+}
+
+@media screen and (max-width: 699px) {
+  .container > div + div {
+    margin-top: 2rem;
+}
+}
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: row;
+  }
+  .container > div + div {
+    margin-left: 2rem;
+  }
+}
+
+.container h4 {
+  margin-top: 0;
+  color: rgb(104, 11, 11);
+}
+
+.telegramLink {
+  display: flex;
+  align-items: center;
+}
+.telegramIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
