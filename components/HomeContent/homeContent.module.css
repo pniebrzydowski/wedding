@@ -23,15 +23,6 @@
   width: 400px;
 }
 
-.buttonWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 .buttonWrapper button {
   width: auto;
-}
-.buttonWrapper button + button {
-  margin-left: 1rem;
 }

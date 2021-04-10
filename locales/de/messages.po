@@ -73,9 +73,13 @@ msgstr "Social"
 msgid "footer:telegramLinkText"
 msgstr "Gruppe auf Telegram beitreten"
 
-#: components/HomeContent/HomeContent.tsx:16
+#: components/HomeContent/HomeContent.tsx:22
 msgid "home:replyButtonLabel"
-msgstr "Sag uns, ob du dabei bist!"
+msgstr "Jetzt antworten"
+
+#: components/HomeContent/HomeContent.tsx:14
+msgid "home:replyText"
+msgstr "Bitte sag uns bis 1. August Bescheid, ob du dabei bist"
 
 #: pages/about.tsx:32
 msgid "pageTitle:about"

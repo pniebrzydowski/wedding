@@ -18,15 +18,22 @@ const HomeContent = ({ basicInfo }: Props): ReactElement => {
         <img src="/images/christina-pat-budapest.jpeg" />
       </div>
       <div className={styles.buttonWrapper}>
-        <Link href={getRouteUrl(RouteName.Reply)}>
-          <a>
-            <Button buttonType="primary">
-              <Trans id="home:replyButtonLabel">
-                Let us know if you can make it!
-              </Trans>
-            </Button>
-          </a>
-        </Link>
+        <p>
+          <Trans id="home:replyText">
+            Please let us know if you can make it by August 1st
+          </Trans>
+        </p>
+        <p>
+          <Link href={getRouteUrl(RouteName.Reply)}>
+            <a>
+              <Button buttonType="primary">
+                <Trans id="home:replyButtonLabel">
+                Reply now
+                </Trans>
+              </Button>
+            </a>
+          </Link>
+        </p>
       </div>
     </div>
   );
