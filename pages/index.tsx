@@ -1,10 +1,11 @@
-import { ReactElement } from 'react';
+import { ReactElement, useContext } from 'react';
 
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import { getTranslatedSiteTitle } from '../components/Layout';
 import SplashScreen from '../components/SplashScreen';
+import { FirebaseContext } from '../firebase';
 
 const saveInviteId = (inviteId: string) => {
   localStorage.setItem('inviteId', inviteId);
@@ -12,9 +13,18 @@ const saveInviteId = (inviteId: string) => {
 
 function Index(): ReactElement {
   const { query } = useRouter();
+  const firebase = useContext(FirebaseContext);
 
   if (query.inviteId) {
-    saveInviteId(query.inviteId as string);
+    const id = query.inviteId as string;
+    saveInviteId(id);
+
+    firebase.firestore
+      .collection('invites')
+      .doc(id)
+      .update({
+        opened: true
+      });
   }
 
   return (

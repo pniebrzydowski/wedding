@@ -15,7 +15,8 @@ export type InviteLanguage = 'en' | 'de';
 
 export interface Invite {
   id: string;
-  lang: InviteLanguage
+  lang: InviteLanguage;
+  opened?: boolean;
 }
 
 export type Attending = '' | 'yes' | 'no';

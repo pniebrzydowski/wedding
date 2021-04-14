@@ -1,9 +1,11 @@
-import { ReactElement } from 'react';
+import { ReactElement, useState } from 'react';
 
 import useCollectionDocsData from '../../../firebase/hooks/useCollectionDocsData';
-import { Guest, Invite, InviteLanguage } from '../../../firebase/types';
+import { Guest, Invite } from '../../../firebase/types';
 
 import styles from './inviteList.module.css';
+import formStyles from '../../form/form.module.css';
+import Grid from '../../ui/Grid';
 
 interface InviteWithGuests extends Invite {
   guests: Guest[];
@@ -20,41 +22,25 @@ const getInvitesWithGuests = (invites: Invite[], guests: Guest[]): InviteWithGue
   return invitesWithGuests;
 };
 
-const getInviteInfo = (invite: InviteWithGuests): { names: string[], emails: string[], salutations: string[] } => {
-  const { guests, lang } = invite;
+const getInviteInfo = (invite: InviteWithGuests): { names: string[], emails: string[] } => {
+  const { guests } = invite;
 
   const names: string[] = [];
   const emails: string[] = [];
-  const salutations: string[] = [];
   guests.forEach(guest => {
     names.push(guest.name);
     if (guest.email) {
       emails.push(guest.email);
     }
-    const salutation = lang === 'en'
-      ? 'Dear'
-      : `Liebe${guest.gender === 'm' ? 'r' : ''}`;
-
-    salutations.push(
-      `${salutation} ${guest.name}`
-    );
   });
-  return { names, emails, salutations };
-};
-
-const getEmailLink = (invite: Invite, emails: string[], salutations: string[]): string => {
-  const subject = invite.lang === 'en'
-    ? 'Wallner-Niebrzydowski Wedding Invitation!'
-    : 'Wallner-Niebrzydowski Hochzeitseinladung!';
-  const inviteLink = `https://christina-patrick.vercel.app/?inviteId=${invite.id}`;
-  const salutation = salutations.join(',%20');
-  return `mailto:${emails}?subject=${subject}&body=${salutation}%0d%0a%0d%0a${inviteLink}`;
+  return { names, emails };
 };
 
 function InviteList(): ReactElement {
   const { data: invites } = useCollectionDocsData<Invite>({
     collection: 'invites'
   });
+  const [openedFilter, setOpenedFilter] = useState<boolean>();
 
   const { loading, data: guests } = useCollectionDocsData<Guest>({
     collection: 'guests',
@@ -66,44 +52,82 @@ function InviteList(): ReactElement {
   }
 
   const invitesWithGuests = getInvitesWithGuests(invites, guests);
+  const opened = invitesWithGuests.filter(i => i.opened).length;
+
+  const visibleInvites = openedFilter === undefined
+    ? invitesWithGuests
+    : invitesWithGuests.filter(invite => 
+      openedFilter === false ? !invite.opened : invite.opened
+    );
 
   return (
-    <table className={styles.table}>
-      <thead>
-        <tr>
-          <th>Invite Id</th>
-          <th>Guest Names</th>
-          <th>Guest Emails</th>
-          <th>Link</th>
-        </tr>
-      </thead>
+    <>
+      <Grid>
+        <select className={formStyles.formField} onChange={e => {
+          if (e.target.value === 'true') {
+            setOpenedFilter(true);
+            return;
+          }
+          if (e.target.value === 'false') {
+            setOpenedFilter(false);
+            return;
+          }
+          setOpenedFilter(undefined);
+        }}>
+          {[
+            {
+              value: '',
+              label: 'Show all'
+            },
+            {
+              value: 'true',
+              label: 'Opened'
+            },
+            {
+              value: 'false',
+              label: 'Not opened'
+            }
+          ].map((option) => (
+            <option key={option.value} value={option.value}>{option.label}</option>
+          ))}
+        </select>
 
-      <tbody>
-        {invitesWithGuests.map(invite => {
-          const { names, emails, salutations } = getInviteInfo(invite);
-          return (
-            <tr key={invite.id}>
-              <td>{invite.id}</td>
-              <td>
-                {names.join(', ')}
-              </td>
-              <td>
-                {emails.join(', ')}
-              </td>
-              <td>
-                {emails && emails.length ? (
-                  <a href={getEmailLink(invite, emails, salutations)}>
-                    Email Link
-                  </a>
-                )
-                  : (<>No emails</>)
-                }
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table >
+        <button onClick={() => {
+          console.log(invitesWithGuests);
+        }}>Generate Invite Objects</button>
+      </Grid>
+
+      <table className={styles.table}>
+        <thead>
+          <tr>
+            <th>Invite Id</th>
+            <th>Guest Names</th>
+            <th>Guest Emails</th>
+            <th>Opened ({opened}/{invitesWithGuests.length})</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {visibleInvites.map(invite => {
+            const { names, emails } = getInviteInfo(invite);
+            return (
+              <tr key={invite.id}>
+                <td>{invite.id}</td>
+                <td>
+                  {names.join(', ')}
+                </td>
+                <td>
+                  {emails.join(', ')}
+                </td>
+                <td>
+                  {invite.opened ? <>&#10003;</> : ''}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
   );
 }
 
