@@ -19,11 +19,11 @@ Immediately following the ceremony, we will proceed downstairs into the beautifu
 
 #### 18:00 - Opening of Buffet
 
-Around 17:00, we will conclude the cocktail hour and begin moving back into the Rittersaal for dinner and an evening of fun. After everyone has had time to find their seats and get comfortable, the dinner buffet will open around 18:00. Vegetarian options will be included. If you have any special dietary needs, please include them in your reply, or reach out to us directly!
+Around 17:00, we will conclude the cocktail hour and begin moving back into the Rittersaal for dinner and an evening of fun, and the dinner buffet will open around 18:00. Vegetarian options will be included. If you have any special dietary needs, please include them in your reply, or reach out to us directly!
 
 An open bar will be available throughout the night, and <a href="https://www.duorotation.at/" target="_blank" rel="noreferrer">Duo Rotation</a> will be providing the entertainment after dinner.
 
-#### 11:30 - Midnight Snack
+#### 23:30 - Midnight Snack
 
 For a proper full night of partying, we think it's important to make sure everyone is properly fueled throughout the night. A small but hearty snack will be provided around midnight to keep everyone going.
 

@@ -18,8 +18,12 @@ Connections from Passau or Schärding take about 3 to 3.5 hours via 1-3 transfer
 
 #### Saving on Transit tickets
 
-Before buying a ticket, consider grouping together and utilizing the the <a href="https://www.oebb.at/de/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket" target="_blank" rel="noreferrer">Einfach-Raus Ticket</a>. The ticket is only valid on local trains (R-, CJX, REX, and S-Bahn) and not express trains (ICE, Railjet). When travelling with a group of 5, the price is only 47€ valid for one calendar day (as compared to €68,50 for 5 individual tickets from Linz, or around 200€ from Vienna).
+Before buying a ticket, consider grouping together and utilizing the the <a href="https://www.oebb.at/de/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket" target="_blank" rel="noreferrer">Einfach-Raus Ticket</a>. The ticket is good for 2-5 people, but is only valid on local trains (R, REX, CJX, & S) and not express trains (ICE, Railjet, Nightjet, EC, etc.).
 
-If you are arriving at the Munich airport, it is almost always best to purchase a <a href="https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml" target="_blank" rel="noreferrer">Bayern Ticket</a>. These tickets are similar to the Einfach-Raus Ticket in Austria, in that they are only available for use on local trains. However, even the cost for a single person (25€) is often lower than the cost to get from Munich to Austria. Most likely, the best route will be via a local train to Passau or Salzburg, while purchasing a separate ticket for the Austrian portion of the journey. They can be purchased online or at the airport DB ticket vending machines.
+If you are arriving at the Munich airport, it is almost always best to purchase a <a href="https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml" target="_blank" rel="noreferrer">Bayern Ticket</a>. These tickets are similar to the Einfach-Raus Ticket in Austria, in that they are only available for use on local trains, with the difference that they can also be used by even a single person. Eveen the cost for a single person (25€) is often lower than the cost to get from Munich to Austria. The Bayern Ticket is good only in Bavaria and can be purchased online or at the airport DB ticket vending machines.
 
-For both of these regional discount tickets, be sure to write your name on the ticket before departing on your journey!
+Most likely, the cheapest route from Munich to Grein would be via a local train to Passau or Salzburg, with a separate ticket for the Austrian portion of the journey. 
+
+For both of these regional discount tickets, be sure to write your name (in ink!) on the ticket before departing on your journey!
+
+Following "the early bird gets the worm," there are also "Sparschine" tickets offered by ÖBB for many connections, as long as they are purchased early enough in advance. These tickets start at 9,90€. However, flexibility is limited, as these tickets are good only for the specfic connection purchased.

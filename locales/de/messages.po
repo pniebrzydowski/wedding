@@ -51,7 +51,7 @@ msgstr "Mit dem öffentlichen Verkehr"
 
 #: components/Footer/Footer.tsx:36
 msgid "footer:contact"
-msgstr "Falls du etwas nicht in unseren {faqLink} finden kannst, kannst du gerne in unseren <0>Gruppenchat auf Telegram</0> oder eine Mail an <1>christina.patrick.2021@gmail.com</1> schreiben"
+msgstr "Falls du etwas nicht in unseren {faqLink} finden kannst, kannst du gerne in unseren <0>Gruppenchat auf Telegram</0> oder eine Mail an <1>christina.patrick.2021@gmail.com</1> schreiben"
 
 #: components/Footer/Footer.tsx:7
 msgid "footer:faqLink"
