@@ -4,8 +4,11 @@ title: "Übernachtung"
 
 ## Übernachtung
 
-Grein ist eine kleine, aber touristische Stadt direkt an der Donau. Aus diesem Grund, können die verfügbare Unterkünfte im Sommer ziemlich limitiert sein, und wir empfehlen eine Unterkunft so früh wie möglich zu buchen!
+Grein ist eine kleine aber touristische Stadt direkt an der Donau. Aus diesem Grund können die verfügbare Unterkünfte im Sommer ziemlich limitiert sein, weshalb wir empfehlen eine Unterkunft so früh wie möglich zu buchen!
 
-Um damit zu helfen, haben wir ein Zimmerkontingent für Freitag und Samstag in die folgende Hotels in der Nähe vorreserviert. Sie können direkt bei denen buchen, aber **bitte in der Buchungsanfrage hinweisen, dass du ein Teil der Hochzeit bist**. Wenn nicht anders angegeben, enthalten Doppelzimmer ein Doppelbett, Einzelzimmer ein Einzelbett, und Familenzimmer ein Doppelbett und zwei Einzelbetten. Frühstück ist in alle unten inkludiert.
+Bei untenstehenden Hotels wird für das Hochzeitswochenende ein Kontingent an Zimmern freigehalten, diese kannst du direkt über den Link in der Überschrift buchen. **Bitte weise in der Buchungsanfrage darauf hin, dass du ein Teil der Hochzeit bist**, damit du nicht abgewiesen wirst.
+Wenn nicht anders angegeben enthalten Doppelzimmer ein Doppelbett, Einzelzimmer ein Einzelbett und Familenzimmer ein Doppelbett und zwei Einzelbetten. Das Frühstück ist bei allen unten genannten Zimmern inkludiert.
 
-Es ist derzeit noch nicht fixiert, aber wir hoffen auch ein Kleinbus für Transport nach der Party (ca. 00:00 - 04:00) zu den unterschiedlichen Hotels in der Gegend zu organisieren.
+Nach der Party haben wir einen Shuttleservice organisiert. Ein Kleinbus wird euch zwischen ca. 00:00 und 04:00 vom Schloss zu den unterschiedlichen Hotels in der Gegend bringen.
+
+

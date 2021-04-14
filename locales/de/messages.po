@@ -51,7 +51,7 @@ msgstr "Mit dem öffentlichen Verkehr"
 
 #: components/Footer/Footer.tsx:36
 msgid "footer:contact"
-msgstr "Falls du etwas nicht in unseren {faqLink} finden kannst, kannst du gerne in unserem <0>Gruppenchat auf Telegram</0> oder eine Mail an <1>christina.patrick.2021@gmail.com</1> schreiben."
+msgstr "Falls du etwas nicht in unseren {faqLink} finden kannst, kannst du gerne in unseren <0>Gruppenchat auf Telegram</0> oder eine Mail an <1>christina.patrick.2021@gmail.com</1> schreiben"
 
 #: components/Footer/Footer.tsx:7
 msgid "footer:faqLink"
@@ -59,7 +59,7 @@ msgstr "FAQs"
 
 #: components/Footer/Footer.tsx:15
 msgid "footer:publicGroup"
-msgstr "Da so viele Leute einreisen und die Pandemie noch im Hintergrund steht, haben wir gedacht, dass es nützlich sein könnte, eine öffentliche Chatgruppe zu haben, wo wir eure Fragen antworten können. Die Gruppe könnte auch eine Möglichkeit bieten, Gruppen für Mitfahrgelegentheiten, Spartickets oder Reisegruppen vor oder nach der Hochzeit zu organisieren."
+msgstr "Nachdem so viele Leute einreisen und die Pandemie noch im Hintergrund steht, haben wir gedacht, es könnte nützlich sein eine öffentliche Chatgruppe zu haben, wo wir eure Fragen beantworten können. Die Chatgruppe könnte auch eine Möglichkeit bieten, Gruppen für Mitfahrgelegenheiten, Spartickets oder Reisegruppen vor oder nach der Hochzeit zu finden."
 
 #: components/Footer/Footer.tsx:33
 msgid "footer:questions"

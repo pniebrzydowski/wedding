@@ -4,4 +4,4 @@ title: "Schloss Greinburg"
 
 ## Schloss Greinburg
 
-Wir sind begeistert, unseren schönsten Tag beim _Schloss Greinburg_ in Grein an der Donau in Oberösterreich mit euch gemeinsam zu verbringen.
+Wir freuen uns, unseren schönsten Tag mit euch gemeinsam im_Schloss Greinburg_ in Grein an der Donau in Oberösterreich verbringen zu können.

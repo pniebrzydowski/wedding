@@ -3,16 +3,16 @@ title: "Welche Regeln und Richtlinien sollte beachten?"
 order: 6
 ---
 
-Das Schloss ist ein historisches Gebäude und hat ein paar Richtlinien, dass wir während der Feier beachten müssen.
+Das Schloss ist ein historisches Gebäude und damit es noch lange so gut erhalten bleibt gibt es ein paar Regeln, die zu befolgen sind.
 
 #### Speisen und Getränke
 
-Bitte beachte, dass Speisen und Getränke sind nur im Saal und in den Außenbereiche erlaubt.
+Bitte beachte, dass Speisen und Getränke nur im Saal und in den Außenbereichen erlaubt sind.
 
 #### Rauchen
 
-Das Rauchen ist in den Innenbereiche des Schlosses streng verboten. Im Hof und in anderen Außenbereiche ist es erlaubt, aber bitte dafür sorgen, dass die Zigarettenstummel ordentlich entsorgt werden.
+Das Rauchen ist im Innenbereich des Schlosses streng verboten. Draußen, im Hof und in den Arkaden ist es erlaubt, aber bitte sorg dafür, dass die Zigarettenstummel ordentlich entsorgt werden. 
 
 #### Schluss
 
-Es gibt keine bestimmte Schlusszeit, aber um 03:00 schließt die Bar und müssen wir anfangen abzubauen. Die Band spielt bis 02:00. Das Reinigungsteam kommt um 06:00 und bis dann muss alles abgebaut und fertig gemacht werden.
+Es gibt keine bestimmte Schlusszeit, aber um 03:00 schließt die Bar und wir müssen anfangen abzubauen. Die Band spielt bis 02:00. Das Reinigungsteam kommt um 06:00 und bis dahin muss alles fertig abgebaut.

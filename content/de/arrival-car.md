@@ -8,11 +8,10 @@ Falls du vom Ausland einreist und ein Auto mietest, vergiss nicht zu prüfen, ob
 
 #### Parkplätze
 
-Parkplätze sind kurz nach dem Eingang zum Schloss auf der rechten Seite, an der zweiten Biege der Auffahrt verfügbar.
-
+Parkplätze sind kurz nach der Einfahrt zum Schloss, auf der rechten Seite neben der zweiten Kurve (Linkskurve) verfügbar. 
 #### Von Linz
 
-Grein ist in circa 45 Minuten mit der B3 oder über die A1 via Ausfahrt Amstetten West, B119 und B3 erreichbar.
+Grein ist in circa 45 Minuten auf der B3 oder über die A1 via Ausfahrt Amstetten West, B119 und B3 erreichbar.
 
 #### Von Wien
 
