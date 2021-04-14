@@ -134,7 +134,7 @@ msgstr "Ladet..."
 
 #: components/InviteNotFound/InviteNotFound.tsx:4
 msgid "reply:noInvite"
-msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du die Website direkt vom Link in deiner Einladung eingetreten hast. Wenn es noch Probleme gibt, bitte kontaktieren uns!"
+msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du durch den Link in der Einladung gekommen bist. Wenn es noch Probleme gibt, bitte kontaktiere uns!"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:21
 msgid "reply:options.no"

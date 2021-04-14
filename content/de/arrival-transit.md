@@ -18,7 +18,7 @@ Verbindungen von Passau oder Schärding brauchen circa 3 bis 3,5 Stunden und man
 
 #### Beim öffentlichen Verkehr sparen
 
-Vor dem Kauf der Fahrkarte, denk darüber nach, eine Gruppe zusammen zu stellen und das<a href="https://www.oebb.at/de/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket" target="_blank" rel="noreferrer">Einfach-Raus Ticket</a> zu benutzen. Dieses Ticket ist für 2-5 Personen, gilt jedoch nur für den Nah- und Regionalverkehr (R-, CJX, REX, und S-Bahn).
+Vor dem Kauf der Fahrkarte, denk darüber nach, eine Gruppe zusammen zu stellen und das <a href="https://www.oebb.at/de/tickets-kundenkarten/schueler-gruppen/einfach-raus-ticket" target="_blank" rel="noreferrer">Einfach-Raus Ticket</a> zu benutzen. Dieses Ticket ist für 2-5 Personen, gilt jedoch nur für den Nah- und Regionalverkehr (R-, CJX, REX, und S-Bahn).
 
 Bei Ankunft am Flughafen München, ist es fast immer besser das <a href="https://www.bahn.com/en/view/offers/regional/regional-day-ticket-for-bavaria.shtml" target="_blank" rel="noreferrer">Bayern Ticket</a> zu kaufen. Das Ticket ist ähnlich zum Einfach-Raus Ticket in Österreich, da es nur für den Nahverkehr- u. Regionalverkehr gilt, mit dem Unterschied, dass das Bayern Ticket auch für nur eine Person gekauft werden kann. Es ist auch für eine Einzelperson meistens bereits günstiger als ein normales Einzelticket nach Österreich. Das Bayern-Ticket gilt nur in Bayern und kann Online oder beim Ticketautomat im Flughafen gekauft werden.
 
