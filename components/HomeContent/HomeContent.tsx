@@ -20,7 +20,7 @@ const HomeContent = ({ basicInfo }: Props): ReactElement => {
       <div className={styles.buttonWrapper}>
         <p>
           <Trans id="home:replyText">
-            Please let us know if you can make it by August 1st
+            Please let us know if you can make it by July 31st
           </Trans>
         </p>
         <p>

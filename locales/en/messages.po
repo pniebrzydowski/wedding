@@ -79,7 +79,7 @@ msgstr "Reply now"
 
 #: components/HomeContent/HomeContent.tsx:14
 msgid "home:replyText"
-msgstr "Please let us know if you can make it by August 1st"
+msgstr "Please let us know if you can make it by July 31st"
 
 #: pages/about.tsx:32
 msgid "pageTitle:about"

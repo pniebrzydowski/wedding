@@ -79,7 +79,7 @@ msgstr "Jetzt antworten"
 
 #: components/HomeContent/HomeContent.tsx:14
 msgid "home:replyText"
-msgstr "Bitte sag uns bis 1. August Bescheid, ob du dabei bist"
+msgstr "Bitte sag uns bis 31. Juli Bescheid, ob du dabei bist"
 
 #: pages/about.tsx:32
 msgid "pageTitle:about"
