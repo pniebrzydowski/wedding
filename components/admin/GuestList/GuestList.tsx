@@ -7,7 +7,7 @@ import styles from './guestList.module.css';
 import formStyles from '../../form/form.module.css';
 import dayjs from 'dayjs';
 
-type AttendingValue = 'yes' | 'no' | 'no-response' | 'any-response' | 'all';
+type AttendingValue = 'yes' | 'no' | 'no-response' | 'any-response' | 'dietary' | 'song' | 'comment' | 'all';
 
 function GuestList(): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
@@ -23,10 +23,19 @@ function GuestList(): ReactElement {
     ? guests
     : guests.filter(guest => {
       if (attendingFilter === 'no-response') {
-        return guest.attending;
+        return !guest.attending;
       }
       if (attendingFilter === 'any-response') {
         return !!guest.attending;
+      }
+      if (attendingFilter === 'dietary') {
+        return guest.attending && !!guest.dietaryNeeds;
+      }
+      if (attendingFilter === 'song') {
+        return guest.attending && !!guest.songRequest;
+      }
+      if (attendingFilter === 'comment') {
+        return !!guest.comment;
       }
       return guest.attending === attendingFilter;
     });
@@ -38,6 +47,12 @@ function GuestList(): ReactElement {
     if (dayjs(a.replyAt) > dayjs(b.replyAt)) { return -1; }
     return 0;
   });
+
+  const showAttedingColumn = attendingFilter !== 'dietary' && attendingFilter !== 'song';
+  const showCommentColumn = attendingFilter !== 'dietary' && attendingFilter !== 'song';
+  const showDietaryColumn = attendingFilter !== 'song' && attendingFilter !== 'comment';
+  const showSongColumn = attendingFilter !== 'dietary' && attendingFilter !== 'comment';
+  const showTimeColumn = attendingFilter !== 'dietary' && attendingFilter !== 'song';
 
   return (
     <div>
@@ -62,6 +77,18 @@ function GuestList(): ReactElement {
           {
             value: 'any-response',
             label: 'Any response'
+          },
+          {
+            value: 'dietary',
+            label: 'Dietary restrictions'
+          },
+          {
+            value: 'song',
+            label: 'Song requests'
+          },
+          {
+            value: 'comment',
+            label: 'Has comment'
           }
         ].map((option) => (
           <option key={option.value} value={option.value}>{option.label}</option>
@@ -73,22 +100,22 @@ function GuestList(): ReactElement {
         <thead>
           <tr>
             <th>Guest Name</th>
-            <th>Attending</th>
-            <th>Comment</th>
-            <th>Dietary</th>
-            <th>Song</th>
-            <th>Time</th>
+            {showAttedingColumn && <th>Attending</th>}
+            {showCommentColumn && <th>Comment</th>}
+            {showDietaryColumn && <th>Dietary Restrictions</th>}
+            {showSongColumn && <th>Song Requests</th>}
+            {showTimeColumn && <th>Time</th>}
           </tr>
         </thead>
 
         <tbody>
           {sortedGuests.map((guest) => <tr key={guest.id}>
             <td>{guest.name}</td>
-            <td>{guest.attending}</td>
-            <td>{guest.comment}</td>
-            <td>{guest.dietaryNeeds}</td>
-            <td>{guest.songRequest}</td>
-            <td className={styles.noWrap}>{guest.replyAt}</td>
+            {showAttedingColumn && <td>{guest.attending}</td>}
+            {showCommentColumn && <td>{guest.comment}</td>}
+            {showDietaryColumn && <td>{guest.dietaryNeeds}</td>}
+            {showSongColumn && <td>{guest.songRequest}</td>}
+            {showTimeColumn && <td className={styles.noWrap}>{guest.replyAt}</td>}
           </tr>)}
         </tbody>
       </table>
