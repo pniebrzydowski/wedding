@@ -96,6 +96,7 @@ function GuestList(): ReactElement {
       </select>
 
       <p>Total: {sortedGuests.length} / {guests.length}</p>
+
       <table className={styles.table}>
         <thead>
           <tr>

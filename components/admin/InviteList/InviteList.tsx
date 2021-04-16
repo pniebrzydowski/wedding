@@ -107,6 +107,8 @@ function InviteList(): ReactElement {
         }}>Generate Invite Objects</button>
       </Grid>
 
+      <p>Total: {sortedInvites.length} / {invitesWithGuests.length}</p>
+
       <table className={styles.table}>
         <thead>
           <tr>
