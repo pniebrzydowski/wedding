@@ -6,6 +6,7 @@ import { Guest, Invite } from '../../../firebase/types';
 import styles from './inviteList.module.css';
 import formStyles from '../../form/form.module.css';
 import Grid from '../../ui/Grid';
+import dayjs from 'dayjs';
 
 interface InviteWithGuests extends Invite {
   guests: Guest[];
@@ -59,6 +60,15 @@ function InviteList(): ReactElement {
     : invitesWithGuests.filter(invite => 
       openedFilter === false ? !invite.opened : invite.opened
     );
+  
+  const sortedInvites = visibleInvites.sort((a, b) => {
+    if (!a.openedAt) { return 1; }
+    if (!b.openedAt) { return -1; }
+    if (dayjs(b.openedAt) > dayjs(a.openedAt)) { return 1; }
+    if (dayjs(a.openedAt) > dayjs(b.openedAt)) { return -1; }
+    return 0;
+  });
+  
 
   return (
     <>
@@ -108,7 +118,7 @@ function InviteList(): ReactElement {
         </thead>
 
         <tbody>
-          {visibleInvites.map(invite => {
+          {sortedInvites.map(invite => {
             const { names, emails } = getInviteInfo(invite);
             return (
               <tr key={invite.id}>

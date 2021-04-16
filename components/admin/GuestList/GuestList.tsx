@@ -5,13 +5,13 @@ import { Guest } from '../../../firebase/types';
 
 import styles from './guestList.module.css';
 import formStyles from '../../form/form.module.css';
+import dayjs from 'dayjs';
 
 type AttendingValue = 'yes' | 'no' | 'no-response' | 'all';
 
 function GuestList(): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
-    collection: 'guests',
-    sortField: 'inviteId'
+    collection: 'guests'
   });
   const [attendingFilter, setAttendingFilter] = useState<AttendingValue>('all');
 
@@ -24,6 +24,14 @@ function GuestList(): ReactElement {
     : guests.filter(guest => {
       return attendingFilter === 'no-response' ? !guest.attending : guest.attending === attendingFilter;
     });
+
+  const sortedGuests = visibleGuests.sort((a, b) => {
+    if (!a.replyAt) { return 1; }
+    if (!b.replyAt) { return -1; }
+    if (dayjs(b.replyAt) > dayjs(a.replyAt)) { return 1; }
+    if (dayjs(a.replyAt) > dayjs(b.replyAt)) { return -1; }
+    return 0;
+  });
 
   return (
     <div>
@@ -50,7 +58,7 @@ function GuestList(): ReactElement {
         ))}
       </select>
 
-      <p>Total: {visibleGuests.length} / {guests.length}</p>
+      <p>Total: {sortedGuests.length} / {guests.length}</p>
       <table className={styles.table}>
         <thead>
           <tr>
@@ -64,7 +72,7 @@ function GuestList(): ReactElement {
         </thead>
 
         <tbody>
-          {visibleGuests.map((guest) => <tr key={guest.id}>
+          {sortedGuests.map((guest) => <tr key={guest.id}>
             <td>{guest.name}</td>
             <td>{guest.attending}</td>
             <td>{guest.comment}</td>
