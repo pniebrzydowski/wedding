@@ -1,13 +1,21 @@
 .table {
-  margin-top: 1rem;
+  border-collapse: collapse;
   text-align: left;
   width: 100%;
 }
 
+.table tbody tr {
+  border-top: 1px solid #aaa;
+}
+.table th {
+  white-space: nowrap;
+}
 .table td, .table th {
-  vertical-align: top;
   padding: 0.5em;
   padding-left: 0;
+}
+.table td {
+  vertical-align: top;
 }
 .table td + td, .table th + th {
   padding-left: 0.5em;
