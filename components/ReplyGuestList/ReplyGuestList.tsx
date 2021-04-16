@@ -13,6 +13,10 @@ import Button from '../ui/Button';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+
+dayjs.extend(utc);
 
 const getSuccessMessage = (attending: Attending[], numberOfGuests: number): string => {
   if (attending.every(v => v === 'yes')) {
@@ -77,7 +81,10 @@ function ReplyGuestList({ inviteId }: Props): ReactElement {
       const guestDoc = firebase.firestore
         .collection('guests')
         .doc(id);
-      batch.update(guestDoc, values.guest[id]);
+      batch.update(guestDoc, {
+        ...values.guest[id],
+        replyAt: dayjs().utc().format('YYYY-MM-DD HH:mm')
+      });
       attending.push(values.guest[id].attending);
     });
 

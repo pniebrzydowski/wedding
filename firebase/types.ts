@@ -17,6 +17,7 @@ export interface Invite {
   id: string;
   lang: InviteLanguage;
   opened?: boolean;
+  openedAt?: string;
 }
 
 export type Attending = '' | 'yes' | 'no';
@@ -31,4 +32,5 @@ export interface Guest {
   dietaryNeeds?: string;
   songRequest?: string;
   comment?: string;
+  replyAt?: string;
 }

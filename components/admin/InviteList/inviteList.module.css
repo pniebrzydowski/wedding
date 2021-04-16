@@ -12,3 +12,7 @@
 .table td + td, .table th + th {
   padding-left: 0.5em;
 }
+
+.noWrap {
+  white-space: nowrap;
+}

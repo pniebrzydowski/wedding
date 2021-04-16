@@ -103,7 +103,7 @@ function InviteList(): ReactElement {
             <th>Invite Id</th>
             <th>Guest Names</th>
             <th>Guest Emails</th>
-            <th>Opened ({opened}/{invitesWithGuests.length})</th>
+            <th>Opened At ({opened}/{invitesWithGuests.length})</th>
           </tr>
         </thead>
 
@@ -119,8 +119,8 @@ function InviteList(): ReactElement {
                 <td>
                   {emails.join(', ')}
                 </td>
-                <td>
-                  {invite.opened ? <>&#10003;</> : ''}
+                <td className={styles.noWrap}>
+                  {invite.opened ? <>&#10003; {invite.openedAt}</> : ''}
                 </td>
               </tr>
             );
