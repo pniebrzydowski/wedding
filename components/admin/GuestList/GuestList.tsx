@@ -7,7 +7,7 @@ import styles from './guestList.module.css';
 import formStyles from '../../form/form.module.css';
 import dayjs from 'dayjs';
 
-type AttendingValue = 'yes' | 'no' | 'no-response' | 'all';
+type AttendingValue = 'yes' | 'no' | 'no-response' | 'any-response' | 'all';
 
 function GuestList(): ReactElement {
   const { loading, data: guests } = useCollectionDocsData<Guest>({
@@ -22,7 +22,13 @@ function GuestList(): ReactElement {
   const visibleGuests = attendingFilter === 'all'
     ? guests
     : guests.filter(guest => {
-      return attendingFilter === 'no-response' ? !guest.attending : guest.attending === attendingFilter;
+      if (attendingFilter === 'no-response') {
+        return guest.attending;
+      }
+      if (attendingFilter === 'any-response') {
+        return !!guest.attending;
+      }
+      return guest.attending === attendingFilter;
     });
 
   const sortedGuests = visibleGuests.sort((a, b) => {
@@ -52,6 +58,10 @@ function GuestList(): ReactElement {
           {
             value: 'no-response',
             label: 'No response'
+          },
+          {
+            value: 'any-response',
+            label: 'Any response'
           }
         ].map((option) => (
           <option key={option.value} value={option.value}>{option.label}</option>
