@@ -62,8 +62,10 @@ function InviteList(): ReactElement {
     );
   
   const sortedInvites = visibleInvites.sort((a, b) => {
-    if (!a.openedAt) { return 1; }
-    if (!b.openedAt) { return -1; }
+    if (!a.openedAt && !a.opened) { return 1; }
+    if (!b.openedAt && !b.opened) { return -1; }
+    if (a.opened && !a.openedAt) { return 1; }
+    if (b.opened && !b.openedAt) { return -1; }
     if (dayjs(b.openedAt) > dayjs(a.openedAt)) { return 1; }
     if (dayjs(a.openedAt) > dayjs(b.openedAt)) { return -1; }
     return 0;

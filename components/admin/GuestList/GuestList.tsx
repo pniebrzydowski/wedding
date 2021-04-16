@@ -41,8 +41,10 @@ function GuestList(): ReactElement {
     });
 
   const sortedGuests = visibleGuests.sort((a, b) => {
-    if (!a.replyAt) { return 1; }
-    if (!b.replyAt) { return -1; }
+    if (!a.replyAt && !a.attending) { return 1; }
+    if (!b.replyAt && !b.attending) { return -1; }
+    if (a.attending && !a.replyAt) { return 1; }
+    if (b.attending && !b.replyAt) { return -1; }
     if (dayjs(b.replyAt) > dayjs(a.replyAt)) { return 1; }
     if (dayjs(a.replyAt) > dayjs(b.replyAt)) { return -1; }
     return 0;
