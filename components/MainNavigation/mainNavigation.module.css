@@ -95,8 +95,19 @@
   .hasSubLinks {
     background-color: transparent;
   }
+  .hasSubLinks::after {
+    content: '+';
+    float: right;
+    color: white;
+  }
   .hasSubLinks.activeLink {
     color: white;
+  }
+  .subMenuOpen::after {
+    content: '-';
+  }
+  .hasSubLinks.activeLink:hover {
+    background-color: transparent;
   }
 }
 
