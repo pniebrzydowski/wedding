@@ -6,6 +6,7 @@ import { Guest } from '../../../firebase/types';
 import styles from './guestList.module.css';
 import formStyles from '../../form/form.module.css';
 import dayjs from 'dayjs';
+import { getLocalDate } from '../utils';
 
 type AttendingValue = 'yes' | 'no' | 'no-response' | 'any-response' | 'dietary' | 'song' | 'comment' | 'all';
 
@@ -112,14 +113,20 @@ function GuestList(): ReactElement {
         </thead>
 
         <tbody>
-          {sortedGuests.map((guest) => <tr key={guest.id}>
-            <td>{guest.name}</td>
-            {showAttedingColumn && <td>{guest.attending}</td>}
-            {showCommentColumn && <td>{guest.comment}</td>}
-            {showDietaryColumn && <td>{guest.dietaryNeeds}</td>}
-            {showSongColumn && <td>{guest.songRequest}</td>}
-            {showTimeColumn && <td className={styles.noWrap}>{guest.replyAt}</td>}
-          </tr>)}
+          {sortedGuests.map((guest) => {
+            const replyDate = getLocalDate(guest.replyAt);
+
+            return (
+              <tr key={guest.id}>
+                <td>{guest.name}</td>
+                {showAttedingColumn && <td>{guest.attending}</td>}
+                {showCommentColumn && <td>{guest.comment}</td>}
+                {showDietaryColumn && <td>{guest.dietaryNeeds}</td>}
+                {showSongColumn && <td>{guest.songRequest}</td>}
+                {showTimeColumn && <td className={styles.noWrap}>{replyDate}</td>}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

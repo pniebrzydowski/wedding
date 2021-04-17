@@ -7,6 +7,7 @@ import styles from './inviteList.module.css';
 import formStyles from '../../form/form.module.css';
 import Grid from '../../ui/Grid';
 import dayjs from 'dayjs';
+import { getLocalDate } from '../utils';
 
 interface InviteWithGuests extends Invite {
   guests: Guest[];
@@ -57,10 +58,10 @@ function InviteList(): ReactElement {
 
   const visibleInvites = openedFilter === undefined
     ? invitesWithGuests
-    : invitesWithGuests.filter(invite => 
+    : invitesWithGuests.filter(invite =>
       openedFilter === false ? !invite.opened : invite.opened
     );
-  
+
   const sortedInvites = visibleInvites.sort((a, b) => {
     if (!a.openedAt && !a.opened) { return 1; }
     if (!b.openedAt && !b.opened) { return -1; }
@@ -70,7 +71,6 @@ function InviteList(): ReactElement {
     if (dayjs(a.openedAt) > dayjs(b.openedAt)) { return -1; }
     return 0;
   });
-  
 
   return (
     <>
@@ -124,6 +124,8 @@ function InviteList(): ReactElement {
         <tbody>
           {sortedInvites.map(invite => {
             const { names, emails } = getInviteInfo(invite);
+            const openedAtDate = getLocalDate(invite.openedAt);
+
             return (
               <tr key={invite.id}>
                 <td>{invite.id}</td>
@@ -134,7 +136,7 @@ function InviteList(): ReactElement {
                   {emails.join(', ')}
                 </td>
                 <td className={styles.noWrap}>
-                  {invite.opened ? <>&#10003; {invite.openedAt}</> : ''}
+                  {invite.opened ? <>&#10003; {openedAtDate}</> : ''}
                 </td>
               </tr>
             );
