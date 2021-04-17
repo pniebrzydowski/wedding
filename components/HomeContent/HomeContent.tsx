@@ -15,7 +15,7 @@ const HomeContent = ({ basicInfo }: Props): ReactElement => {
     <div className={styles.container}>
       <div className={styles.basicInfo} dangerouslySetInnerHTML={{ __html: basicInfo }} />
       <div className={styles.imgWrapper}>
-        <img src="/images/christina-pat-budapest.jpeg" />
+        <img src="/images/christina-pat-budapest.jpg" />
       </div>
       <div className={styles.buttonWrapper}>
         <p>
@@ -28,7 +28,7 @@ const HomeContent = ({ basicInfo }: Props): ReactElement => {
             <a>
               <Button buttonType="primary">
                 <Trans id="home:replyButtonLabel">
-                Reply now
+                  Reply now
                 </Trans>
               </Button>
             </a>

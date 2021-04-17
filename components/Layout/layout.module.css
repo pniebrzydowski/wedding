@@ -27,6 +27,7 @@
 
 .footerWrapper {
   border-top:1px solid rgb(104, 11, 11);
+  clear: both;
   width: 100%;
   margin-top: 2rem;
   padding: 1rem 0;

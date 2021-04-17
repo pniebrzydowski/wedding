@@ -17,20 +17,22 @@
   }
 
   .navLink {
-    color: rgb(104, 11, 11);
+    color: rgb(17, 22, 22);
     display: block;
     line-height: 1rem;
     padding: 1rem 2rem;
     border-bottom: 1px solid transparent;
+    margin: 0 0.5rem;
   }
 
   .navLink:hover {
-    border-color: rgb(128, 19, 19);
-    color: rgb(128, 19, 19);
+    border-color: rgb(117, 121, 121);
+    color: rgb(17, 22, 22);
     text-decoration: none;
   }
 
   .activeLink {
     border-color: rgb(104, 11, 11);
+    color: rgb(104, 11, 11);
   }
 }
