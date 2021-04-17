@@ -48,6 +48,24 @@
   padding: 1rem 2rem;
 }
 
+.subLink {
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 699px) {
+  .hasSubLinks[href] {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hasSubLinks:not([href]) {
+    display: none;
+  }
+  .subLink {
+    display: none;
+  }
+}
+
 .navLink:hover {
   background-color: rgb(128, 19, 19);
   text-decoration: none;
@@ -71,6 +89,15 @@
 .activeLink {
   background-color: white;
   color: rgba(104, 11, 11);
+}
+
+@media screen and (max-width: 699px) {
+  .hasSubLinks {
+    background-color: transparent;
+  }
+  .hasSubLinks.activeLink {
+    color: white;
+  }
 }
 
 .activeLink:hover {

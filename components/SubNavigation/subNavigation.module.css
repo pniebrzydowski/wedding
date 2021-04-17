@@ -1,0 +1,36 @@
+.nav {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .nav {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .navList {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navLink {
+    color: rgb(104, 11, 11);
+    display: block;
+    line-height: 1rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navLink:hover {
+    border-color: rgb(128, 19, 19);
+    color: rgb(128, 19, 19);
+    text-decoration: none;
+  }
+
+  .activeLink {
+    border-color: rgb(104, 11, 11);
+  }
+}

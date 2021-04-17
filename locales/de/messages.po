@@ -81,34 +81,46 @@ msgstr "Jetzt antworten"
 msgid "home:replyText"
 msgstr "Bitte sag uns bis 31. Juli Bescheid, ob du dabei bist"
 
-#: pages/about.tsx:32
+#: pages/about/index.tsx:20
 msgid "pageTitle:about"
 msgstr "Über uns"
 
-#: components/MainNavigation/routes.ts:49
+#: pages/about/christina.tsx:28
+msgid "pageTitle:about.christina"
+msgstr "Über Christina"
+
+#: pages/about/patrick.tsx:28
+msgid "pageTitle:about.patrick"
+msgstr "Über Patrick"
+
+#: pages/about/index.tsx:28
+msgid "pageTitle:about.story"
+msgstr "Unsere Geschichte"
+
+#: components/MainNavigation/routes.ts:51
 #: pages/accommodations.tsx:39
 msgid "pageTitle:accommodation"
 msgstr "Übernachtung"
 
-#: components/MainNavigation/routes.ts:41
+#: components/MainNavigation/routes.ts:43
 msgid "pageTitle:faq"
 msgstr "FAQ"
 
-#: components/MainNavigation/routes.ts:16
+#: components/MainNavigation/routes.ts:22
 msgid "pageTitle:home"
 msgstr "Start"
 
-#: components/MainNavigation/routes.ts:33
+#: components/MainNavigation/routes.ts:35
 #: pages/location.tsx:35
 msgid "pageTitle:location"
 msgstr "Veranstaltungsort"
 
-#: components/MainNavigation/routes.ts:57
+#: components/MainNavigation/routes.ts:59
 #: pages/reply.tsx:32
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:81
+#: components/ReplyGuestList/ReplyGuestList.tsx:84
 msgid "reply:error"
 msgstr "Es gab einen Fehler. Versuch es nochmal, oder kontaktiere uns falls du weiter Probleme hast."
 
@@ -128,7 +140,7 @@ msgstr "Andere Kommentare"
 msgid "reply:labels.songRequest"
 msgstr "Liedwunsch"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:58
+#: components/ReplyGuestList/ReplyGuestList.tsx:61
 msgid "reply:loading"
 msgstr "Ladet..."
 
@@ -144,7 +156,7 @@ msgstr "Leider muss ich ablehnen"
 msgid "reply:options.yes"
 msgstr "Freu mich schon!"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:97
+#: components/ReplyGuestList/ReplyGuestList.tsx:100
 msgid "reply:save"
 msgstr "Speichern"
 
@@ -152,15 +164,15 @@ msgstr "Speichern"
 msgid "reply:songRequestDisclaimer"
 msgstr "Keine Garantie"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:23
+#: components/ReplyGuestList/ReplyGuestList.tsx:26
 msgid "reply:success.attending"
 msgstr "{numberOfGuests, plural, one {Wir freuen uns, dich da zu sehen!} other {Wir freuen uns, euch da zu sehen!}}"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:40
+#: components/ReplyGuestList/ReplyGuestList.tsx:43
 msgid "reply:success.noResponse"
 msgstr "Vielen Dank für die Antwort!"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:32
+#: components/ReplyGuestList/ReplyGuestList.tsx:35
 msgid "reply:success.notAttending"
 msgstr "{numberOfGuests, plural, one {Tut uns lied, dass du nicht kommen kannst. Wir hoffen dich bald zu sehen!} other {Tut uns lied, dass ihr nicht kommen könnt. Wir hoffen euch bald zu sehen!}}"
 
