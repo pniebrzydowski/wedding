@@ -2,7 +2,7 @@
 title: "Our Story"
 ---
 
-### Origins
+### The Beginning
 
 We first met in July 2017 at a birthday party Christina organized in the basement bar of the dorm Patrick was living in at the time. We would see each other from time to time at various parties and always enjoyed it, but romance wasn't in the picture. Looking back, the first sign of how well we fit together was during a group ski trip to Kaprun, when the two of us enjoyed a 90s dance party until late into the early morning after everyone else had already gone to bed.
 
@@ -22,12 +22,12 @@ In September 2018, Patrick was laid off from his job in Linz. Shortly thereafter
 
 <img src="/images/christina-pat-thailand.jpg" class="float-left" />
 
-In the meantime, we took our first extended trip together, spending about 10 days in Thailand. We again discovered our ability to adjust to adversity, surviving a 4-hour flight delay followed by a convenience store dinner, and dealing with a hospital visit after Christina was hit by motorbike which had run a red light. 
+In the meantime, we took our first extended trip together, spending about 10 days in Thailand. We again discovered our ability to adjust to adversity, surviving a 4-hour flight delay followed by a convenience store dinner, and dealing with a hospital visit after Christina was hit by a motorbike. 
 
-Despite these challenges, the trip was a wonderful experience which exibited our connection. While enjoying a peaceful late-night swim in the warm ocean, Christina professed her love and Patrick responded enthusiastically with an invitation to visit his family in the USA over Christmas a few months later.
+Despite these challenges, the trip was a wonderful experience which exibited our connection. While enjoying a peaceful late-night swim in the warm ocean, Christina professed her love and Patrick responded enthusiastically with an invitation to visit his family a few months later in the USA over Christmas.
 
 ### The Engagement
 
 <img src="/images/christina-pat-almkogel.jpg" class="float-right" />
 
-Due to the pandemic and lockdowns, planning an engagement was not easy. In September, 2020, we took a short trip to the Salzkammergut region of Austria. After an incredible dinner at a local restaurant, Patrick proposed on the balcony of the accommodation, overlooking the beautiful Attersee. The next day, we conquered our first challenge as an engaged couple, summitting the Almkogel together.
+Due to the pandemic and lockdowns, ring shopping and planning a proposal was not easy. However, in September 2020, we took a short trip to the Salzkammergut region of Austria. After an incredible dinner at a local restaurant, Patrick proposed on the balcony of the accommodation, overlooking the beautiful Attersee. The next day, we conquered our first challenge as an engaged couple, summitting the Almkogel together.

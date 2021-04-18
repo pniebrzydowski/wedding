@@ -33,7 +33,6 @@ const getRoutes = (): Route[] => {
         message: 'Home'
       }))
     },
-    /*
     {
       ...getAboutRoute(),
       subRoutes: [
@@ -42,7 +41,6 @@ const getRoutes = (): Route[] => {
         getAboutPatrickRoute()
       ]
     },
-    */
     {
       name: RouteName.Location,
       url: '/location',
