@@ -4,7 +4,7 @@ title: "Our Story"
 
 ### Der Anfang
 
-Zum ersten Mal getroffen haben wir uns im Juli 2017 bei einer von Christina organisierten Geburtstagsparty in der Kellerbar des Studentenheims wo Patrick damals wohnte. Wir trafen uns hin und wieder bei einigen Partys und genossen es immer, aber Romantik war nie im Spiel. Im Rückblick, war das erste Zeichen wie gut wir uns verstehen während eine Gruppenskireise nach Kaprun. Damals machten wir eine 90s Dance-Party bis in der Früh zusammen, nachdem die anderen alle schon eingeschlafen waren.
+Zum ersten Mal getroffen haben wir uns im Juli 2017 bei einer von Christina organisierten Geburtstagsparty in der Kellerbar des Studentenheims indem Patrick damals wohnte. Wir trafen uns hin und wieder bei einigen Partys und genossen es immer, aber Romantik war nie im Spiel. Im Rückblick, war das erste Zeichen wie gut wir uns verstehen während eine Gruppenskireise nach Kaprun. Damals machten wir eine 90s Dance-Party bis in der Früh zusammen, nachdem die anderen alle schon eingeschlafen waren.
 
 ### Das Zusammenkommen
 
@@ -30,4 +30,4 @@ Trotz diese Hindernisse war die Reise eine wundervolle Erfahrung, die unsere Ver
 
 <img src="/images/christina-pat-almkogel.jpg" class="float-right" />
 
-Aufgrund der Pandemie und Lockdowns, war das Kaufen eines Rings und einen Antrag zu machen nicht einfach. Wir benutzten die Gelegenheit zwischen zwei Lockdowns und reisten im September 2020 in das Salzkammergut. Nach einem unglaublichen Abendessen in einem lokalen Restaurant, machte Patrick einen Antrag auf dem Balkon der Unterkunft mit einem Blick zum schönen Attersee. Am nächsten Tag meisterten wir unsere erste Herausforderung als verlobtes Paar und eroberten den Gipfel vom Almkogel zusammen.
+Aufgrund der Pandemie und Lockdowns, war das Kaufen eines Rings und einen Antrag zu machen nicht einfach. Wir nutzten die Gelegenheit zwischen zwei Lockdowns und reisten im September 2020 in das Salzkammergut. Nach einem unglaublichen Abendessen in einem lokalen Restaurant, machte Patrick einen Antrag auf dem Balkon der Unterkunft mit einem Blick zum schönen Attersee. Am nächsten Tag meisterten wir unsere erste Herausforderung als verlobtes Paar und eroberten den Gipfel vom Almkogel zusammen.
