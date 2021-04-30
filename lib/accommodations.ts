@@ -47,5 +47,5 @@ export const getBlockedAccommodations = async (locale: string): Promise<Accommod
 
 export const getOtherAccommodations = async (locale: string): Promise<AccommodationData[]> => {
   const allData = await getAllAccommodationData(locale);
-  return allData.filter((a) => !a.blockedUntil || dayjs(a.blockedUntil) < dayjs());
+  return allData.filter((a) => !a.blockedUntil || dayjs(a.blockedUntil).startOf('day') < dayjs().startOf('day'));
 };
