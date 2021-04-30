@@ -15,7 +15,7 @@ function AccommodationInfo({ accommodation: {
   blockedDouble, costDouble, blockedSingle, costSingle, blockedFamily,
   costFamily, blockedUntil, distance, url, name, contentHtml
 } }: Props): ReactElement {
-  const isBlocked = blockedUntil && dayjs(blockedUntil) > dayjs();
+  const isBlocked = blockedUntil && dayjs(blockedUntil).startOf('day') >= dayjs().startOf('day');
   const distanceInFeet = Math.round(distance * 3.28084);
 
   return (
