@@ -38,11 +38,13 @@ const getInviteInfo = (invite: InviteWithGuests): { names: string[], emails: str
   return { names, emails };
 };
 
+type InviteFilterValue = 'all' | 'opened' | 'not-opened' | 'no-response';
+
 function InviteList(): ReactElement {
   const { data: invites } = useCollectionDocsData<Invite>({
     collection: 'invites'
   });
-  const [openedFilter, setOpenedFilter] = useState<boolean>();
+  const [filterValue, setFilterValue] = useState<InviteFilterValue>('all');
 
   const { loading, data: guests } = useCollectionDocsData<Guest>({
     collection: 'guests',
@@ -54,13 +56,19 @@ function InviteList(): ReactElement {
   }
 
   const invitesWithGuests = getInvitesWithGuests(invites, guests);
-  const opened = invitesWithGuests.filter(i => i.opened).length;
+  const openedCount = invitesWithGuests.filter(i => i.opened).length;
 
-  const visibleInvites = openedFilter === undefined
+  const visibleInvites = (filterValue) === undefined
     ? invitesWithGuests
-    : invitesWithGuests.filter(invite =>
-      openedFilter === false ? !invite.opened : invite.opened
-    );
+    : invitesWithGuests.filter(invite => {
+      if (filterValue === 'all') {
+        return true;
+      }
+      if (filterValue === 'no-response') {
+        return invite.guests.some(g => !g.attending);
+      }
+      return filterValue==='opened' ? invite.opened : !invite.opened;
+    });
 
   const sortedInvites = visibleInvites.sort((a, b) => {
     if (!a.openedAt && !a.opened) { return 1; }
@@ -76,28 +84,24 @@ function InviteList(): ReactElement {
     <>
       <Grid>
         <select className={formStyles.formField} onChange={e => {
-          if (e.target.value === 'true') {
-            setOpenedFilter(true);
-            return;
-          }
-          if (e.target.value === 'false') {
-            setOpenedFilter(false);
-            return;
-          }
-          setOpenedFilter(undefined);
+          setFilterValue(e.target.value as InviteFilterValue);
         }}>
           {[
             {
-              value: '',
+              value: 'all',
               label: 'Show all'
             },
             {
-              value: 'true',
+              value: 'opened',
               label: 'Opened'
             },
             {
-              value: 'false',
+              value: 'not-opened',
               label: 'Not opened'
+            },
+            {
+              value: 'no-response',
+              label: 'No Response'
             }
           ].map((option) => (
             <option key={option.value} value={option.value}>{option.label}</option>
@@ -105,7 +109,7 @@ function InviteList(): ReactElement {
         </select>
 
         <button onClick={() => {
-          console.log(invitesWithGuests);
+          console.log(visibleInvites);
         }}>Generate Invite Objects</button>
       </Grid>
 
@@ -117,7 +121,7 @@ function InviteList(): ReactElement {
             <th>Invite Id</th>
             <th>Guest Names</th>
             <th>Guest Emails</th>
-            <th>Opened At ({opened}/{invitesWithGuests.length})</th>
+            <th>Opened At ({openedCount}/{invitesWithGuests.length})</th>
           </tr>
         </thead>
 
