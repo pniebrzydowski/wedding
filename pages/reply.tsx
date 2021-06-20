@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement } from 'react';
 
 import Head from 'next/head';
 
@@ -9,6 +9,8 @@ import { defineMessage } from '@lingui/macro';
 import { i18n } from '@lingui/core';
 import { StaticContent } from '../content/types';
 import InviteNotFound from '../components/InviteNotFound';
+
+import useInviteId from '../firebase/hooks/useInviteId';
 
 interface Props {
   introContent: StaticContent;
@@ -25,12 +27,8 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 };
 
 function Reply({ introContent }: Props): ReactElement {
-  const [inviteId, setInviteId] = useState('');
-  useEffect(() => {
-    const iId = localStorage.getItem('inviteId');
-    setInviteId(iId);
-  });
-
+  const inviteId = useInviteId();
+  
   const pageTitle = i18n._(defineMessage({
     id: 'pageTitle:reply',
     message: 'Reply'
