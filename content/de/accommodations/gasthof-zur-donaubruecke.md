@@ -12,6 +12,10 @@ distance: 2700
 order: 3
 ---
 
+### Buchung
+
+Bitte das Hotel direkt per Mail oder Telefon kontaktieren. Das Online-Buchungssystem und Booking.com zeigen keine Verfügbarkeit, da die Zimmer für unsere Hochzeit vorreserviert sind.
+
 #### Zimmer
 
 Die Einzelzimmer haben zwei Einzelbetten und können auch als Doppelzimmer für 80€ gebucht werden.

@@ -12,6 +12,10 @@ distance: 2700
 order: 3
 ---
 
+### Booking
+
+Be sure to contact the hotel directly via email or phone. The online booking system and Booking.com will show no availability, as the rooms are blocked off for our wedding.
+
 #### Rooms
 
 The single rooms have two twin beds, and can also be booked by 2 people for 80€.
