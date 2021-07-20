@@ -37,7 +37,7 @@ const getAllAccommodationData = async (locale = 'en') => {
     })
   );
 
-  return allAccommodationsData.sort((a, b) => a.order - b.order);
+  return allAccommodationsData.sort((a, b) => a.order - b.order).filter(a => a.order !== 0);
 };
 
 export const getBlockedAccommodations = async (locale: string): Promise<AccommodationData[]> => {
