@@ -18,6 +18,7 @@ interface Props {
   defaultValue?: string;
   error?: string;
   required?: boolean;
+  disabled?: boolean;
 }
 
 function Select({
@@ -28,6 +29,7 @@ function Select({
   defaultValue,
   error,
   required,
+  disabled
 }: Props): ReactElement {
   const { register } = useFormContext();
   const fieldId = `${formName}_${fieldName}`;
@@ -35,6 +37,7 @@ function Select({
   return (
     <FieldWrapper fieldId={fieldId} label={label} error={error}>
       <select
+        disabled={disabled}
         className={styles.formField}
         id={fieldId}
         name={fieldName}

@@ -45,6 +45,7 @@ function GuestReplyForm(
       </div>
       <Grid factorX={2}>
         <Select
+          disabled
           formName="reply"
           fieldName={`guest[${id}].attending`}
           label={<Trans id="reply:labels.answer">You in?</Trans>}
