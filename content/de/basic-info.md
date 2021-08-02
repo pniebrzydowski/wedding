@@ -2,8 +2,6 @@
 title: "Basic Info"
 ---
 
-# Christina & Patrick
-
 Schloss Greinburg • Grein, Österreich
 
 28\. August 2021

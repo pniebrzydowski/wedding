@@ -1,41 +1,25 @@
-import { Trans } from '@lingui/macro';
-import Link from 'next/link';
 import { ReactElement } from 'react';
-import { getRouteUrl, RouteName } from '../MainNavigation/routes';
-import Button from '../ui/Button';
+import Grid from '../ui/Grid';
 
 import styles from './homeContent.module.css';
 
 interface Props {
   basicInfo: string;
+  covidInfo: string;
 }
 
-const HomeContent = ({ basicInfo }: Props): ReactElement => {
+const HomeContent = ({ basicInfo, covidInfo }: Props): ReactElement => {
   return (
-    <div className={styles.container}>
-      <div className={styles.basicInfo} dangerouslySetInnerHTML={{ __html: basicInfo }} />
-      <div className={styles.imgWrapper}>
-        <img src="/images/christina-pat-budapest.jpg" />
-      </div>
-      <div className={styles.buttonWrapper}>
-        <p>
-          <Trans id="home:replyText">
-            Please let us know if you can make it by July 31st
-          </Trans>
-        </p>
-        <p>
-          <Link href={getRouteUrl(RouteName.Reply)}>
-            <a>
-              <Button buttonType="primary">
-                <Trans id="home:replyButtonLabel">
-                  Reply now
-                </Trans>
-              </Button>
-            </a>
-          </Link>
-        </p>
-      </div>
-    </div>
+    <>
+      <h1 className={styles.basicInfo}>Christina & Patrick</h1>
+      <Grid factorX={2}>
+        <div className={styles.covidInfo} dangerouslySetInnerHTML={{ __html: covidInfo }} />
+        <div>
+          <div className={styles.basicInfo} dangerouslySetInnerHTML={{ __html: basicInfo }} />
+          <img src="/images/christina-pat-budapest.jpg" />
+        </div>
+      </Grid>
+    </>
   );
 };
 

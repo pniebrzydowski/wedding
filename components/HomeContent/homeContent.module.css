@@ -1,16 +1,36 @@
-.container {
-  text-align: center;
-  padding-top: 1rem;
-}
-
 .imgWrapper {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
+.covidInfo {
+  padding: 12px 16px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  background: rgba(218, 116, 0, 0.225);
+}
+
+.covidInfo h2 {
+  font-size: 1rem;
+}
+
+.covidInfo ul {
+  list-style: disc outside;
+  line-height: 1.2rem;
+  margin-left: 16px;
+}
+
+.covidInfo li + li {
+  margin-top: 8px;
+}
+
 .basicInfo {
   font-family: 'Dancing Script';
-  font-size: 1.5em;
+  text-align: center;
+}
+
+.basicInfo h1 {
+  font-size: 3rem;
 }
 
 .basicInfo p {
@@ -21,8 +41,4 @@
 
 .imgWrapper img {
   width: 400px;
-}
-
-.buttonWrapper button {
-  width: auto;
 }

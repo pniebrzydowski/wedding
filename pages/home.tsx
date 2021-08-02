@@ -9,6 +9,7 @@ import HomeContent from '../components/HomeContent';
 
 interface Props {
   basicInfo: StaticContent;
+  covidInfo: StaticContent;
 }
 
 export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
@@ -16,16 +17,21 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
     id: 'basic-info',
     locale,
   });
+  const covidInfo = await getContentData({
+    id: 'covid-info',
+    locale,
+  });
 
   return {
     props: {
-      basicInfo
+      basicInfo,
+      covidInfo
     },
   };
 };
 
 
-function Home({ basicInfo }: Props): ReactElement {
+function Home({ basicInfo, covidInfo }: Props): ReactElement {
   return (
     <Layout>
       <Head>
@@ -33,7 +39,7 @@ function Home({ basicInfo }: Props): ReactElement {
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></link>
         <title>{getTranslatedSiteTitle()}</title>
       </Head>
-      <HomeContent basicInfo={basicInfo.contentHtml} />
+      <HomeContent basicInfo={basicInfo.contentHtml} covidInfo={covidInfo.contentHtml} />
     </Layout>
   );
 }
