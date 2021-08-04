@@ -4,12 +4,12 @@ title: "Covid Info"
 
 ## Covid-19 Update
 
-Um eine sichere Feier einzurichten, sowie um an der Maßnahmen der Regierung zu halten, **muss jeder vor dem Einlass ins Schloss eine Erfüllung der "3G"-Regel nachweisen**. Das heißt, du brauchst ein Beweis von einem der folgenden:
+Um eine sichere Feier zu gewährleisten, und um uns an die Maßnahmen der Regierung zu halten, **muss jede/r vor dem Einlass ins Schloss einen Nachweis im Sinne der “3G”-Regal vorweisen**. Das heißt, du brauchst einen Nachweis dass du entweder:
 
-- Geimpft (wenigstens 2 Wochen nach der zweite Impfung)
-- Genesen (innerhalb von 6 Monaten)
-- Getestet (PCR-Test innerhalb 72 Stunden, oder Antigen-Test innerhalb 48 Stunden)
+- Geimpft bist (mindestens 2 Wochen nach der zweiten Impfung)
+- Genesen bist (innerhalb von 6 Monaten), oder
+- Getestet wurdest (PCR-Test innerhalb 72 Stunden, oder Antigen-Test innerhalb 48 Stunden)
 
-Bitte bereite dieses vor, um den Einlass zu erleichtern. Diese Kontrolle hilft uns für eine sicherere Stelle zu sorgen, damit wir alle auf einer Nacht voller Spaß fokusieren können! Vielen Dank für das Verstandnis und wir können nicht warten, mit euch alle zu feiern.
+Bitte bereite den Nachweis vor, um den Einlass zu erleichtern. Diese Kontrolle hilft uns für Sicherheit zu sorgen, damit wir alle die Nacht in vollen Zügen genießen können! Vielen Dank für dein Verständnis und wir können es kaum erwarten, mit euch allen zu feiern.
 
-Wenn du nicht schon geimpft oder genesen bist, befindet sich hier <a href="https://www.austria.info/de/service-und-fakten/coronavirus-situation-in-oesterreich/testungen">Informationen über Testen in Österreich</a>. Wenn du nicht schon geimpft bin, empfehlen wir es völlig, eine der Impfungen zu holen. Wir sorgen alles dafür wo wir können, dass alle sicher und gesund bleiben, aber der beste Schutz gegen eventuelle Auswirkungen des Virus ist durch die Impfungen.
+Wenn du nicht schon geimpft oder genesen bist, findest du hier <a href="https://www.austria.info/de/service-und-fakten/coronavirus-situation-in-oesterreich/testungen">Informationen über das Testen in Österreich</a>. Wenn du nicht schon geimpft bist, empfehlen wir es dass du dich vor der Hochzeit impfen lässt. Wir sorgen wo wir können dafür, dass alle sicher und gesund bleiben, aber der beste Schutz gegen eventuelle Auswirkungen des Virus ist eine Impfungen. Bitte lass dich auch testen, wenn du Kontakt mit einer der kürzlich positiv getesteten Person hattest, oder falls du in den Tagen vor der Hochzeit Erkältungs- oder Grippe- ähnliche Symptome entwickelst – auch wenn du schon geimpft bist.
