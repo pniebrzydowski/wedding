@@ -18,8 +18,7 @@ export enum RouteName {
   AboutPatrick = 'about-patrick',
   Location = 'location',
   Faq = 'faq',
-  Accommodation = 'accommodations',
-  Reply = 'reply'
+  Accommodation = 'accommodations'
 }
 
 
@@ -64,15 +63,7 @@ const getRoutes = (): Route[] => {
         id: 'pageTitle:accommodation',
         message: 'Accommodations'
       }))
-    },
-    {
-      name: RouteName.Reply,
-      url: '/reply',
-      title: i18n._(defineMessage({
-        id: 'pageTitle:reply',
-        message: 'Reply'
-      }))
-    },
+    }
   ];
 };
 
