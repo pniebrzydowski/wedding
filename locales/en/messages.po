@@ -73,13 +73,13 @@ msgstr "Social"
 msgid "footer:telegramLinkText"
 msgstr "Join the telegram group here"
 
-#: components/HomeContent/HomeContent.tsx:22
-msgid "home:replyButtonLabel"
-msgstr "Reply now"
+#: components/GiftsContent/GiftsContent.tsx:16
+msgid "gifts:amazon"
+msgstr "<0><1>Amazon Registry</1></0><2>For those who prefer a more traditional approach, we have put together a small registry on Amazon.de.</2>"
 
-#: components/HomeContent/HomeContent.tsx:14
-msgid "home:replyText"
-msgstr "Please let us know if you can make it by July 31st"
+#: components/GiftsContent/GiftsContent.tsx:8
+msgid "gifts:experiences"
+msgstr "<0><1>Shared Experiences via Tinggly</1></0><2>There is nothing that would help draw us closer together during our trip than sharing new experiences.</2>"
 
 #: pages/about/index.tsx:20
 msgid "pageTitle:about"
@@ -106,6 +106,11 @@ msgstr "Accommodations"
 msgid "pageTitle:faq"
 msgstr "FAQ"
 
+#: components/MainNavigation/routes.ts:59
+#: pages/gifts.tsx:28
+msgid "pageTitle:gifts"
+msgstr "Gifts"
+
 #: components/MainNavigation/routes.ts:22
 msgid "pageTitle:home"
 msgstr "Home"
@@ -115,8 +120,7 @@ msgstr "Home"
 msgid "pageTitle:location"
 msgstr "Location"
 
-#: components/MainNavigation/routes.ts:59
-#: pages/reply.tsx:32
+#: pages/reply.tsx:28
 msgid "pageTitle:reply"
 msgstr "Reply"
 

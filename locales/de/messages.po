@@ -73,13 +73,13 @@ msgstr "Social"
 msgid "footer:telegramLinkText"
 msgstr "Gruppe auf Telegram beitreten"
 
-#: components/HomeContent/HomeContent.tsx:22
-msgid "home:replyButtonLabel"
-msgstr "Jetzt antworten"
+#: components/GiftsContent/GiftsContent.tsx:16
+msgid "gifts:amazon"
+msgstr "<0><1>Hochzeitsliste auf Amazon</1></0><2>Für diejenigen, die ein traditionelles Vorgehen bevorzugen, haben wir eine kleine Hochzeitsliste auf Amazon.de zusammengestellt.</2>"
 
-#: components/HomeContent/HomeContent.tsx:14
-msgid "home:replyText"
-msgstr "Bitte sag uns bis 31. Juli Bescheid, ob du dabei bist"
+#: components/GiftsContent/GiftsContent.tsx:8
+msgid "gifts:experiences"
+msgstr "<0><1>Gemeinsame Erfahrungen über Tinggly</1></0><2>Es gibt nichts was besseres, das uns näher während der Reise zusammenbringen könnte, als etwas neues zusammen zu erfahren.</2>"
 
 #: pages/about/index.tsx:20
 msgid "pageTitle:about"
@@ -106,6 +106,11 @@ msgstr "Übernachtung"
 msgid "pageTitle:faq"
 msgstr "FAQ"
 
+#: components/MainNavigation/routes.ts:59
+#: pages/gifts.tsx:28
+msgid "pageTitle:gifts"
+msgstr "Geschenke"
+
 #: components/MainNavigation/routes.ts:22
 msgid "pageTitle:home"
 msgstr "Start"
@@ -115,8 +120,7 @@ msgstr "Start"
 msgid "pageTitle:location"
 msgstr "Veranstaltungsort"
 
-#: components/MainNavigation/routes.ts:59
-#: pages/reply.tsx:32
+#: pages/reply.tsx:28
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
