@@ -75,11 +75,11 @@ msgstr "Gruppe auf Telegram beitreten"
 
 #: components/GiftsContent/GiftsContent.tsx:16
 msgid "gifts:amazon"
-msgstr "<0><1>Hochzeitsliste auf Amazon</1></0><2>Für diejenigen, die ein traditionelles Vorgehen bevorzugen, haben wir eine kleine Hochzeitsliste auf Amazon.de zusammengestellt.</2>"
+msgstr "<0><1>Hochzeitsliste auf Amazon</1></0><2>Für diejenigen, die es traditionell bevorzugen, haben wir eine kleine Hochzeitsliste auf Amazon.de zusammengestellt.</2>"
 
 #: components/GiftsContent/GiftsContent.tsx:8
 msgid "gifts:experiences"
-msgstr "<0><1>Gemeinsame Erfahrungen über Tinggly</1></0><2>Es gibt nichts was besseres, das uns näher während der Reise zusammenbringen könnte, als etwas neues zusammen zu erfahren.</2>"
+msgstr "<0><1>Gemeinsame Erfahrungen auf Tinggly</1></0><2>Es gibt nichts besseres, das uns während der Reise näher zusammenbringen könnte, als zusammen etwas neues zu erleben.</2>"
 
 #: pages/about/index.tsx:20
 msgid "pageTitle:about"

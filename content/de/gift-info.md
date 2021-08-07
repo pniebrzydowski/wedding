@@ -4,4 +4,4 @@ title: "Gifts"
 
 ## Geschenke
 
-Dein Präsenz ist für uns schon ein Geschenk, besonders weil so viele von euch für unseren schönen Tag einreisen! Wie viele von euch schon wissen, planen wir mit einer einjährigen Weltreise im Dezember (falls Covid es bewilligt) anzufangen. Aus diesem Grund passt eine traditionelle Hochzeitsliste wahrscheinlich nicht am Besten für uns, weil ein ganzes Jahr auf einem Regal zu stehen ist keine gute Nutzung einer Gewährleistung. Trotzdem haben wir für diejenige, die uns gefragt haben, einige Ideen gesammelt, damit wir unseres Zusammenleben besser anfangen können.
+Deine Anwesenheit ist für uns schon Geschenk genug, besonders weil so viele von euch für unseren besonderen Tag von weit her reisen! Wie viele von euch schon wissen, wollen wir, falls Covid es bewilligt, im Dezember eine einjährige Weltreise beginnen.. Aus diesem Grund ist eine traditionelle Hochzeitsliste wahrscheinlich nicht das Beste für uns – ein Jahr im Regal zu verstauben ist nicht die beste Nutzung der Garantiezeit! Trotzdem haben wir für diejenige, die uns gefragt haben, einige Ideen gesammelt, die uns dabei helfen werden unser gemeinsames Leben zu beginnen!
