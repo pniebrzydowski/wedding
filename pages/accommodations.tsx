@@ -17,7 +17,6 @@ import { defineMessage } from '@lingui/macro';
 
 interface Props {
   introContent: StaticContent;
-  additionalContent: StaticContent;
   blockedAccommodations: AccommodationData[];
   otherAccommodations: AccommodationData[];
 }
@@ -27,17 +26,12 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
     id: 'accommodation-intro',
     locale,
   });
-  const additionalContent = await getContentData({
-    id: 'accommodation-more',
-    locale,
-  });
   const blockedAccommodations: AccommodationData[] = await getBlockedAccommodations(locale);
   const otherAccommodations: AccommodationData[] = await getOtherAccommodations(locale);
 
   return {
     props: {
       introContent,
-      additionalContent,
       blockedAccommodations,
       otherAccommodations,
     },
@@ -46,7 +40,6 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 
 function Accommodation({
   introContent,
-  additionalContent,
   blockedAccommodations,
   otherAccommodations,
 }: Props): ReactElement {
@@ -69,8 +62,6 @@ function Accommodation({
           <AccommodationInfo accommodation={option} key={option.name} />
         ))}
       </Grid>
-
-      <div dangerouslySetInnerHTML={{ __html: additionalContent.contentHtml }} />
 
       <Grid factorX={4}>
         {otherAccommodations.map((option) => (

@@ -9,12 +9,8 @@ costSingle: 55
 costDouble: 90
 costFamily: 140
 distance: 2700
-order: 3
+order: 2
 ---
-
-### Buchung
-
-Bitte das Hotel direkt per Mail oder Telefon kontaktieren. Das Online-Buchungssystem und Booking.com zeigen keine Verfügbarkeit, da die Zimmer für unsere Hochzeit vorreserviert sind.
 
 #### Zimmer
 

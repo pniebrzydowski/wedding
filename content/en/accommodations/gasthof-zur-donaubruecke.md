@@ -9,12 +9,8 @@ costSingle: 55
 costDouble: 90
 costFamily: 140
 distance: 2700
-order: 3
+order: 2
 ---
-
-### Booking
-
-Be sure to contact the hotel directly via email or phone. The online booking system and Booking.com will show no availability, as the rooms are blocked off for our wedding.
 
 #### Rooms
 
