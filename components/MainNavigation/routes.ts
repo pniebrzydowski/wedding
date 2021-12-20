@@ -8,6 +8,7 @@ export interface Route {
   name: string,
   url: string,
   title: string,
+  hideInNav?: boolean,
   subRoutes?: Route[]
 }
 
@@ -35,14 +36,6 @@ export const getHomeRoute = () => ({
 const getRoutes = (): Route[] => {
   return [
     getHomeRoute(),
-    {
-      name: RouteName.PartyUS,
-      url: '/party-in-the-usa',
-      title: i18n._(defineMessage({
-        id: 'pageTitle:partyUS',
-        message: 'Party in the USA'
-      }))
-    },
     {
       ...getAboutRoute(),
       subRoutes: [
@@ -82,6 +75,15 @@ const getRoutes = (): Route[] => {
         id: 'pageTitle:gifts',
         message: 'Gifts'
       }))
+    },
+    {
+      name: RouteName.PartyUS,
+      url: '/party-in-the-usa',
+      title: i18n._(defineMessage({
+        id: 'pageTitle:partyUS',
+        message: 'Party in the USA'
+      })),
+      hideInNav: true
     }
   ];
 };
