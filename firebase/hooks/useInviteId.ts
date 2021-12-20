@@ -28,13 +28,20 @@ const useInviteId = (party: PartyLocation = 'austria'): string => {
         openedAtUS: openedAt
       };
 
-      firebase.firestore
-        .collection('invites')
-        .doc(id)
-        .update(updatedData);
 
-      setInviteId(id);
-      return;
+      const doc = firebase.firestore
+        .collection('invites')
+        .doc(id);
+
+      doc.get()
+        .then(resDoc => {
+          if (!resDoc.exists) {
+            return;
+          }
+          doc.update(updatedData);
+          setInviteId(id);
+          return;
+        })
     }
 
     const iId = localStorage.getItem('inviteId');

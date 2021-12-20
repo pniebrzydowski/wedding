@@ -2,12 +2,14 @@ import { i18n } from '@lingui/core';
 import { defineMessage } from '@lingui/macro';
 
 import Head from 'next/head';
+import Link from 'next/link';
 import { ReactElement, ReactNode } from 'react';
 import Footer from '../../Footer';
+import LangSwitch from '../../LangSwitch';
+import { getHomeRoute } from '../../MainNavigation/routes';
 
 import styles from './layout.module.css';
-
-const siteTitle = 'Christina & Patrick\'s Wedding - Round 2';
+import navLinkStyles from '../../MainNavigation/mainNavigation.module.css';
 
 export const getTranslatedSiteTitle = (): string => i18n._(defineMessage({
   id: 'siteTitle-us',
@@ -21,6 +23,7 @@ interface Props {
 
 const LayoutUS = ({ children, headerImageUrl }: Props): ReactElement => {
   const siteTitle = getTranslatedSiteTitle();
+  const originalSiteRoute = getHomeRoute();
 
   return (
     <div className={styles.body}>
@@ -39,6 +42,21 @@ const LayoutUS = ({ children, headerImageUrl }: Props): ReactElement => {
       <div className={styles.bg}></div>
       <div className={styles.header}>
         <h1>{siteTitle}</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link href={originalSiteRoute.url}>
+                <a className={navLinkStyles.navLink}>
+                  {i18n._(defineMessage({
+                    id: 'pageTitle:originalSite',
+                    message: 'Round 1'
+                  }))}
+                </a>
+              </Link>
+            </li>
+            <LangSwitch />
+          </ul>
+        </nav>
       </div>
       {headerImageUrl && <img className={styles.headerImage} src={`/images/${headerImageUrl}`} />}
       <div className={styles.container}>
