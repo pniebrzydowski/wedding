@@ -13,13 +13,13 @@ const SplashScreen = (): ReactElement => {
         <ul className={styles.languageList}>
           <li>
             <a href={infoUrl} className={styles.languageLink}>
-              <img src="/images/eagle-us-gold.png" className={styles.imgEagle} />
+              <img src="/images/eagle-us-silver.png" className={styles.imgEagle} />
               Continue
             </a>
           </li>
           <li>
             <a href={`/de${infoUrl}`} className={styles.languageLink}>
-              <img src="/images/eagle-aut-gold.png" className={styles.imgEagle} />
+              <img src="/images/eagle-aut-silver.png" className={styles.imgEagle} />
               Weiter
             </a>
           </li>
@@ -27,7 +27,7 @@ const SplashScreen = (): ReactElement => {
       </nav>
       <div>
         <h2 className={styles.subTitle}>June 25, 2022</h2>
-        <h2 className={styles.subTitle}>Sterling Heights, MI</h2>
+        <h2 className={styles.subTitle}>Sterling Heights, MI, USA</h2>
       </div>
     </div>
   );

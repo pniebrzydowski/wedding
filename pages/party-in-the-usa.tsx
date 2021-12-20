@@ -34,6 +34,7 @@ function PartyUS({ introContent, basicInfo }: Props): ReactElement {
   return (
     <LayoutUS>
       <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></link>
         <title>{getTranslatedSiteTitle()}</title>
       </Head>
 
