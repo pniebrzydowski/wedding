@@ -1,0 +1,21 @@
+.listItem {
+  width: 100%;
+}
+
+.listItem + .listItem {
+  border-top: 1px solid lightgray;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0;
+}

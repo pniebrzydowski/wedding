@@ -97,54 +97,62 @@ msgstr "Über Patrick"
 msgid "pageTitle:about.story"
 msgstr "Unsere Geschichte"
 
-#: components/MainNavigation/routes.ts:51
-#: pages/accommodations.tsx:39
+#: components/MainNavigation/routes.ts:60
+#: pages/accommodations.tsx:34
 msgid "pageTitle:accommodation"
 msgstr "Übernachtung"
 
-#: components/MainNavigation/routes.ts:43
+#: components/MainNavigation/routes.ts:52
 msgid "pageTitle:faq"
 msgstr "FAQ"
 
-#: components/MainNavigation/routes.ts:59
+#: components/MainNavigation/routes.ts:68
 #: pages/gifts.tsx:28
 msgid "pageTitle:gifts"
 msgstr "Geschenke"
 
-#: components/MainNavigation/routes.ts:22
+#: components/MainNavigation/routes.ts:23
 msgid "pageTitle:home"
 msgstr "Start"
 
-#: components/MainNavigation/routes.ts:35
+#: components/MainNavigation/routes.ts:44
 #: pages/location.tsx:35
 msgid "pageTitle:location"
 msgstr "Veranstaltungsort"
+
+#: components/MainNavigation/routes.ts:31
+msgid "pageTitle:partyUS"
+msgstr "Party in the USA"
 
 #: pages/reply.tsx:28
 msgid "pageTitle:reply"
 msgstr "Antwort"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:84
+#: components/ReplyGuestList/ReplyGuestList.tsx:85
 msgid "reply:error"
 msgstr "Es gab einen Fehler. Versuch es nochmal, oder kontaktiere uns falls du weiter Probleme hast."
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:32
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:32
 msgid "reply:labels.answer"
 msgstr "Antwort"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:33
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:33
 msgid "reply:labels.dietaryRestrictions"
 msgstr "Diätvorschriften"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:34
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:34
 msgid "reply:labels.otherComment"
 msgstr "Andere Kommentare"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:36
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:36
 msgid "reply:labels.songRequest"
 msgstr "Liedwunsch"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:61
+#: components/ReplyGuestList/ReplyGuestList.tsx:62
 msgid "reply:loading"
 msgstr "Ladet..."
 
@@ -153,33 +161,40 @@ msgid "reply:noInvite"
 msgstr "Entschuldigung, aber wir konnten deine Einladung nicht finden. Bitte überprüfen, dass du durch den Link in der Einladung gekommen bist. Wenn es noch Probleme gibt, bitte kontaktiere uns!"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:21
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:21
 msgid "reply:options.no"
 msgstr "Leider muss ich ablehnen"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:14
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:14
 msgid "reply:options.yes"
 msgstr "Freu mich schon!"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:100
+#: components/ReplyGuestList/ReplyGuestList.tsx:103
 msgid "reply:save"
 msgstr "Speichern"
 
 #: components/GuestReplyForm/GuestReplyForm.tsx:37
+#: components/GuestReplyFormUS/GuestReplyFormUS.tsx:37
 msgid "reply:songRequestDisclaimer"
 msgstr "Keine Garantie"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:26
+#: components/ReplyGuestList/ReplyGuestList.tsx:27
 msgid "reply:success.attending"
 msgstr "{numberOfGuests, plural, one {Wir freuen uns, dich da zu sehen!} other {Wir freuen uns, euch da zu sehen!}}"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:43
+#: components/ReplyGuestList/ReplyGuestList.tsx:44
 msgid "reply:success.noResponse"
 msgstr "Vielen Dank für die Antwort!"
 
-#: components/ReplyGuestList/ReplyGuestList.tsx:35
+#: components/ReplyGuestList/ReplyGuestList.tsx:36
 msgid "reply:success.notAttending"
 msgstr "{numberOfGuests, plural, one {Tut uns lied, dass du nicht kommen kannst. Wir hoffen dich bald zu sehen!} other {Tut uns lied, dass ihr nicht kommen könnt. Wir hoffen euch bald zu sehen!}}"
 
 #: components/Layout/Layout.tsx:8
 msgid "siteTitle"
 msgstr "Christina & Patricks Hochzeit"
+
+#: components/LayoutUS/LayoutUS.tsx:7
+msgid "siteTitle-us"
+msgstr "Christina & Patricks Hochzeit - Runde 2"

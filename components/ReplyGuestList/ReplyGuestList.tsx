@@ -15,6 +15,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
+import GuestReplyFormUS from '../partyUS/GuestReplyForm';
 
 dayjs.extend(utc);
 
@@ -48,9 +49,11 @@ const getSuccessMessage = (attending: Attending[], numberOfGuests: number): stri
 
 interface Props {
   inviteId: string;
+  partyLocation?: 'austria' | 'us';
 }
 
-function ReplyGuestList({ inviteId }: Props): ReactElement {
+function ReplyGuestList({ inviteId, partyLocation = 'austria' }: Props): ReactElement {
+  const attendingKey = partyLocation === 'austria' ? 'attending' : 'attendingUS';
   const { loading, data: guests } = useCollectionDocsData<Guest>({
     collection: 'guests',
     query: {
@@ -74,18 +77,20 @@ function ReplyGuestList({ inviteId }: Props): ReactElement {
 
   const onSubmit = async (values: { guest: { [key: string]: Partial<Guest> } }) => {
     const guestIds = Object.keys(values.guest);
+    const replyTime = dayjs().utc().format('YYYY-MM-DD HH:mm');
+
 
     const batch = firebase.firestore.batch();
     const attending: Attending[] = [];
     guestIds.forEach(id => {
+      const updatedGuest: Partial<Guest> = values.guest[id];
+      updatedGuest[partyLocation === 'austria' ? 'replyAt' : 'replyAtUS'] = replyTime;
+
       const guestDoc = firebase.firestore
         .collection('guests')
         .doc(id);
-      batch.update(guestDoc, {
-        ...values.guest[id],
-        replyAt: dayjs().utc().format('YYYY-MM-DD HH:mm')
-      });
-      attending.push(values.guest[id].attending);
+      batch.update(guestDoc, updatedGuest);
+      attending.push(values.guest[id][attendingKey]);
     });
 
     batch
@@ -115,7 +120,9 @@ function ReplyGuestList({ inviteId }: Props): ReactElement {
         <form onSubmit={handleSubmit(onSubmit)}>
           <ul>
             {guests.map((guest) => (
-              <GuestReplyForm guest={guest} key={guest.id} />
+              partyLocation === 'austria' ?
+                <GuestReplyForm guest={guest} key={guest.id} />
+                : <GuestReplyFormUS guest={guest} key={guest.id} />
             ))}
           </ul>
           <Button buttonType="primary" type="submit" disabled={isSubmitting}>

@@ -3,10 +3,13 @@ import { useRouter } from 'next/router';
 import { FirebaseContext } from '../../firebase';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
+import { Invite } from '../types';
 
 dayjs.extend(utc);
 
-const useInviteId = (): string => {
+type PartyLocation = 'austria' | 'us';
+
+const useInviteId = (party: PartyLocation = 'austria'): string => {
   const { query } = useRouter();
   const firebase = useContext(FirebaseContext);
 
@@ -15,20 +18,25 @@ const useInviteId = (): string => {
     if (query.inviteId) {
       const id = query.inviteId as string;
       localStorage.setItem('inviteId', inviteId);
-  
+
       const openedAt = dayjs().utc().format('YYYY-MM-DD HH:mm');
+      const updatedData: Partial<Invite> = party === 'austria' ? {
+        opened: true,
+        openedAt
+      } : {
+        openedUS: true,
+        openedAtUS: openedAt
+      };
+
       firebase.firestore
         .collection('invites')
         .doc(id)
-        .update({
-          opened: true,
-          openedAt
-        });
-      
+        .update(updatedData);
+
       setInviteId(id);
       return;
     }
-    
+
     const iId = localStorage.getItem('inviteId');
     if (iId) {
       setInviteId(iId);

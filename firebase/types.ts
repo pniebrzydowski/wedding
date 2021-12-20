@@ -18,6 +18,8 @@ export interface Invite {
   lang: InviteLanguage;
   opened?: boolean;
   openedAt?: string;
+  openedUS?: boolean;
+  openedAtUS?: string;
 }
 
 export type Attending = '' | 'yes' | 'no';
@@ -29,8 +31,12 @@ export interface Guest {
   gender: 'm' | 'f';
   email?: string;
   attending?: Attending;
+  attendingUS?: Attending;
   dietaryNeeds?: string;
   songRequest?: string;
+  songRequestUS?: string;
   comment?: string;
+  commentUS?: string;
   replyAt?: string;
+  replyAtUS?: string;
 }

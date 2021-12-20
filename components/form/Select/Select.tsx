@@ -33,6 +33,7 @@ function Select({
 }: Props): ReactElement {
   const { register } = useFormContext();
   const fieldId = `${formName}_${fieldName}`;
+  const ref = register({ required });
 
   return (
     <FieldWrapper fieldId={fieldId} label={label} error={error}>
@@ -42,7 +43,7 @@ function Select({
         id={fieldId}
         name={fieldName}
         defaultValue={defaultValue}
-        ref={register({ required })}
+        ref={disabled ? undefined : ref}
       >
         {options.map((option) => (
           <option key={option.value} value={option.value}>
@@ -50,6 +51,7 @@ function Select({
           </option>
         ))}
       </select>
+      {disabled && <input type="hidden" defaultValue={defaultValue} name={fieldName} ref={ref} />}
     </FieldWrapper>
   );
 }
