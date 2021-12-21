@@ -7,7 +7,7 @@ import useInviteId from '../firebase/hooks/useInviteId';
 import SplashScreenUS from '../components/partyUS/SplashScreen';
 
 function Index(): ReactElement {
-  useInviteId();
+  useInviteId('us');
 
   return (
     <>

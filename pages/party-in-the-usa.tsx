@@ -29,7 +29,7 @@ export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ 
 };
 
 function PartyUS({ introContent, basicInfo }: Props): ReactElement {
-  const inviteId = useInviteId();
+  const inviteId = useInviteId('us');
 
   return (
     <LayoutUS>
