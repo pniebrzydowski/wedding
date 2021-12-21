@@ -1,7 +1,8 @@
 .bg {
   position: fixed;
   opacity: 0.06;
-  background-image: url('/images/greinburg-hof.jpg');
+  background-image: url('/images/eagle-with-flag.jpg');
+  background-position: center top;
   width: 100vw;
   height: 100vh;
   z-index: -1;

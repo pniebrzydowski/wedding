@@ -6,4 +6,4 @@ title: "Basic Info"
 Sterling Heights, MI, USA
 
 25\. Juni 2022<br />
-Mehr Details kommen noch
+Details folgen

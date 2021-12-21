@@ -9,12 +9,11 @@ interface Props {
 
 const HomeContentUS = ({ basicInfo }: Props): ReactElement => {
   return (
-    <>
-      <Grid>
-        <div className={styles.basicInfo} dangerouslySetInnerHTML={{ __html: basicInfo }} />
-        <img src="/images/christina-pat-almkogel.jpg" />
-      </Grid>
-    </>
+    <Grid align='center'>
+      <div className={styles.basicInfo} dangerouslySetInnerHTML={{ __html: basicInfo }} />
+      <img src="/images/christina-pat-chiflon.jpg" />
+    </Grid>
+
   );
 };
 

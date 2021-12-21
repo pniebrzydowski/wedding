@@ -38,12 +38,13 @@ function PartyUS({ introContent, basicInfo }: Props): ReactElement {
         <title>{getTranslatedSiteTitle()}</title>
       </Head>
 
-      {inviteId && <>
-        <HomeContentUS basicInfo={basicInfo.contentHtml} />
-        <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
-      </>}
-
-      {inviteId ? <ReplyGuestList inviteId={inviteId} partyLocation='us' /> : <InviteNotFound />}
+      {inviteId ? (
+        <>
+          <HomeContentUS basicInfo={basicInfo.contentHtml} />
+          <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
+          <ReplyGuestList inviteId={inviteId} partyLocation='us' />
+        </>
+      ) : <InviteNotFound />}
     </LayoutUS>
   );
 }

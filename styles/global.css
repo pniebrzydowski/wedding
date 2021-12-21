@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background: linear-gradient( rgba(104, 11, 11, 0) 50px, rgba(104, 11, 11, .2) 800px);
+  background: linear-gradient( rgba(11, 11, 104, 0) 50px, rgba(11, 11, 104, .2) 800px);
 }
 
 * {

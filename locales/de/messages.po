@@ -154,7 +154,7 @@ msgstr "Andere Kommentare"
 #: components/GuestReplyForm/GuestReplyForm.tsx:36
 #: components/partyUS/GuestReplyForm/GuestReplyForm.tsx:36
 msgid "reply:labels.songRequest"
-msgstr "Liedwunsch"
+msgstr "Liederwunsch"
 
 #: components/ReplyGuestList/ReplyGuestList.tsx:63
 msgid "reply:loading"
