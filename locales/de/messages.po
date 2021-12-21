@@ -51,7 +51,7 @@ msgstr "Mit dem öffentlichen Verkehr"
 
 #: components/Footer/Footer.tsx:36
 msgid "footer:contact"
-msgstr "Falls du etwas nicht in unseren {faqLink} finden kannst, kannst du gerne in unseren <0>Gruppenchat auf Telegram</0> oder eine Mail an <1>christina.patrick.2021@gmail.com</1> schreiben"
+msgstr "Wir fügen bald weitere Details hinzu, aber falls du mittlerweile etwas noch brauchst, kannst du gerne in unseren <0>Gruppenchat auf Telegram</0> oder eine Mail an <1>christina.patrick.2021@gmail.com</1> schreiben"
 
 #: components/Footer/Footer.tsx:7
 msgid "footer:faqLink"
@@ -97,16 +97,16 @@ msgstr "Über Patrick"
 msgid "pageTitle:about.story"
 msgstr "Unsere Geschichte"
 
-#: components/MainNavigation/routes.ts:61
+#: components/MainNavigation/routes.ts:53
 #: pages/accommodations.tsx:34
 msgid "pageTitle:accommodation"
 msgstr "Übernachtung"
 
-#: components/MainNavigation/routes.ts:53
+#: components/MainNavigation/routes.ts:45
 msgid "pageTitle:faq"
 msgstr "FAQ"
 
-#: components/MainNavigation/routes.ts:69
+#: components/MainNavigation/routes.ts:61
 #: pages/gifts.tsx:28
 msgid "pageTitle:gifts"
 msgstr "Geschenke"
@@ -115,16 +115,16 @@ msgstr "Geschenke"
 msgid "pageTitle:home"
 msgstr "Start"
 
-#: components/MainNavigation/routes.ts:45
+#: components/MainNavigation/routes.ts:37
 #: pages/location.tsx:35
 msgid "pageTitle:location"
 msgstr "Veranstaltungsort"
 
-#: components/partyUS/Layout/Layout.tsx:34
+#: components/partyUS/Layout/Layout.tsx:33
 msgid "pageTitle:originalSite"
 msgstr "Runde 1"
 
-#: components/MainNavigation/routes.ts:32
+#: components/MainNavigation/routes.ts:69
 msgid "pageTitle:partyUS"
 msgstr "Party in the USA"
 
@@ -199,6 +199,6 @@ msgstr "{numberOfGuests, plural, one {Tut uns lied, dass du nicht kommen kannst.
 msgid "siteTitle"
 msgstr "Christina & Patricks Hochzeit"
 
-#: components/partyUS/Layout/Layout.tsx:11
+#: components/partyUS/Layout/Layout.tsx:10
 msgid "siteTitle-us"
 msgstr "Christina & Patricks Hochzeit - Runde 2"

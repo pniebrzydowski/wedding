@@ -5,7 +5,7 @@ import { getRouteUrl, RouteName } from '../MainNavigation/routes';
 
 import styles from './footer.module.css';
 
-const Footer = (): ReactElement => {  
+const Footer = (): ReactElement => {
   const faqLink = (
     <Link href={getRouteUrl(RouteName.Faq)}>
       <a><Trans id="footer:faqLink">FAQs</Trans></a>
@@ -30,7 +30,7 @@ const Footer = (): ReactElement => {
           <a className={styles.telegramLink} href="https://t.me/joinchat/RcMHaKRjn9hlMWRk">
             <img className={styles.telegramIcon} src="/images/Telegram.svg" />
             <Trans id="footer:telegramLinkText">
-            Join the telegram group here
+              Join the telegram group here
             </Trans>
           </a>
         </div>
@@ -41,7 +41,7 @@ const Footer = (): ReactElement => {
         </h4>
         <p>
           <Trans id="footer:contact">
-            If you can&apos;t find what you&apos;re looking for in our {faqLink}, you can ask in our{' '}
+            We will add more information soon, but if you need any more info in the meantime, you can ask in our{' '}
             <a href="https://t.me/joinchat/RcMHaKRjn9hlMWRk">Group Chat on Telegram</a>{' '}
             or write us an email at{' '}
             <a href="mailto:christina.patrick.2021@gmail.com">christina.patrick.2021@gmail.com</a>.
