@@ -56,7 +56,7 @@ function InviteList(): ReactElement {
   }
 
   const invitesWithGuests = getInvitesWithGuests(invites, guests);
-  const openedCount = invitesWithGuests.filter(i => i.opened).length;
+  const openedCount = invitesWithGuests.filter(i => i.openedUS).length;
 
   const visibleInvites = (filterValue) === undefined
     ? invitesWithGuests
@@ -67,16 +67,16 @@ function InviteList(): ReactElement {
       if (filterValue === 'no-response') {
         return invite.guests.some(g => !g.attending);
       }
-      return filterValue==='opened' ? invite.opened : !invite.opened;
+      return filterValue === 'opened' ? invite.openedUS : !invite.openedUS;
     });
 
   const sortedInvites = visibleInvites.sort((a, b) => {
-    if (!a.openedAt && !a.opened) { return 1; }
-    if (!b.openedAt && !b.opened) { return -1; }
-    if (a.opened && !a.openedAt) { return 1; }
-    if (b.opened && !b.openedAt) { return -1; }
-    if (dayjs(b.openedAt) > dayjs(a.openedAt)) { return 1; }
-    if (dayjs(a.openedAt) > dayjs(b.openedAt)) { return -1; }
+    if (!a.openedAtUS && !a.openedUS) { return 1; }
+    if (!b.openedAtUS && !b.openedUS) { return -1; }
+    if (a.openedUS && !a.openedAtUS) { return 1; }
+    if (b.openedUS && !b.openedAtUS) { return -1; }
+    if (dayjs(b.openedAtUS) > dayjs(a.openedAtUS)) { return 1; }
+    if (dayjs(a.openedAtUS) > dayjs(b.openedAtUS)) { return -1; }
     return 0;
   });
 
@@ -128,7 +128,7 @@ function InviteList(): ReactElement {
         <tbody>
           {sortedInvites.map(invite => {
             const { names, emails } = getInviteInfo(invite);
-            const openedAtDate = getLocalDate(invite.openedAt);
+            const openedAtDate = getLocalDate(invite.openedAtUS);
 
             return (
               <tr key={invite.id}>
@@ -140,7 +140,7 @@ function InviteList(): ReactElement {
                   {emails.join(', ')}
                 </td>
                 <td className={styles.noWrap}>
-                  {invite.opened ? <>&#10003; {openedAtDate}</> : ''}
+                  {invite.openedUS ? <>&#10003; {openedAtDate}</> : ''}
                 </td>
               </tr>
             );

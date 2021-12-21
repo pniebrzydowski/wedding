@@ -24,30 +24,30 @@ function GuestList(): ReactElement {
     ? guests
     : guests.filter(guest => {
       if (attendingFilter === 'no-response') {
-        return !guest.attending;
+        return !guest.attendingUS;
       }
       if (attendingFilter === 'any-response') {
-        return !!guest.attending;
+        return !!guest.attendingUS;
       }
       if (attendingFilter === 'dietary') {
-        return guest.attending && !!guest.dietaryNeeds;
+        return guest.attendingUS && !!guest.dietaryNeeds;
       }
       if (attendingFilter === 'song') {
-        return guest.attending && !!guest.songRequest;
+        return guest.attendingUS && !!guest.songRequestUS;
       }
       if (attendingFilter === 'comment') {
-        return !!guest.comment;
+        return !!guest.commentUS;
       }
-      return guest.attending === attendingFilter;
+      return guest.attendingUS === attendingFilter;
     });
 
   const sortedGuests = visibleGuests.sort((a, b) => {
-    if (!a.replyAt && !a.attending) { return 1; }
-    if (!b.replyAt && !b.attending) { return -1; }
-    if (a.attending && !a.replyAt) { return 1; }
-    if (b.attending && !b.replyAt) { return -1; }
-    if (dayjs(b.replyAt) > dayjs(a.replyAt)) { return 1; }
-    if (dayjs(a.replyAt) > dayjs(b.replyAt)) { return -1; }
+    if (!a.replyAtUS && !a.attendingUS) { return 1; }
+    if (!b.replyAtUS && !b.attendingUS) { return -1; }
+    if (a.attendingUS && !a.replyAtUS) { return 1; }
+    if (b.attendingUS && !b.replyAtUS) { return -1; }
+    if (dayjs(b.replyAtUS) > dayjs(a.replyAtUS)) { return 1; }
+    if (dayjs(a.replyAtUS) > dayjs(b.replyAtUS)) { return -1; }
     return 0;
   });
 
@@ -114,15 +114,15 @@ function GuestList(): ReactElement {
 
         <tbody>
           {sortedGuests.map((guest) => {
-            const replyDate = getLocalDate(guest.replyAt);
+            const replyDate = getLocalDate(guest.replyAtUS);
 
             return (
               <tr key={guest.id}>
                 <td>{guest.name}</td>
-                {showAttedingColumn && <td>{guest.attending}</td>}
-                {showCommentColumn && <td>{guest.comment}</td>}
+                {showAttedingColumn && <td>{guest.attendingUS}</td>}
+                {showCommentColumn && <td>{guest.commentUS}</td>}
                 {showDietaryColumn && <td>{guest.dietaryNeeds}</td>}
-                {showSongColumn && <td>{guest.songRequest}</td>}
+                {showSongColumn && <td>{guest.songRequestUS}</td>}
                 {showTimeColumn && <td className={styles.noWrap}>{replyDate}</td>}
               </tr>
             );
