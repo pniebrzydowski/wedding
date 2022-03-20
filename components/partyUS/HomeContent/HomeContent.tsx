@@ -11,7 +11,10 @@ const HomeContentUS = ({ basicInfo }: Props): ReactElement => {
   return (
     <Grid align='center'>
       <div className={styles.basicInfo} dangerouslySetInnerHTML={{ __html: basicInfo }} />
-      <img src="/images/christina-pat-chiflon.jpg" />
+      <div className={styles.imgWrapper}>
+        <img src="/images/cp-hallstatt.jpg" />
+        <img src="/images/cp-hands.jpg" />
+      </div>
     </Grid>
 
   );

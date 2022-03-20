@@ -1,5 +1,5 @@
 .basicInfo {
-  font-family: 'Dancing Script';
+  font-family: "Dancing Script";
 }
 
 .basicInfo p {
@@ -10,5 +10,8 @@
 }
 
 .imgWrapper img {
-  width: 100%;
+  width: calc(50% - 4px);
+}
+.imgWrapper img + img {
+  margin-left: 8px;
 }
