@@ -9,6 +9,20 @@
   margin-bottom: 1rem;
 }
 
+.additionalInfo ul {
+  list-style: square;
+  margin-left: 15px;
+  font-variant: small-caps;
+}
+.additionalInfo li + li {
+  margin-top: 0.5rem;
+}
+
+.additionalInfo p {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
 .imgWrapper img {
   width: calc(50% - 4px);
 }

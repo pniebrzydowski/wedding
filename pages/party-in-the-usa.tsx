@@ -14,21 +14,24 @@ import HomeContentUS from '../components/partyUS/HomeContent';
 interface Props {
   introContent: StaticContent;
   basicInfo: StaticContent;
+  additionalInfo: StaticContent;
 }
 
 export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
   const introContent = await getContentData({ id: 'reply-intro-us', locale });
   const basicInfo = await getContentData({ id: 'basic-info-us', locale });
+  const additionalInfo = await getContentData({ id: 'additional-info-us', locale });
 
   return {
     props: {
       introContent,
-      basicInfo
+      basicInfo,
+      additionalInfo
     },
   };
 };
 
-function PartyUS({ introContent, basicInfo }: Props): ReactElement {
+function PartyUS({ introContent, basicInfo, additionalInfo }: Props): ReactElement {
   const inviteId = useInviteId('us');
 
   return (
@@ -40,11 +43,11 @@ function PartyUS({ introContent, basicInfo }: Props): ReactElement {
 
       {inviteId ? (
         <>
-          <HomeContentUS basicInfo={basicInfo.contentHtml} />
+          <HomeContentUS basicInfo={basicInfo.contentHtml} additionalInfo={additionalInfo.contentHtml} />
           <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
           <ReplyGuestList inviteId={inviteId} partyLocation='us' />
         </>
-      ) : <InviteNotFound />}
+      ) : <HomeContentUS basicInfo={basicInfo.contentHtml} additionalInfo={additionalInfo.contentHtml} />}
     </LayoutUS>
   );
 }
