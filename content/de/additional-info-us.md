@@ -6,4 +6,4 @@ title: "Additional Info"
 - 15:00 : Erneuerung der Eheversprechen
 - 16:00 - 18:00pm: Essen
 
-Snacks und Getränke werden den ganzen Tag verfügbar sein. Dies ist eine Gartenparty, also zieh 'was gemütlich an und sei bereit für Spaß und Spiele!
+Snacks und Getränke werden den ganzen Tag verfügbar sein. Dies ist eine Gartenparty, also zieh 'was gemütliches an und sei bereit für Spaß und Spiele!
