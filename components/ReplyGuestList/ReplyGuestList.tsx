@@ -24,8 +24,8 @@ const getSuccessMessage = (attending: Attending[], numberOfGuests: number): stri
     return i18n._(defineMessage({
       id: 'reply:success.attending',
       message: plural(numberOfGuests, {
-        one: 'Looking forward to seeing you there!',
-        other: 'Looking forward to seeing you there!'
+        one: 'Awesome, see you there!',
+        other: 'Awesome, see you there!'
       })
     }));
   }

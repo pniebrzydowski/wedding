@@ -18,9 +18,13 @@
   margin-top: 0.5rem;
 }
 
+.additionalInfo h2 {
+  font-size: 1.25rem;
+}
+
 .additionalInfo p {
-  font-size: 1rem;
-  line-height: 1.25;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 .imgWrapper img {

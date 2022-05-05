@@ -43,11 +43,10 @@ function PartyUS({ introContent, basicInfo, additionalInfo }: Props): ReactEleme
 
       {inviteId ? (
         <>
-          <HomeContentUS basicInfo={basicInfo.contentHtml} additionalInfo={additionalInfo.contentHtml} />
-          <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
+          <HomeContentUS basicInfo={basicInfo.contentHtml} additionalInfo={additionalInfo.contentHtml} introContent={introContent.contentHtml} />
           <ReplyGuestList inviteId={inviteId} partyLocation='us' />
         </>
-      ) : <HomeContentUS basicInfo={basicInfo.contentHtml} additionalInfo={additionalInfo.contentHtml} />}
+      ) : <InviteNotFound />}
     </LayoutUS>
   );
 }
