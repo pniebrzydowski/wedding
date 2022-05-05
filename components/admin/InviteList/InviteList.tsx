@@ -65,7 +65,7 @@ function InviteList(): ReactElement {
         return true;
       }
       if (filterValue === 'no-response') {
-        return invite.guests.some(g => !g.attending);
+        return invite.guests.some(g => !g.attendingUS);
       }
       return filterValue === 'opened' ? invite.openedUS : !invite.openedUS;
     });
