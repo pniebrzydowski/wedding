@@ -2,48 +2,52 @@ import { ReactElement } from 'react';
 
 import Head from 'next/head';
 
-import Layout, { getTranslatedSiteTitle } from '../components/Layout';
 import ReplyGuestList from '../components/ReplyGuestList';
 import { getContentData } from '../lib/content';
-import { defineMessage } from '@lingui/macro';
-import { i18n } from '@lingui/core';
 import { StaticContent } from '../content/types';
 import InviteNotFound from '../components/InviteNotFound';
 
 import useInviteId from '../firebase/hooks/useInviteId';
+import LayoutUS, { getTranslatedSiteTitle } from '../components/partyUS/Layout';
+import HomeContentUS from '../components/partyUS/HomeContent';
 
 interface Props {
   introContent: StaticContent;
+  basicInfo: StaticContent;
+  additionalInfo: StaticContent;
 }
 
 export const getStaticProps = async ({ locale }: { locale: string }): Promise<{ props: Props }> => {
-  const introContent = await getContentData({ id: 'reply-intro', locale });
+  const introContent = await getContentData({ id: 'reply-intro-us', locale });
+  const basicInfo = await getContentData({ id: 'basic-info-us', locale });
+  const additionalInfo = await getContentData({ id: 'additional-info-us', locale });
 
   return {
     props: {
       introContent,
+      basicInfo,
+      additionalInfo
     },
   };
 };
 
-function Reply({ introContent }: Props): ReactElement {
-  const inviteId = useInviteId();
-  
-  const pageTitle = i18n._(defineMessage({
-    id: 'pageTitle:reply',
-    message: 'Reply'
-  }));
+function Reply({ introContent, basicInfo, additionalInfo }: Props): ReactElement {
+  const inviteId = useInviteId('us');
 
   return (
-    <Layout>
+    <LayoutUS>
       <Head>
-        <title>{pageTitle} | {getTranslatedSiteTitle()}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"></link>
+        <title>{getTranslatedSiteTitle()}</title>
       </Head>
 
-      <div dangerouslySetInnerHTML={{ __html: introContent.contentHtml }} />
-
-      {inviteId ? <ReplyGuestList inviteId={inviteId} /> : <InviteNotFound />}
-    </Layout>
+      {inviteId ? (
+        <>
+          <HomeContentUS basicInfo={basicInfo.contentHtml} additionalInfo={additionalInfo.contentHtml} introContent={introContent.contentHtml} />
+          <ReplyGuestList inviteId={inviteId} partyLocation='us' />
+        </>
+      ) : <InviteNotFound />}
+    </LayoutUS>
   );
 }
 
